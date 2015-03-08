@@ -33,6 +33,26 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+// COMMON
+
+.onepage-pagination {
+	transform: translateY(-50%);
+	width: 28px;
+	padding: 4px 0 !important;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, .3);
+	
+	li a:before {
+		background: rgba(0,0,0,0.5) !important;
+		
+	}
+	li a.active:before {
+		border: 1px solid rgba(0,0,0,0.5) !important;
+		background: none !important;
+	}
+}
+
+
 //MAIN PAGE 
 
 .main-page {
@@ -97,6 +117,7 @@ html {
 	}
 	
 	a {
+		display: block;
 		width: 50px;
 		height: 50px;
 		background: none;
@@ -104,8 +125,9 @@ html {
 		text-align: center;
 		padding: 0;
 		border-radius: 50%;
-		line-height: 50px;
 		color: #fff;
+		line-height: 55px;
+		text-decoration: none;
 		animation: main-button-norm 0.5s 1;
 		-webkit-animation: main-button-norm 0.5s 1;
 		
