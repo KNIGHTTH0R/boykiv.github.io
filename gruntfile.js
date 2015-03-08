@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 	require('jit-grunt')(grunt);
-	
+
 	grunt.initConfig({
 		less: {
 			development: {
@@ -15,19 +15,17 @@ module.exports = function(grunt) {
 			}
 		},
 		watch: {
-			less: {
-				files: ['less/*.less'],
-				tasks: 'less'
-			},
-			reload: {
-				files: ['*.html',
-					'css/styles.css',
-					'js/*.js'],
-			tasks: 'reload'
+			styles: {
+				files: ['less/styles.less'],
+				tasks: ['less'],
+				options: {
+					nospawn: true,
+					livereload: true
+				}
 			}
 		}
 	});
-	
+
 	grunt.registerTask('default', ['less', 'watch']);
 	grunt.loadNpmTasks('grunt-contrib-watch');
 };
