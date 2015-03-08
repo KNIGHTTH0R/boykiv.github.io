@@ -1,5 +1,8 @@
 // One page scroll
 
+$(document).ready(function() {
+	$('#pagepiling').pagepiling();
+});
 
 
 // For wow.js
