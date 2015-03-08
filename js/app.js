@@ -45,6 +45,13 @@ function onPlayerReady(event) {
 	event.target.mute();
 }
 
+//for resizing video
+$( window ).resize(function() {
+	var w = $(document).width()*1.35;
+	$("#player").css('width', ''+w+'px').css('height', ''+w/1.77778+'px');
+	console.log($(document).width());
+});
+
 
 // SLIDER
 
@@ -52,3 +59,4 @@ $('.right-arrow').click(function() {
 	$('.white-chair').removeClass('animated').removeClass('fadeInLeft');
 	$('.white-chair').addClass('fadeInLeft').addClass('animated');
 });
+
