@@ -46,10 +46,14 @@ function onPlayerReady(event) {
 }
 
 //for resizing video
-$( window ).resize(function() {
+function videoResize() {
 	var w = $(document).width()*1.35;
 	$("#player").css('width', ''+w+'px').css('height', ''+w/1.77778+'px');
 	console.log($(document).width());
+}
+videoResize();
+$(window).resize(function() {
+	videoResize();
 });
 
 
