@@ -6,8 +6,6 @@
 @import "common/grid";
 @import "common/theme";
 
-@import "grid/grid";
-
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Hind:400,300,500,600,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto:100);
@@ -33,4 +31,145 @@ html {
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+//MAIN PAGE 
+
+.main-page {
+	height: 100%; width: 100%;
+	overflow: hidden;
+	background: url(../img/chair-preview.jpg);
+	background-size: cover;
+	text-align: center;
+	position: relative;
+	background-attachment: fixed;
+	
+	& > * {
+		position: relative;
+		z-index: 1;
+	}
+	
+	&:after {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		content: "";
+		background: rgba(0, 0, 0, .4);
+	}
+	
+	h1 {
+		letter-spacing: 0.15em;
+		text-align: left;
+		display: inline-block;
+		padding: 80px 0;
+		color: #fff;
+		font-family: "Montserrat";
+		text-transform: uppercase;
+		font-size: 32px;
+		
+		b {
+			background: #fa225b;
+			padding: 0 10px;
+			margin-left: -10px;
+		}
+		
+		span {
+			display: block;
+			
+			&:first-child {
+				font-size: 50px;
+			}
+		}
+		
+		small {
+			font-size: 60%;
+		}
+	}
+	
+	.button-box {
+		position: absolute;
+		bottom: 80px;
+		left: 50%;
+		margin-left: -25px;
+	}
+	
+	button {
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: 2px solid #fff;
+		text-align: center;
+		padding: 0;
+		border-radius: 50%;
+		line-height: 50px;
+		color: #fff;
+		animation: main-button-norm 0.5s 1;
+		-webkit-animation: main-button-norm 0.5s 1;
+		
+		span {
+			display: none;
+		}
+		
+		&:before{
+			.icomoon;
+			
+			content:'\51';
+			font-size: 30px;
+		}
+		
+		&:hover {
+			animation: main-button 0.5s 1;
+			-webkit-animation: main-button 0.5s 1;
+			color: @brand;
+			border-color: @brand;
+		}
+	}
+}
+
+@keyframes main-button {
+	0% {
+		color: #fff;
+		border: 2px solid #fff;
+	}
+	100% {
+		color: @brand;
+		border: 2px solid @brand;
+	}
+}
+
+@-webkit-keyframes main-button {
+	0% {
+		color: #fff;
+		border: 2px solid #fff;
+	}
+	100% {
+		color: @brand;
+		border: 2px solid @brand;
+	}
+}
+
+
+@keyframes main-button-norm {
+	0% {
+		color: @brand;
+		border: 2px solid @brand;
+	}
+	100% {
+		color: #fff;
+		border: 2px solid #fff;
+	}
+}
+
+@-webkit-keyframes main-button-norm {
+	0% {
+		color: @brand;
+		border: 2px solid @brand;
+	}
+	100% {
+		color: #fff;
+		border: 2px solid #fff;
+	}
 }

@@ -1,6 +1,6 @@
-
 // For wow.js
 
+new WOW().init();
 
 
 // For video in youtube
