@@ -438,8 +438,11 @@ html {
 		height: @svg-size;
 		position: relative;
 		
-		img {
-			width: 100%;
+		img,
+		svg {
+			width: 200px;
+			height: 200px;
+			fill: $brand;
 		}
 		
 		.bottom {
@@ -571,8 +574,10 @@ html {
 		height: @svg-size;
 		position: relative;
 		
-		img {
-			width: 100%;
+		img,
+		svg {
+			width: 200px;
+			height: 200px;
 		}
 		
 		.bottom {
@@ -697,6 +702,7 @@ html {
 	position: relative;
 	text-align: center;
 	background-size: cover;
+	background: #fff;
 	
 	.content {
 		position: absolute;
@@ -844,4 +850,12 @@ html {
 		font-weight: 300;
 		line-height: 1;
 	}
+}
+
+
+// FOOTER PAGE
+
+.footer-page {
+//	height: 40%;
+//	background: red;
 }
