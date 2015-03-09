@@ -8,7 +8,7 @@
 	<link href="css/styles.css" type="text/css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="bower_components/pagepiling.js/jquery.pagepiling.css" />
 
-	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/pagepiling.js/jquery.pagepiling.min.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
 		
 		<section class="main-page section">
 			<div class="title-block flipInX wow" data-wow-delay="0.3s">
-				<h1><span><b>Eames Lounge</b> Chair</span><span>an design icon of the 20<small>th</small> centuary</span></h1>
+				<h1><span><b>Eames Lounge</b> Chair</span><span>a design icon of the 20<small>th</small> century</span></h1>
 			</div>
 			<div class="button-box wow bounce" data-wow-delay="1s" data-wow-duration="1.5s" data-wow-iteration="3">
 				<a href="javascript:void(0)" onclick="$.fn.pagepiling.moveSectionDown();"><span>Next page</span></a>
@@ -33,7 +33,7 @@
 		<section class="dev-page section">
 			<div class="content">
 				<div class="row dev-header">
-					<h2 class="flipInX wow" data-wow-delay="0.3s"><span class="w1">Handmading</span><br> <span class="w2">provides</span> <span class="w34">excellent quality</span></h2>
+					<h2 class="flipInX wow" data-wow-delay="0.3s"><span class="w1">Hand assembling</span><br> <span class="w2">provides</span> <span class="w34">excellent quality</span></h2>
 				</div>
 				<div class="row dev-content">
 					<div class="col materials wow fadeInDown">
@@ -91,7 +91,7 @@
 						<img class="black-chair" src="img/black-chair.png">
 					</div>
 				</div>
-				<button class="left-arrow"></button>
+				<button class="left-arrow" onclick="$('.black-model').toggle();$('.white-model').toggle();"></button>
 				<button class="right-arrow" onclick="$('.black-model').toggle();$('.white-model').toggle();"></button>
 	<!--			<button class="buy wow fadeInLeft" data-wow-delay="1.8s">Buy for 4899$</button>-->
 			</div>
