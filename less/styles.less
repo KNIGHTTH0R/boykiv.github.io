@@ -224,9 +224,10 @@ html {
 				font-size: 16px;
 			}
 			
+			margin: 0;
 			letter-spacing: 0.15em;
 			text-align: center;
-			padding: 20px 20px 20px;
+			padding: 40px 20px;
 			font-size: 1.3125em;
 			color: #fff;
 			font-family: "Montserrat";
@@ -261,6 +262,14 @@ html {
 				text-align: center;
 			}
 			
+			&.dev-header {
+				height: 170px;
+			}
+			
+			&.dev-content {
+				height: 350px;
+			}
+			
 			&:after {
 				content: "";
 				display: block;
@@ -274,7 +283,7 @@ html {
 				
 				@media (max-width:1200px) {
 					&.measurments {
-						display: none;
+						display: none !important;
 					}
 				}
 				
@@ -671,5 +680,164 @@ html {
 				}
 			}
 		}
+	}
+}
+
+
+/* MODEL PAGE */
+
+.model-page {
+	height: 100%; width: 100%;
+	overflow: hidden;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+	background-size: cover;
+	
+	.content {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+	
+	.image-block {
+		width: 900px;
+		margin: 0 auto;
+	}
+	
+	.menu {
+		width: 300px;
+		margin: 50px auto;
+		
+		li {
+			width: 150px;
+			float: left;
+			display: block;
+			
+			&:first-child button {
+				border-right: none;
+				border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px;
+			}
+			
+			&:last-child button {
+				border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+		}
+		
+		button {
+			width: 150px;
+			height: 30px;
+			background: none;
+			border: 1px solid #fa225b;
+			padding: 0;
+			font-size: 12px;
+			color: #fa225b;
+			padding: 1px 26px 0;
+			text-transform: uppercase;
+			letter-spacing: .15em;
+		}
+		
+		.active button {
+			background: #fa225b;
+			color: #fff;
+		}
+	}
+	
+	h2 {
+		width: 500px;
+		text-align: left;
+		top: 0px;
+		left: 50%;
+		position: absolute;
+		font-family: "Montserrat";
+		text-transform: uppercase;
+		letter-spacing: .15em;
+		
+		span {
+			display: inline-block;
+		}
+		
+		.p1 {
+			display: block;
+			font-size: 30px;
+			
+			.p11 {
+				display: inline-block;
+				background: #fa225b;
+				color: #fff;
+				padding: 0 5px;
+			}
+		}
+	}
+	
+	img {
+		position: relative;
+		z-index: 2;
+		width: 900px;
+	}
+	
+	@arrow-color: #888;
+	
+	.left-arrow {
+		position: absolute;
+		top: 50%;
+		left: 140px;
+		margin-top: -25px;
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: none;
+		text-align: center;
+		padding: 0;
+		border-radius: 50%;
+		line-height: 50px;
+		
+		&:before{
+			.icomoon;
+			
+			margin-left: -4px;
+			color: @arrow-color;
+			content:'\50';
+			font-size: 30px;
+		}
+	}
+	
+	.right-arrow {
+		position: absolute;
+		top: 50%;
+		right: 140px;
+		margin-top: -25px;
+		width: 50px;
+		height: 50px;
+		background: none;
+		border: none;
+		text-align: center;
+		padding: 0;
+		border-radius: 50%;
+		line-height: 50px;
+		
+		&:before{
+			.icomoon;
+			
+			margin-right: -4px;
+			color: @arrow-color;
+			content:'\53';
+			font-size: 30px;
+		}
+	}
+	
+	.buy {
+		margin: 30px 30px;
+		background: none;
+		border: none;
+		font-size: 30px;
+		font-family: Hind;
+		color: @brand;
+		font-weight: 300;
+		line-height: 1;
 	}
 }

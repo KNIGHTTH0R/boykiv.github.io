@@ -1,7 +1,25 @@
 // One page scroll
 
 $(document).ready(function() {
-	$('#pagepiling').pagepiling();
+				$('.dev-page .content').hide();
+	$('.model-page .content').hide();
+	
+	$('#pagepiling').pagepiling({
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+		
+		afterLoad: function(anchorLink, index){
+			
+			//using anchorLink
+			if(index == 2){
+				$('.dev-page .content').show();
+			}
+			
+			//using index
+			if(index == 3){
+				$('.model-page .content').show();
+			}
+		}
+	});
 });
 
 
@@ -50,4 +68,5 @@ $('.right-arrow').click(function() {
 	$('.white-chair').removeClass('animated').removeClass('fadeInLeft');
 	$('.white-chair').addClass('fadeInLeft').addClass('animated');
 });
+
 

@@ -32,11 +32,11 @@
 		
 		<section class="dev-page section">
 			<div class="content">
-				<div class="row">
-					<h2 class="flipInX wow" data-wow-delay="0.5s" data-wow-offset="100"><span class="w1">Handmading</span><br> <span class="w2">provides</span> <span class="w34">excellent quality</span></h2>
+				<div class="row dev-header">
+					<h2 class="flipInX wow" data-wow-delay="0.3s"><span class="w1">Handmading</span><br> <span class="w2">provides</span> <span class="w34">excellent quality</span></h2>
 				</div>
-				<div class="row">
-					<div class="col materials wow fadeInDown" data-wow-delay="1s">
+				<div class="row dev-content">
+					<div class="col materials wow fadeInDown">
 						<h3>Materials</h3>
 						<ul>
 							<li>Seven-ply walnut</li>
@@ -50,7 +50,7 @@
 							<li>stainless steel glides</li>
 						</ul>
 					</div>
-					<div class="col measurments wow fadeInDown front-block" data-wow-delay="1.2s">
+					<div class="col measurments wow fadeInDown front-block" data-wow-delay="0.2s">
 						<div class="front">
 							<div class="wrapper">
 								<div class="bottom"><div class="l"></div><div class="num">37.5</div><div class="r"></div></div>
@@ -59,7 +59,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col measurments wow fadeInDown" data-wow-delay="1.4s">
+					<div class="col measurments wow fadeInDown" data-wow-delay="0.4s">
 						<div class="flang">
 							<div class="wrapper">
 								<div class="bottom"><div class="l"></div><div class="num">37.5</div><div class="r"></div></div>
@@ -69,7 +69,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="link-block fadeInDown" data-wow-delay="1.6s"><a href="https://www.youtube.com/watch?v=M3lOwDnRXjg" target="_blank" class="watch-video">Watch video</a></div>
+				<div class="link-block fadeInDown wow" data-wow-delay="0.6s"><a href="https://www.youtube.com/watch?v=M3lOwDnRXjg" target="_blank" class="watch-video">Watch video</a></div>
 			</div>
 			<div id="player"></div>
 		</section>
@@ -78,13 +78,23 @@
 		<!-- MAODEL PAGE -->
 		
 		<section class="model-page section">
-			<h2 ><span class="p1"><span class="w1 wow fadeInLeft" data-wow-delay="0.4s">An</span> <span class="p11 wow fadeInLeft" data-wow-delay="0.6s">ivory leather</span> <span class="w2 wow fadeInLeft" data-wow-delay="0.8s">model</span></span><span class="p2 wow fadeInLeft" data-wow-delay="1s">as soft as glove</span></h2>
-			<div class="image-block wow fadeInLeft" data-wow-delay="1.2s">
-				<img class="white-chair" src="img/white-chair.png">
+			<div class="content">
+				<div class="white-model">
+					<h2><span class="p1"><span class="w1 wow fadeInLeft" data-wow-delay="0.4s">An</span> <span class="p11 wow fadeInLeft" data-wow-delay="0.6s">ivory leather</span> <span class="w2 wow fadeInLeft" data-wow-delay="0.8s">model</span></span><span class="p2 wow fadeInLeft" data-wow-delay="1s">as soft as glove</span></h2>
+					<div class="wow fadeInLeft" data-wow-delay="1.2s">
+						<img class="white-chair" src="img/white-chair.png">
+					</div>
+				</div>
+				<div class="black-model" style="display: none;">
+					<h2><span class="p1"><span class="w1 wow fadeInLeft" data-wow-delay="0.4s">An</span> <span class="p11 wow fadeInLeft" data-wow-delay="0.6s">ivory leather</span> <span class="w2 wow fadeInLeft" data-wow-delay="0.8s">model</span></span><span class="p2 wow fadeInLeft" data-wow-delay="1s">as soft as glove</span></h2>
+					<div class="wow fadeInLeft" data-wow-delay="1.2s">
+						<img class="black-chair" src="img/black-chair.png">
+					</div>
+				</div>
+				<button class="left-arrow"></button>
+				<button class="right-arrow" onclick="$('.black-model').toggle();$('.white-model').toggle();"></button>
+	<!--			<button class="buy wow fadeInLeft" data-wow-delay="1.8s">Buy for 4899$</button>-->
 			</div>
-			<button class="left-arrow"></button>
-			<button class="right-arrow"></button>
-			<button class="buy wow fadeInLeft" data-wow-delay="1.8s">Buy for 4899$</button>
 		</section>
 		
 	</div>
