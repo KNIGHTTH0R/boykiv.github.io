@@ -424,6 +424,51 @@ html {
 
 @front-size: 200px;
 
+@keyframes svg-animation {
+	0% {
+		fill: rgba(255, 255, 255, 0);
+		stroke: rgba(255, 255, 255, .3);
+	}
+	100% {
+		fill: @brand;
+		stroke: #fff;
+	}
+}
+
+@-webkit-keyframes svg-animation {
+	0% {
+		fill: rgba(255, 255, 255, 0);
+		stroke: rgba(255, 255, 255, .3);
+	}
+	100% {
+		fill: @brand;
+		stroke: #fff;
+	}
+}
+
+
+
+@keyframes svg-animation-def {
+	0% {
+		fill: @brand;
+		stroke: #fff;
+	}
+	100% {
+		fill: rgba(255, 255, 255, 0);
+		stroke: rgba(255, 255, 255, .3);
+	}
+}
+
+@-webkit-keyframes svg-animation-def {
+	0% {
+		fill: @brand;
+		stroke: #fff;
+	}
+	100% {
+		fill: rgba(255, 255, 255, 0);
+		stroke: rgba(255, 255, 255, .3);
+	}
+}
 
 .front {
 	@svg-size: 200px;
@@ -442,7 +487,17 @@ html {
 		svg {
 			width: 200px;
 			height: 200px;
-			fill: $brand;
+			fill: rgba(255, 255, 255, 0);
+			stroke: rgba(255, 255, 255, .3);
+			animation: svg-animation-def 1.5s 1;
+			-webkit-animation: svg-animation-def 1.5s 1;
+			
+			&:hover {
+				fill: @brand;
+				stroke: #fff;
+				animation: svg-animation 1.5s 1;
+				-webkit-animation: svg-animation 1.5s 1;
+			}
 		}
 		
 		.bottom {
@@ -578,6 +633,17 @@ html {
 		svg {
 			width: 200px;
 			height: 200px;
+			fill: rgba(255, 255, 255, 0);
+			stroke: rgba(255, 255, 255, .3);
+			animation: svg-animation-def 1.5s 1;
+			-webkit-animation: svg-animation-def 1.5s 1;
+			
+			&:hover {
+				fill: @brand;
+				stroke: #fff;
+				animation: svg-animation 1.5s 1;
+				-webkit-animation: svg-animation 1.5s 1;
+			}
 		}
 		
 		.bottom {
