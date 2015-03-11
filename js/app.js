@@ -1,6 +1,7 @@
 // One page scroll
 
 $(document).ready(function() {
+				$('.footer').hide();
 				$('.dev-page .content').hide();
 	$('.model-page .content').hide();
 	
@@ -22,10 +23,13 @@ $(document).ready(function() {
 			//using index
 			if(index == 4){
 				$('.footer').show();
+				$('.footer').addClass('bounceInUp')
+				$('.footer').removeClass('bounceOutDown')
 				$('.footer-page').css('z-index', '100');
 			} else {
-				$('.footer').hide();
-				$('.footer-page').css('z-index', '0');
+				$('.footer').attr('style', '')
+				$('.footer').removeClass('bounceInUp')
+				$('.footer').addClass('bounceOutDown')
 			}
 		}
 	});
