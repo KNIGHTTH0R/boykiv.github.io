@@ -768,7 +768,6 @@ html {
 	position: relative;
 	text-align: center;
 	background-size: cover;
-	background: #fff;
 	
 	.content {
 		position: absolute;
@@ -922,6 +921,34 @@ html {
 // FOOTER PAGE
 
 .footer-page {
-//	height: 40%;
-//	background: red;
+	position: relative;
+	
+	.footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -100px;
+		height: 300px;
+		background: rgba(0, 0, 0, .85);
+		
+		.pluso {
+			text-align: center;
+			width: 100%;
+			margin-top: 40px;
+			
+			a {
+				margin: 10px;
+				
+				&:last-child {
+					display: none;
+				}
+			}
+		}
+		
+		.copyright {
+			margin-top: 10px;
+			text-align: center;
+			color: #fff;
+		}
+	}
 }

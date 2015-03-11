@@ -18,6 +18,15 @@ $(document).ready(function() {
 			if(index == 3){
 				$('.model-page .content').show();
 			}
+			
+			//using index
+			if(index == 4){
+				$('.footer').show();
+				$('.footer-page').css('z-index', '100');
+			} else {
+				$('.footer').hide();
+				$('.footer-page').css('z-index', '0');
+			}
 		}
 	});
 });
@@ -68,5 +77,3 @@ $('.right-arrow').click(function() {
 	$('.white-chair').removeClass('animated').removeClass('fadeInLeft');
 	$('.white-chair').addClass('fadeInLeft').addClass('animated');
 });
-
-
