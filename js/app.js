@@ -30,6 +30,7 @@ $(document).ready(function() {
 				$('.footer').attr('style', '')
 				$('.footer').removeClass('bounceInUp')
 				$('.footer').addClass('bounceOutDown')
+				$('.footer-page').css('z-index', '1');
 			}
 		}
 	});
