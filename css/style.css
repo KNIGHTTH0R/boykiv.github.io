@@ -17,6 +17,27 @@ body {
 	overflow: hidden;
 }
 
+.menu-col {
+	box-sizing: border-box;
+	width: 250px;
+	padding: 0 10px;
+	float: left;
+}
+
+.content-col {
+	box-sizing: border-box;
+	width: 950px;
+	padding: 0 10px;
+	float: left;
+}
+
+.col50p {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 10px;
+	float: left;
+}
+
 .col {
 	box-sizing: border-box;
 	width: 400px;
@@ -64,14 +85,13 @@ body {
 	text-align: left;
 }
 
+.wrapper {
+	width: 1200px;
+	margin: 100px auto;
+}
+
 
 /* HEADER */
-
-.logo {
-	text-align: center;
-	width: 300px;
-	margin: 100px auto 110px;
-}
 
 .logo img {
 	width: 160px;
@@ -79,56 +99,37 @@ body {
 
 .logo h1 {
 	font-weight: normal;
-	text-align: center;
 	font-size: 22px;
-	margin: 0 0 50px;
-	opacity: .5;
-	font-weight: 400;
+	margin: 0;
+	margin-bottom: 3px;
+	/*opacity: .8;*/
+	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: .15em;
+	letter-spacing: .1em;
 }
 
-.left-menu {
-	position: absolute;
-	left: 50%;
-	top: 142px;
-	margin-left: -480px;
+.main-menu {
+	margin: 0;
+	padding: 0;
 }
 
-.right-menu {
-	position: absolute;
-	right: 50%;
-	top: 142px;
-	margin-right: -410px;
+.main-menu li {
+	display: block;
 }
 
-ul.menu {
-	font-size: 0;
-}
-
-.menu li {
-	display: inline-block;
-	margin: 0 10px;
-}
-
-.menu a {
+.main-menu a {
 	color: #555;
 	font-weight: 400;
 	text-transform: uppercase;
 	font-size: 14px;
-	letter-spacing: .15em;
+	letter-spacing: .1em;
 	text-decoration: none;
-	line-height: 30px;
-	padding: 0 20px;
+	line-height: 20px;
 	display: block;
 }
 
-.menu li a span {
-	padding-left: 3px;
-}
-
-.menu li.active a span {
-	border-bottom: 1px solid #ccc;
+.main-menu li.active a span {
+	font-weight: 700;
 }
 
 
@@ -139,6 +140,7 @@ ul.menu {
 	position: relative;
 	margin-bottom: 20px;
 	overflow: hidden;
+	font-size: 0;
 }
 
 #projects .preview:after {
@@ -159,42 +161,33 @@ ul.menu {
 	left: 0;
 	right: 0;
 	top: 0;
-	background: rgba(0, 0, 0, .5);
-}
-
-#projects .preview:before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100px;
-	background: linear-gradient(to bottom,
-		rgba(53,51,57,0) 0%,
-		rgba(53,51,57,.05) 20%,
-		rgba(53,51,57,.2) 45%,
-		rgba(53,51,57,.3) 60%,
-		rgba(53,51,57,.4) 100%);
+	background: rgba(0, 0, 0, .4);
+	transition: all .4s;
 }
 
 #projects .preview img {
 	width: 100%;
 }
 
+#projects .preview:hover p {
+	opacity: 1;
+}
+
 #projects .preview p {
-	font-size: 18px;
+	font-size: 24px;
 	margin: 0;
-	font-family: "Roboto Slab";
-	font-weight: 100;
+	font-weight: 700;
 	position: absolute;
-	padding-top: 30px;
-	bottom: 0;
+	top: 50%;
 	left: 0;
 	right: 0;
 	color: #fff;
 	line-height: 50px;
-	text-shadow: 0 0 8px rgba(53,51,57, 1);
 	z-index: 1;
+	transition: .4s .4s;
+	text-align: center;
+	transform: translateY(-50%);
+	opacity: 0;
 }
 
 .show-more {
@@ -230,15 +223,13 @@ ul.menu {
 	/*background: #000;*/
 }
 
-#about .content-g img {
-	width: 400px;
+#about .content-col img {
 	margin-left: 0;
 	width: 100%;
 }
 
 #about .quote {
 	padding-left: 18px;
-	font-family: "Roboto Slab";
 	font-size: 30px;
 	position: relative;
 	font-weight: 900;
@@ -259,7 +250,6 @@ ul.menu {
 
 #about .quote-author {
 	margin-top: 3px;
-	font-family: "Roboto Slab";
 	font-size: 18px;
 	opacity: .5;
 	padding-left: 18px;
@@ -272,7 +262,7 @@ ul.menu {
 	margin: 16px 0 20px;
 }
 
-#about .content-g a {
+#about .col50p a {
 	margin-left: 18px;
 	display: inline-block;
 	padding: 10px 20px;
@@ -284,7 +274,7 @@ ul.menu {
 	transition: all 0.2s;
 }
 
-#about .content-g a:hover {
+#about .col50p a:hover {
 	border: 1px solid rgba(85, 85, 85, 1);
 	color: #000;
 }
@@ -292,11 +282,14 @@ ul.menu {
 
 /* CONTACT */
 
+#contact .content-col {
+	background: #eee;
+}
+
 #contact h2 {
 	font-size: 30px;
-	margin: 0;
+	margin: 20px 0 0;
 	text-align: center;
-	font-family: "Roboto Slab";
 	line-height: 1.2;
 }
 
@@ -331,7 +324,7 @@ ul.menu {
 }
 
 #contact .submit {
-	display: inline-block;
+	display: block;
 	padding: 10px 20px;
 	/*background: rgba(85, 85, 85, .2);*/
 	border: 1px solid rgba(85, 85, 85, .5);
@@ -342,6 +335,7 @@ ul.menu {
 	background: none;
 	cursor: pointer;
 	transition: all 0.2s;
+	width: 400px;
 }
 
 #contact .submit:hover {
