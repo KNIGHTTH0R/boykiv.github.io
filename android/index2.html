@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/menu.css"/>
+    <link href="./css/style_webreath.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div class="specantiscroll">
+      <nav id="menu" class="menu" style="opacity: 0;">
+
+      <section class="menu-section">
+        <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+          <ul class="nav navbar-nav">
+                <li class="dropdown-header">Shopping</li>
+                <li role="separator" class="divider"></li>
+            <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Living <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Living</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dining <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Dining</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bedroom <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Bedroom</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Office <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Office</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Decor <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Decor</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rugs <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Rugs</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lighting <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Lighting</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outdoor <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">All Outdoor</a></li>
+                <li class="dropdown-header"><a href="#">Sofas</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sectionals</a></li>
+                <li><a href="#">Sofa Couches</a></li>
+                <li><a href="#">Sofa Beds</a></li>
+                <li><a href="#">Loveseats</a></li>
+                <li><a href="#">Ottomans</a></li>
+                <li><a href="#">Living Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Chairs</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Arm Chairs</a></li>
+                <li><a href="#">Chaise Lounges</a></li>
+                <li><a href="#">Accent Chairs</a></li>
+                <li><a href="#">Club Chairs</a></li>
+                <li><a href="#">Recliner Chairs</a></li>
+                <li><a href="#">Rocker Chairs</a></li>
+                <li><a href="#">Chair and Half</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Tables</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Coffee Tables</a></li>
+                <li><a href="#">End Tables</a></li>
+                <li><a href="#">Console Tables</a></li>
+                <li><a href="#">Foyer Tables</a></li>
+                <li><a href="#">Drum Tables</a></li>
+                <li><a href="#">Pedestal Tables</a></li>
+                <li><a href="#">Nesting Tables</a></li>
+                <li><a href="#">Table Sets</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Accent</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Cabinets</a></li>
+                <li><a href="#">Credenzas</a></li>
+                <li><a href="#">Consoles</a></li>
+                <li><a href="#">Chests</a></li>
+                <li><a href="#">Benches</a></li>
+                <li><a href="#">Stools</a></li>
+                <li><a href="#">Trunks</a></li>
+              </ul>
+              <ul class="dropdown-menu">
+                <li class="dropdown-header"><a href="#">Entertainment</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Entertainment Centers</a></li>
+                <li><a href="#">TV Stands</a></li>
+                <li><a href="#">Bars</a></li>
+                <li><a href="#">Bar Stools</a></li>
+                <li><a href="#">Theater Seating</a></li>
+                <li><a href="#">Game Tables</a></li>
+                <li><a href="#">Pool Tables</a></li>
+              </ul>
+            </li>
+            <li><a href="#about">SALE</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="menu-section">
+        <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+          <ul class="nav navbar-nav">
+                <li class="dropdown-header">Helpful links</li>
+                <li role="separator" class="divider"></li>
+             <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Brands <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="" href="#">BDI</a></li>
+                <li><a class="" href="#">Bellini</a></li>
+                <li><a class="" href="#">ET2</a></li>
+                <li><a class="" href="#">Fine Art Lamps</a></li>
+                <li><a class="" href="#">Hinkley Lighting</a></li>
+                <li><a class="" href="#">Hubbardton Forge</a></li>
+                <li><a class="" href="#">ION Design</a></li>
+                <li><a class="" href="#">Lexington</a></li>
+                <li><a class="" href="#">Loloi Rugs</a></li>
+                <li><a class="" href="#">Moe's Home Collection</a></li>
+                <li><a class="" href="#">Monte Carlo Fans</a></li>
+                <li><a class="" href="#">Oluce</a></li>
+                <li><a class="" href="#">Orange22</a></li>
+                <li><a class="" href="#">Rossetto</a></li>
+                <li><a class="" href="#">Schonbek</a></li>
+                <li><a class="" href="#">Swarovski</a></li>
+                <li><a class="" href="#">Tommy Bahama</a></li>
+                <li><a class="" href="#"><b>+ More Brands</b></a></li>
+              </ul>
+            </li>
+            <li><a href="#about">Designers</a></li>
+            <li><a href="#contact">Trade Program</a></li>
+             <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="" href="#">Sign In</a></li>
+                <li><a class="" href="#">Create Account</a></li>
+                <li><a class="" href="#">Account Info</a></li>
+                <li><a class="" href="#">My Orders</a></li>
+                <li><a class="" href="#">My Quotes</a></li>
+              </ul>
+            </li> 
+            <li class="dropdown">
+              <a href="#1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer Service <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a class="" href="#">About Us</a></li>
+                <li><a class="" href="#">Contact Us</a></li>
+                <li><a class="" href="#">Request Quote</a></li>
+                <li><a class="" href="#">Price Guarantee</a></li>
+                <li><a class="" href="#">30-Day Return</a></li>
+                <li><a class="" href="#">Shipping Policy</a></li>
+                <li><a class="" href="#">Privacy Policy</a></li>
+                <li><a class="" href="#">Terms of Use</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+ 
+        <div id="panel" class="scrollercont">
+    <div class="header__logoandmenandph">
+      <div class="container container__body">
+        <div class="logo__box">
+          <a href="/" class="logo__link">
+            <img src="./img/LuxeDecor.gif" alt="Logotype" class="logo__img">
+          </a>
+        </div>
+        <div class="right-top__box nomobile">
+          <div class="right-top__box__menu">
+            <ul class="right-top__box__menu__block">
+              <li class="right-top__box__menu__block__list dropdown">
+                <a href="#" title="Brands" class="right-top__box__menu__block__list__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Brands</a>
+                <ul id="menu1" class="dropdown-menu child__minitop__menu__block" aria-labelledby="drop111">
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">BDI</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Bellini</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">ET2</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Fine Art Lamps</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Hinkley Lighting</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Hubbardton Forge</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">ION Design</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Lexington</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Loloi Rugs</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Moe's Home Collection</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Monte Carlo Fans</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Oluce</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Orange22</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Rossetto</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Schonbek</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Swarovski</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Tommy Bahama</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link"><b>+ More Brands</b></a></li>
+                </ul>
+              </li>
+              <li class="right-top__box__menu__block__list">
+                <a href="#" title="Designers" class="right-top__box__menu__block__list__link">Designers</a>
+              </li>
+              <li class="right-top__box__menu__block__list">
+                <a href="#" title="Trade Program" class="right-top__box__menu__block__list__link">Trade Program</a>
+              </li>
+              <li class="right-top__box__menu__block__list dropdown">
+                <a href="#" title="My Account" class="right-top__box__menu__block__list__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account</a>
+                <ul id="menu88" class="dropdown-menu child__minitop__menu__block" aria-labelledby="drop161">
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Sign In</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Create Account</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Account Info</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">My Orders</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">My Quotes</a></li>
+                </ul>
+              </li>
+              <li class="right-top__box__menu__block__list dropdown">
+                <a href="#" title="Customer Service" class="right-top__box__menu__block__list__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer Service</a>
+                <ul id="menu99" class="dropdown-menu child__minitop__menu__block" aria-labelledby="drop151">
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">About Us</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Contact Us</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Request Quote</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Price Guarantee</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">30-Day Return</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Shipping Policy</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Privacy Policy</a></li>
+                  <li class="child__minitop__menu__block__list"><a href="#" class="child__minitop__menu__block__link">Terms of Use</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="topphone__box">
+              <img src="./img/icnPhone.gif" alt="Phone" class="topphone__icon"><span class="topphone__phone">888-733-3201</span>
+            </div>
+          </div>
+          <div class="topgarant__box">
+            <a href="#" title="garant1" class="topgarant__garant__link">
+              <img src="./img/shopperapproved.gif" alt="garant1" class="topgarant__garant__img">
+            </a>
+            <a href="#" title="garant2" class="topgarant__garant__link">
+              <img src="./img/freeshipping.gif" alt="garant2" class="topgarant__garant__img">
+            </a>
+            <div class="search__box">
+              <input type="text" placeholder="Find anything home" name="" id="" class="search__input">
+              <button name="" id="" class="search__input__button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed navbar -->
+
+    <div class="menu__fullsize__box">
+        
+
+      <div class="container container__body">
+<nav class="navbar navbar-default nodesctope">
+      <div class="container">
+        <div class="navbar-header">
+          <button id="trigger" type="button" class="js-slideout-toggle navbar-toggle collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+
+          <li class="top__menu__list top__menu__list_right specmobile">
+            <a href="#" title="" class="fav__link">
+              <img src="./img/btnfav.png" alt="" class="fav__img">
+            </a>
+            <a href="#" title="" class="cart__link">
+              <img src="./img/btncrte.png" alt="" class="cart__img">
+            </a>
+          </li>
+            <div class="search__box specmobile">
+              <input type="text" placeholder="Find anything home" name="" id="" class="search__input">
+              <button name="" id="" class="search__input__button"></button>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+
+        <ul class="top__menu nomobile">
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Living</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop1">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dining</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop2">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bedroom</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop3">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Office</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop4">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Decor</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop5">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rugs</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop6">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list dropdown nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lighting</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop7">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list dropdown navbar-right nomobile">
+            <a href="#" title="" class="top__menu__link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Outdoor</a>
+            <div id="menu1" class="child__menu__box dropdown-menu" aria-labelledby="drop8">
+             <div class="full-width__child__menu__box">
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Sofas</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sectionals</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Couches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Sofa Beds</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Loveseats</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Ottomans</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Living Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Sofas</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Chairs</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Arm Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chaise Lounges</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Accent Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Club Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Recliner Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Rocker Chairs</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chair and Half</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Chairs</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Tables</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Coffee Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">End Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Console Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Foyer Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Drum Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pedestal Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Nesting Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Table Sets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">All Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Accent</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Cabinets</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Credenzas</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Consoles</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Chests</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Benches</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Trunks</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled">
+                <h2 class="title__child__menu__block"><a href="#" class="title__child__menu__link">Entertainment</a></h2>
+                <hr>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Entertainment Centers</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">TV Stands</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bars</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Bar Stools</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Theater Seating</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Game Tables</a></li>
+                <li class="child__menu__list"><a href="#" class="child__menu__link">Pool Tables</a></li>
+              </ul>
+              <ul class="child__menu__block list-unstyled last banner__menu">
+                <li class="child__menu__list">
+                  <a href="#" class="child__menu__link">
+                    <img src="./img/banners/mnLiving.jpg">
+                  </a>
+                </li>
+              </ul>
+             </div>
+            </div>
+          
+          </li>
+          <li class="top__menu__list top__menu__list_red last nomobile">
+            <a href="#" title="" class="top__menu__link">SALE</a>
+          </li>
+          
+          <li class="top__menu__list top__menu__list_right nomobile">
+            <a href="#" title="" class="fav__link">
+              <img src="./img/btnfav.png" alt="" class="fav__img">
+            </a>
+            <a href="#" title="" class="cart__link">
+              <img src="./img/btncrte.png" alt="" class="cart__img">
+            </a>
+            <a href="#" title="" class="checout__link">Checkout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="banner__fullsize__box">
+      <div class="container container__body">
+        <div class="banner__block">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                    <img src="./img/banners/Tommy-Bahama-Furniture.jpg" alt="" class="banner__img">
+              </div>
+             <div class="item">
+                    <img src="./img/banners/Rosetto-Furniture.jpg" alt="" class="banner__img">
+              </div>
+             <div class="item">
+                    <img src="./img/banners/Hubbardton-Forge-Sale.jpg" alt="" class="banner__img">
+              </div>
+             <div class="item">
+                    <img src="./img/banners/Innovation-Sofas.jpg" alt="" class="banner__img">
+              </div>
+             <div class="item">
+                    <img src="./img/banners/Monte-Carlo.jpg" alt="" class="banner__img">
+              </div>
+             <div class="item">
+                    <img src="./img/banners/Woodard-Furniture.jpg" alt="" class="banner__img">
+              </div>
+    
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="categories__fullsize__box">
+      <div class="container container__body">
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/LightingMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Lighting </span>
+          </a>
+        </div>
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/RugsMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Rugs </span>
+          </a>
+        </div>
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/DecorMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Decor </span>
+          </a>
+        </div>
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/FurnitureMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Furniture </span>
+          </a>
+        </div>
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/OutdoorMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Outdoor </span>
+          </a>
+        </div>
+        <div class="categories__block">
+          <a href="#" title="" class="categories__link">
+            <img src="./img/categories/BrandsMain.jpg" alt="" class="img-responsive categories__img">
+            <span class="categories__title">Shop by Brand </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="banners__fullwidth__box">
+      <div class="container container__body">
+        <div class="banners__block">
+          <a href="#" title="" class="banners__link">
+            <img src="./img/banners/BDIOffice.jpg" alt="" class="banners__img">
+            <h2 class="banners__title">BDI</h2>
+            <span class="banners__txt">Contemporary Office | Shop Now </span>
+          </a>
+        </div>
+        <div class="banners__block">
+          <a href="#" title="" class="banners__link">
+            <img src="./img/banners/Momeni.jpg" alt="" class="banners__img">
+            <h2 class="banners__title">Momeni</h2>
+            <span class="banners__txt">Cutting Edge Rugs | Shop Now </span>
+          </a>
+        </div>
+        <div class="banners__block">
+          <a href="#" title="" class="banners__link">
+            <img src="./img/banners/Maxim.jpg" alt="" class="banners__img">
+            <h2 class="banners__title">Maxim Lighting</h2>
+            <span class="banners__txt">High Fashion Lights | Shop Now </span>
+          </a>
+        </div>
+        <div class="banners__block">
+          <a href="#" title="" class="banners__link">
+            <img src="./img/banners/Innermost.jpg" alt="" class="banners__img">
+            <h2 class="banners__title">Innermost</h2>
+            <span class="banners__txt">30% Off Sale | Shop Now </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="ideas__fullwidth__box">
+      <div class="container container__body">
+        <h2 class="ideas__box__title">Design Ideas</h2>
+        <hr>
+        <div class="ideas__block">
+          <a href="#" title="" class="ideas__link">
+            <img src="./img/deals/outsidein1.jpg" alt="" class="ideas__img">
+            <span class="ideas__title">Outside In </span>
+          </a>
+        </div>
+        <div class="ideas__block">
+          <a href="#" title="" class="ideas__link">
+            <img src="./img/deals/dining1021.jpg" alt="" class="ideas__img">
+            <span class="ideas__title">Contemporary Dining </span>
+          </a>
+        </div>
+        <div class="ideas__block">
+          <a href="#" title="" class="ideas__link">
+            <img src="./img/deals/modern1019.jpg" alt="" class="ideas__img">
+            <span class="ideas__title">Modern Minimalist </span>
+          </a>
+        </div>
+        <div class="ideas__block">
+          <a href="#" title="" class="ideas__link">
+            <img src="./img/deals/entertain1020.jpg" alt="" class="ideas__img">
+            <span class="ideas__title">Autumn Outdoor Living </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="brands__fullwidth__box">
+      <div class="container container__body">
+        <h2 class="brands__fullwidth__box__title">Featured Brands</h2>
+        <ul class="brands__block" data-slick='{"slidesToShow": 6, "slidesToScroll": 6}'>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/BDI6001WLSET1_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/bdi-furniture.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/LX714133SET32_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/LexingtonHome.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/S52248_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/schonbek-logo.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/LLDR02IVREC5_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/loloirugs.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/TO010536876CSET1_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/TommyBahama.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/FA6018406ST_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/FinArtLamps.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/HBF104116_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/Hubbardton_Forge.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/HY3208AN_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/hinkley-lighting.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/MEHV100018_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/moes.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/O2CARBONSLIPFIB1_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/Orange22.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/OE476_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/oluce-lighting.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/IDP137952_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/ION_Design.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/S6SEY1051_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/swarovski-logo.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/ROSR700AD20000054SET2.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/Rossetto.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/MCF4BFR54BKD_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/monte-carlo-fans.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/BLFLYNTLOVESEAT5_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/Bellini.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+          <li class="brands__list">
+            <a href="#" title="" class="brands__link">
+              <img src="./img/items/ET2E2306718PC_th.jpg" alt="" class="brands__img__prod">
+              <img src="./img/logo/et2-lighting.gif" alt="" class="brands__img__bra">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+   <div class="seotext__fullwidth__box">
+      <div class="container container__body">
+        <h2 class="seotext__fullwidth__box__title">Shop Home & Outdoor Furniture, Lighting, Rugs & Home Decor</h2>
+        <hr>
+        <div class="seotext__block">
+          <p>
+            LuxeDécor is the premiere online showroom for high-end indoor/outdoor furniture, lighting, rugs, and home décor - we have products to rival any design studio, all in one convenient place. We have products for every room in your house, including your outdoor spaces.  The website is beautifully designed to allow you to easily navigate and view each carefully selected, exclusive brand at your own leisure. With a collective online catalog of over 100,000 products, you'll find what you're looking for at LuxeDécor.
+          </p>
+          <p>
+            To complement the extensive selections available, LuxeDécor prides itself on its team of Sales Representatives. Each Representative has received comprehensive, hands-on product training from our manufacturers and has a drive to always put the customer first. Their repertoire has evolved into a crucial aspect of LuxeDécor‘s buying experience by providing customers with an "ask me anything" service that has become a focal point of the LuxeDécor success story.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="footer__fullwidth__box">
+      <div class="container container__body">
+        <footer>
+          <div class="footer__left__block">
+            <a href="#" title="" class="footer__promo__but">
+              <img src="./img/btnPromo.png" alt="" class="footer__promo__but__img">
+            </a>
+            <ul class="footer__menu__block">
+              <h2 class="footer__menu__block__title">COMPANY INFO</h2>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">About Us</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Contact Us</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">BBB Accredited</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Trusted Commerce</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Terms of Use</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Privacy Policy</a>
+              </li>
+            </ul>
+            <ul class="footer__menu__block">
+              <h2 class="footer__menu__block__title">ORDERING INFO</h2>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Customer Service</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Request Quote</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Price Guarantee</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">30-Day Return Policy</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Shipping Policy</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Verified Merchant</a>
+              </li>
+            </ul>
+            <ul class="footer__menu__block">
+              <h2 class="footer__menu__block__title">MY ACCOUNT</h2>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Login</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Track My Order</a>
+              </li>
+              <li class="footer__menu__list">
+                <a href="#" title="" class="footer__menu__link">Account Info</a>
+              </li>
+            </ul>
+            <ul class="footer__menu__block last">
+              <h2 class="footer__menu__block__title">TRADE PROGRAM</h2>
+              <li class="">
+                <a href="#" title="" class="footer__menu__link">
+                  <img src="./img/tradeprogram.jpg" alt="" class="footer__menu__img">
+                </a>
+              </li>
+            </ul>
+            <span class="copyright__txt">LuxeDecor, Inc. Copyright 2015. All rights reserved.</span>
+          </div>
+          <div class="footer__block__right">
+            <div class="footer__garanty__block">
+              <a href="#" title="" class="footer__garanty__link"><img src="./img/trust.png" alt="" class="footer__garanty__img"></a>
+              <a href="#" title="" class="footer__garanty__link"><img src="./img/bbb.png" alt="" class="footer__garanty__img"></a>
+              <a href="#" title="" class="footer__garanty__link"><img src="./img/mc.png" alt="" class="footer__garanty__img"></a>
+              <a href="#" title="" class="footer__garanty__link"><img src="./img/an.png" alt="" class="footer__garanty__img"></a>
+            </div>
+            <div class="footer__block__followme">
+              <h3 class="footer__block__followme__title">CONNECT WIDTH US</h3>
+              <ul class="footer__block__followme__block">
+                <li class="footer__block__followme__list">
+                  <a href="" title="" class="footer__block__followme__link footer__block__followme__link_hz"></a>
+                </li>
+                <li class="footer__block__followme__list">
+                  <a href="" title="" class="footer__block__followme__link footer__block__followme__link_pin"></a>
+                </li>
+                <li class="footer__block__followme__list">
+                  <a href="" title="" class="footer__block__followme__link footer__block__followme__link_fk"></a>
+                </li>
+                <li class="footer__block__followme__list">
+                  <a href="" title="" class="footer__block__followme__link footer__block__followme__link_tv"></a>
+                </li>
+                <li class="footer__block__followme__list">
+                  <a href="" title="" class="footer__block__followme__link footer__block__followme__link_gp"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__box__pyment-sys">
+              <ul class="footer__pyment-sys__block">
+                <li class="footer__pyment-sys__list">
+                  <a href="" title="" class="footer__pyment-sys__link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </footer>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap-hover-dropdown.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.7/slick.css"/>
+    <script type="text/javascript" src="./js/slick.js"></script>
+    <script type="text/javascript">
+    $('.brands__block').slick({
+  slidesToShow: 6,
+  slidesToScroll: 6,
+  autoplay: true,
+  autoplaySpeed: 5000,
+});
+  </script>
+    <script>
+      mocha.setup('bdd');
+      var exports = null;
+      function assert(expr, msg) {
+        if (!expr) throw new Error(msg || 'failed');
+      }
+    </script>
+    <script src="./js/slideout.js"></script>
+    <script src="./js/test.js"></script>
+    <script>
+      window.onload = function() {
+        document.querySelector('.js-slideout-toggle').addEventListener('click', function() {
+          slideout.toggle();
+        });
+
+        document.querySelector('.menu').addEventListener('click', function(eve) {
+          if (eve.target.nodeName === 'A') {  }
+        });
+
+        var runner = mocha.run();
+      };
+    </script>
+
+   <!--script>
+(function(){
+var a = document.querySelector('.top__menu'), b = null, P = 0;  // если ноль заменить на число, то блок будет прилипать до того, как верхний край окна браузера дойдёт до верхнего края элемента. Может быть отрицательным числом
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);
+function Ascroll() {
+  if (b == null) {
+    var Sa = getComputedStyle(a, ''), s = '';
+    for (var i = 0; i < Sa.length; i++) {
+      if (Sa[i].indexOf('overflow') == 0 || Sa[i].indexOf('padding') == 0 || Sa[i].indexOf('border') == 0 || Sa[i].indexOf('outline') == 0 || Sa[i].indexOf('box-shadow') == 0 || Sa[i].indexOf('background') == 0) {
+        s += Sa[i] + ': ' +Sa.getPropertyValue(Sa[i]) + '; '
+      }
+    }
+    b = document.createElement('div');
+    b.style.cssText = s + ' box-sizing: border-box; width: ' + a.offsetWidth + 'px;';
+    a.insertBefore(b, a.firstChild);
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) {
+      b.appendChild(a.childNodes[1]);
+    }
+    a.style.height = b.getBoundingClientRect().height + 'px';
+    a.style.padding = '0';
+    a.style.border = '0';
+  }
+  var Ra = a.getBoundingClientRect(),
+      R = Math.round(Ra.top + b.getBoundingClientRect().height - document.querySelector('footer').getBoundingClientRect().top + 0);  // селектор блока, при достижении верхнего края которого нужно открепить прилипающий элемент;  Math.round() только для IE; если ноль заменить на число, то блок будет прилипать до того, как нижний край элемента дойдёт до футера
+  if ((Ra.top - P) <= 0) {
+    if ((Ra.top - P) <= R) {
+      b.className = 'stop';
+      b.style.top = - R +'px';
+    } else {
+      b.className = 'sticky';
+      b.style.top = P + 'px';
+    }
+  } else {
+    b.className = '';
+    b.style.top = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+})()
+</script-->     
+
+  </body>
+</html>
