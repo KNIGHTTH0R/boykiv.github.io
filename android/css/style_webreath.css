@@ -1204,6 +1204,7 @@ footer{
         -webkit-appearance: none;
         -webkit-border-radius: 0;
         float: left;
+        font-size: 11px;
     }
 
     .search__input__button {
