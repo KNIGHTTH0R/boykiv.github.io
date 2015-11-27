@@ -11,7 +11,6 @@
   overflow-y: auto;
   opacity: 0;
   -webkit-overflow-scrolling: touch;
-  left: -256px;
   transition: 0.3s;
 }
 
@@ -48,13 +47,9 @@
   z-index: 1;
   transition: 0.3s;
   left: 0;
-    -webkit-transform: translate3d(0px, 0px, 0px)!important;
-    -moz-transform: translate3d(0px, 0px, 0px)!important;
-    transform: translate3d(0px, 0px, 0px)!important;
 }
 
 .slideout-open .slideout-panel {
-  left: 256px;
 }
 
 .slideout-open,
