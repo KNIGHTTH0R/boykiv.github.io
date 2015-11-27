@@ -1,0 +1,428 @@
+.trade__top-banner{
+    width: 100%;
+}
+
+.trade__leftbox {
+    width: 50%;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.trade__rightbox {
+    width: 47%;
+    margin: 10px 0;
+    display: inline-block;
+    float: right;
+}
+
+.trade__leftbox p{
+    font-size: 12px;	
+}
+.trade__leftbox ul{
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+
+.trade__leftbox .blocckforinput{
+    width: 54%;
+}
+
+.passblinp .blocckforinput i{
+    position: absolute;
+    width: 135%;
+    bottom: -16px;
+}
+
+.trade__leftbox .form-group{
+    margin-bottom: 10px;
+}
+
+.trade__leftbox .checkbox__label__trade{
+    margin-top: -5px;
+}
+
+.form-group.passblinp{
+    margin-bottom: 20px;
+}
+
+.blocckforinput.buttoncreateblock{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
+.trade__leftbox .submitbutton{
+    padding: 10px 25px;
+    /* width: auto!important; */
+    font: bold 17px Arial;
+}
+
+
+.checkbox__label__trade{
+    font: Bold 12px Arial;
+    color: #000;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.trade__leftbox .needhelpmodal__contactblock__form{
+    width: 80%;
+}
+
+.trade__leftbox .needhelpmodal__contactblock__label{
+    width: 120px;
+}
+
+.trade__rightbox .blocckforinput{
+    width: 60%;
+}
+
+.trade__rightbox .form-group{
+    margin-bottom: 10px;
+}
+
+.trade__leftbox .submitbutton{
+}
+
+.rght__loginblock{
+    background: url('../img/banners/designers.jpg');    
+    padding-left: 4px;
+}
+
+.rght__loginblock p{
+    text-align: justify;
+    font: 13px arial;
+    color: #333333;
+    line-height: 16px;
+}
+
+.rght__loginblock .needhelpmodal__contactblock__form{
+    width: 80%;
+}
+
+.rght__loginblock .needhelpmodal__contactblock__label{
+    width: 120px;
+}
+
+.checkbox__label__trade_login{
+    font: 12px Arial;
+    color: #111;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.trade__leftbox .brands__fullwidth__box__title{
+    color: #000;
+    font: 25px Arial;
+}
+
+.trade__leftbox ul li{
+    font: 12px Arial;
+    color: #333333;
+}
+
+.trade__leftbox ul + .brands__fullwidth__box__title{
+    color: #000;
+    font: 22px Arial;
+}
+
+.tradetxtspan{    
+    text-align: justify;
+    font: 13px arial;
+    color: #333333;
+    line-height: 16px;
+}
+
+.rght__loginblock .brands__fullwidth__box__title{
+    color: #000;
+    font: 25px Arial;
+}
+
+.blocckforinput i{
+    font: 11px Arial;
+    color: #333333;
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.rght__loginblock .submitbutton{
+    margin: 0px 0;
+}
+
+.forgot__pass__link{
+    font: 12px Arial;
+    color: #111;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+}
+.forgot__pass__link:hover{
+    color: #111;
+    text-decoration: none;
+}
+
+.login__box__brandlogo__box{
+    padding: 0;
+    list-style-type: none;
+}
+
+.login__box__brandlogo__box .brands__fullwidth__box__title{
+    display: inline-block;
+}
+
+.brands__fullwidth__box__viewmorbrand{
+    display: inline-block;
+    float: right;
+    color: #055176;
+    font: bold 16px arial;
+    text-decoration: underline;
+    cursor: pointer;
+    line-height: 30px;
+    margin-top: 3px;
+    width: 63%;
+    text-align: center;
+}
+
+.login__box__brandlogo__list{
+    display: inline-block;
+    margin: 10px 2px;
+
+}
+
+.login__box__brandlogo__link{
+
+}
+
+.login__box__brandlogo__img{
+
+}
+
+.brands__fullwidth__box__viewmorbrand_last{
+    float: none;
+    display: block;
+
+}
+
+
+@media (max-width: 400px){
+	.trade__leftbox {
+    width: 100%;
+}
+
+.trade__rightbox {
+    width: 100%;
+}
+
+.trade__leftbox .submitbutton {
+    margin-left: 0;
+}
+.brands__fullwidth__box__viewmorbrand {
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 5px;
+    width: 44%;
+}
+
+.trade__leftbox .blocckforinput {
+    width: 80%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+
+
+}
+
+@media (min-width: 401px) and (max-width: 450px){
+	.trade__leftbox {
+    width: 100%;
+}
+
+.trade__rightbox {
+    width: 100%;
+}
+
+.trade__leftbox .submitbutton {
+    margin-left: 0;
+}
+.brands__fullwidth__box__viewmorbrand {
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 4%;
+}
+.trade__leftbox .blocckforinput {
+    width: 80%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+
+.blocckforinput.buttoncreateblock{
+    text-align: left;
+}
+
+}
+
+
+@media (min-width: 451px) and (max-width: 499px){
+	.trade__leftbox {
+    width: 100%;
+}
+
+.trade__rightbox {
+    width: 100%;
+}
+
+.trade__leftbox .submitbutton {
+    margin-left: 0;
+}
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 7.2%;
+}
+
+.trade__leftbox .blocckforinput {
+    width: 60%;
+}
+
+
+.blocckforinput.buttoncreateblock{
+    text-align: left;
+}
+
+
+.trade__leftbox .blocckforinput {
+    width: 85%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+
+}
+
+
+
+@media (min-width: 500px) and (max-width: 550px){
+	.trade__leftbox {
+    width: 100%;
+}
+
+.trade__rightbox {
+    width: 100%;
+}
+
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+
+.blocckforinput.buttoncreateblock{
+    text-align: left;
+}
+
+
+.trade__leftbox .blocckforinput {
+    width: 85%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+
+}
+
+
+@media (min-width: 551px) and (max-width: 639px){
+	.trade__leftbox {
+    width: 100%;
+}
+
+.trade__rightbox {
+    width: 100%;
+}
+
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 2%;
+}
+
+
+.blocckforinput.buttoncreateblock{
+    text-align: left;
+}
+
+
+
+}
+
+
+@media (min-width: 640px) and (max-width: 700px){
+
+
+.brands__fullwidth__box__viewmorbrand {
+    display: block;
+    float: none;
+    text-align: left;
+}
+
+.login__box__brandlogo__list {
+    display: inline-block;
+    margin: 10px 2%;
+    width: 45%;
+}
+
+.trade__leftbox .blocckforinput {
+    width: 85%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+
+
+
+}
+
+
+@media (min-width: 700px) and (max-width: 1000px){
+	.brands__fullwidth__box__viewmorbrand {
+    display: block;
+    float: none;
+}
+.trade__leftbox .blocckforinput {
+    width: 85%;
+}
+
+.trade__rightbox .blocckforinput {
+    width: 100%;
+}
+}
+
+
+@media (min-width: 960px) and (max-width: 1000px){
+	.login__box__brandlogo__list {
+    width: 30%;
+}
+}

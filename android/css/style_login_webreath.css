@@ -1,0 +1,217 @@
+
+.checkout__left__box{
+    display: inline-block;
+    position: relative;
+    width: 73%;
+    border-right: 1px solid #DDD;
+}
+
+.checkout__left__box__title{
+    color: #70632b;
+    font: bold 15px Arial;
+    padding: 0px 0px 0px 0px;
+    margin: 5px 0px 2px 0px;
+}
+
+.checkout__right__box{
+    float: right;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.checkout__left__box .needhelpmodal__contactblock__label{
+    width: 190px;
+}
+
+.checkout__left__box .needhelpmodal__contactblock__form{
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+
+.checkout__left__box .blocckforinput {
+    width: 65.333333%;
+    margin-left: -30px!important;
+}
+
+.checkout__left__box .submitbutton{
+    padding: 0 40px;
+    margin: 20px 0;
+}
+
+.checkout__left__box .radio__login__page{
+    margin-top: 10px;
+}
+
+.checkout__left__box .radio__login__page + .radio__login__page{
+    margin-top: 0px;
+    margin-bottom: -3px;
+}
+
+.radio__login__page label{
+    font: bold 12px Arial;
+    color: #333333;
+    line-height: 21px;
+}
+
+.checkout__left__box .forgot__pass__link{
+    cursor: pointer;
+    color: #333333;
+    font: 12px arial;
+}
+
+.title__garant__right__box__loginpage{
+    color: #70632b;
+    font: bold 15px Arial;
+    padding: 0px 0px 0px 0px;
+    margin: 5px 0px 2px 0px;
+}
+
+.garant__right__box__loginpage{
+    padding: 0;
+    list-style-type: none;
+    margin-top: -15px;
+}
+
+.garant__right__box__list__loginpage{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.garant__right__box__link__loginpage{
+    
+}
+
+.garant__right__box__img__loginpage{
+    width: auto;
+}
+
+
+@media (max-width: 495px){
+
+    .checkout__left__box{
+    width: auto;      
+    border: 0;  
+    }
+
+.checkout__left__box .blocckforinput {
+    width: 100%;
+    margin-left: 0!important;
+}
+
+.checkout__left__box .submitbutton {
+    padding: 0 20px;
+    margin: 20px 0;
+    margin-right: 10px;
+}
+
+.checkout__right__box {
+    float: none;
+}
+
+.garant__right__box__list__loginpage {
+    margin: 10px 0;
+    width: 48%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.garant__right__box__loginpage{
+    margin-top: 0;
+}
+
+.garant__right__box__list__loginpage:first-child .garant__right__box__img__loginpage{
+    width: 100%;
+}
+
+.garant__right__box__img__loginpage {
+    width: 85%;
+}
+
+}
+
+
+@media (min-width: 496px) and (max-width: 639px){
+
+    .checkout__left__box{
+    width: auto;      
+    border: 0;  
+    }
+
+.checkout__left__box .blocckforinput {
+    width: 100%;
+    margin-left: 0!important;
+}
+
+.checkout__left__box .submitbutton {
+    padding: 0 20px;
+    margin: 20px 0;
+    margin-right: 10px;
+}
+
+.checkout__right__box {
+    float: none;
+}
+
+.garant__right__box__list__loginpage {
+    margin: 10px 0;
+    width: 23.2%;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.garant__right__box__loginpage{
+    margin-top: 0;
+}
+
+.garant__right__box__list__loginpage:first-child .garant__right__box__img__loginpage{
+    width: 100%;
+}
+
+.garant__right__box__img__loginpage {
+    width: 100%;
+}
+
+}
+
+
+
+
+@media (min-width: 640px) and (max-width: 810px){
+
+
+.checkout__left__box .blocckforinput {
+    margin-left: 0!important;
+    width: 75.333333%;
+}
+
+.checkout__left__box .needhelpmodal__contactblock__form{
+    width: 100%;
+}
+
+.checkout__right__box{
+    width: 24%;
+}
+
+.garant__right__box__list__loginpage:first-child .garant__right__box__img__loginpage{
+    width: 100%;
+}
+
+
+}
+
+
+
+
+@media (min-width: 811px) and (max-width: 855px){
+
+
+.checkout__left__box .blocckforinput {
+    margin-left: 0!important;
+    width: 75.333333%;
+}
+
+
+
+
+}

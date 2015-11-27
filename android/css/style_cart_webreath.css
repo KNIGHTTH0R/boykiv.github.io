@@ -1,0 +1,459 @@
+
+.title__cart__box{
+    color: #000;
+    font: 25px Arial;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 15px 0px;
+}
+
+.controllpanel__cart__box{
+    display: block;
+    position: relative;
+    margin-top: 17px;
+    height: auto;
+}
+
+.keepshopping__button__cartpage{
+    background: #eeeeee;
+    font: bold 17px Arial;
+    color: #333;
+    padding: 11px 20px 8px 20px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: none;
+    position: relative;
+}
+
+.checout__button__cartpage{
+    background: #507578;
+    font: bold 17px Arial;
+    color: #fff;
+    padding: 11px 20px 8px 20px;
+    border: 1px solid #426366;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: none;
+    float: right;
+    position: relative;
+    top: -13px;
+    margin-bottom: -7px;
+}
+
+.keepshopping__button__cartpage:hover,
+.keepshopping__button__cartpage:focus,
+.keepshopping__button__cartpage:active{
+    background: #ddd;
+    border: 1px solid #ddd;
+    color: #111;
+    -webkit-appearance: none;
+    text-decoration: none;
+}
+
+.checout__button__cartpage:hover,
+.checout__button__cartpage:active,
+.checout__button__cartpage:focus{
+    background: #426366;
+    color: #fff;
+    border: 1px solid #426366;
+    -webkit-appearance: none;
+    text-decoration: none;
+}
+
+.table__cart__box{
+    margin-bottom: 0;    
+}
+
+.table__cart__box thead{
+    background-color: #f7f7f7;    
+}
+
+.table__cart__box thead tr{
+    
+}
+
+.table__cart__box thead th{
+    font: bold 12px Arial;
+    color: #333333;
+    border: none!important;   
+    text-align: center; 
+}
+
+.table__cart__box thead th:first-child{
+    text-align: left;     
+}
+
+.table__cart__image__product{
+    width: 150px;
+    text-align: center;
+}
+
+.table__cart__imgprod{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.table__cart__titleprod{
+    color: #333333;
+    font: 12px arial;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.table__cart__titleprod b{
+    display: block;
+    margin-bottom: -2px;
+    position: relative;
+}
+
+
+.table__cart__infoprod{
+    font: 12px Arial;
+    color: #111;
+}
+
+.table__cart__retailinfo{
+    font: 12px Arial;
+    color: #111;
+    text-align: center;
+}
+
+.table__cart__retailinfo i{
+    font: 12px Arial;
+    color: #880000;
+    font-style: normal;
+    display: block;
+}
+
+
+
+.table__cart__pricelinfo{
+    font: 12px Arial;
+    color: #111;
+    text-align: center;
+}
+
+
+.table__cart__totallinfo{
+    font: 12px Arial;
+    color: #111;
+    text-align: center;
+}
+.table__cart__quainfo{
+    font: 12px Arial;
+    color: #111;
+    text-align: center;
+}
+
+.more__prod__info__cart__table{
+    text-align: left;
+}
+
+.more__prod__info__cart__table td{
+    border-top: 0!important;
+}
+
+.table__cart__box thead .tablecart__thtotal{
+    border-right: 1px solid #DDD!important;
+}
+
+.table__cart__image__product,
+.table__cart__infoprod,
+.table__cart__retailinfo,
+.table__cart__pricelinfo,
+.table__cart__quainfo,
+.table__cart__totallinfo{
+    border-left: 0!important;
+    border-right: 0!important;
+    border-bottom: 0!important;
+}
+
+
+.table__cart__totallinfo{
+    border-right: 1px solid #DDD!important;    
+}
+
+.shipstxt__table__cart{
+    font: Bold 12px Arial;
+    color: #475e7c;
+    display: block;
+}
+
+.deiwerytxt__table__cart{
+    font: bold 12px Arial;
+    color: #333333;
+}
+
+.linkdelivery__table__cart{
+    cursor: pointer;
+    color: #333333;
+    font: 12px arial;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.linkdelivery__table__cart:hover{
+    text-decoration: none;
+    color: #333333;
+}
+
+.more__prod__info__cart__table .product__filtr__form__label__input{
+    display: block;
+    margin-top: 2px;
+
+}
+
+.quainput__table__cart{
+    color: #000;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    font: Bold 12px Arial;
+    border: solid 1px #a7a6aa;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.linkupdate__table__cart__table{
+    cursor: pointer;
+    color: #333333;
+    font: 12px arial;
+    text-decoration: underline;
+    display: block;
+    margin: 15px 0;
+}
+
+.linkremove__table__cart__table{
+    cursor: pointer;
+    color: #880000;
+    font: 12px arial;
+    text-decoration: underline;
+}
+
+.table__controll__uprempanel{
+    font: 12px Aral;
+    color: #333333;
+    background-color: #f7f7f7;
+    border: 1px solid #DDD;
+    border-top: 0;
+    text-align: right;
+    padding: 5px;
+}
+
+.table__controll__uprempanel__link__update{
+    cursor: pointer;
+    color: #333333;
+    font: 12px arial;
+    text-decoration: underline;
+}
+
+.table__controll__uprempanel__link__remove{
+    cursor: pointer;
+    color: #880000;
+    font: 12px arial;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.table__controll__uprempanel__link__update:hover{
+    cursor: pointer;
+    color: #333333;
+    text-decoration: none;
+}
+
+.table__controll__uprempanel__link__remove:hover{
+    cursor: pointer;
+    color: #880000;
+    text-decoration: none;
+}
+
+.total__afttable__cart__block{
+    padding: 5px;
+    display: block;
+    position: relative;
+    background: #F7F7F7;
+    border: 1px solid #DDD;
+    border-top: 0;
+    margin-bottom: 10px;
+}
+
+.garant__cartbock{
+    list-style-type: none;
+    padding: 0;
+    width: 80%;
+    display: inline-block;
+
+}
+
+.garant__cartbock__list{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.garant__cartbock__link{
+
+}
+
+.garant__cartbock__img{
+    width: 100%;
+}
+
+.total__right__block{
+    float: right;
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.total__right__block span{
+    display: block;
+    font: 12px Arial;
+    color: #111;
+}
+
+.total__right__block .red{
+    font: 12px Arial;
+    color: #880000;
+    font-style: normal;
+}
+
+.total__right__block i{
+    font-style: normal;
+    min-width: 55px;
+    position: relative;
+    display: inline-block;
+}
+
+.controllpanel__cart__box{
+
+}
+
+.checoutpaypal__button__link{
+    float: right;
+    margin-top: -10px;
+}
+
+.checoutpaypal__button__img{
+
+}
+
+.controllpanel__cart__box span{
+    float: right;
+    font: bold 12px Arial;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0 15px;
+}
+
+.carusel__recent__product.carusel__recent__product_favorites_cart{
+    margin-top: 30px;
+}
+
+
+
+@media (max-width: 430px){
+
+.keepshopping__button__cartpage {
+    font: bold 13px Arial;
+    padding: 10px 20px 9px 20px;
+}
+
+.checout__button__cartpage {
+    font: bold 13px Arial;
+    padding: 10px 20px 9px 20px;
+    top: -8px;
+}
+
+.table-bordered.table__cart__box thead th:first-child{
+    display: none;
+}
+
+.table__cart__image__product{
+    display: none;
+}
+
+.thead__retail,
+.table__cart__retailinfo{
+    display: none;
+}
+
+.garant__cartbock {
+    width: 55%;
+}
+
+.garant__cartbock__list {
+    width: 45%;
+}
+
+.controllpanel__cart__box_footer .keepshopping__button__cartpage{
+    display: none;
+}
+.controllpanel__cart__box_footer span{
+    display: none;
+}
+
+.controllpanel__cart__box_footer .checoutpaypal__button__link{
+    float: none;
+    position: relative;
+    top: -8px;
+}
+
+}
+
+
+@media (min-width: 430px) and (max-width: 630px){
+
+
+.table-bordered.table__cart__box thead th:first-child{
+    display: none;
+}
+
+.table__cart__image__product{
+    display: none;
+}
+
+.thead__retail,
+.table__cart__retailinfo{
+    display: none;
+}
+
+.garant__cartbock {
+    width: 70%;
+}
+
+.garant__cartbock__list {
+    width: 25%;
+}
+
+.controllpanel__cart__box_footer .keepshopping__button__cartpage{
+    display: none;
+}
+.controllpanel__cart__box_footer span{
+    display: none;
+}
+
+.controllpanel__cart__box_footer .checoutpaypal__button__link{
+    float: none;
+    position: relative;
+    top: -10px;
+}
+
+}
+
+
+
+@media (min-width: 631px) and (max-width: 680px){
+
+
+
+.garant__cartbock {
+    width: 70%;
+}
+
+
+
+}

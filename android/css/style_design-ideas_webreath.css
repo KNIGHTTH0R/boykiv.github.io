@@ -1,0 +1,271 @@
+
+.container__category_design-ideas{
+
+}
+
+.topbanner__box{
+    position: relative;
+    display: block;
+    margin-top: -3px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.tobanner__box__img{
+    width: 100%;
+}
+
+.seotext__box__design-ideas{
+
+}
+
+.seotext__box__design-ideas__title{
+    color: #333;
+    font: 45px Arial;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 10px 0px;
+    text-transform: none;
+    width: 70%;
+}
+
+
+.seotext__box__design-ideas p{
+    margin: 25px 0 25px 0;
+    padding: 0 0 0 0;
+    text-align: justify;
+    font: 17px arial;
+    color: #333;
+}
+
+
+.container__category_design-ideas .product__filtr__block{
+    margin-bottom: 10px;
+}
+
+
+.container__category_design-ideas .product__filtr__form{
+    margin-bottom: 0;
+}
+
+.group__filtr__box_right__checkbox__filt{
+    color: #335053;
+    font: 12px arial;
+}
+
+
+.container__category_design-ideas .group__filtr__box_right{
+    text-align: left;
+}
+
+
+.container__category_design-ideas .group__filtr__box_right .product__filtr__form:first-child{
+    text-align: left;
+    margin-left: 15%;
+}
+
+
+.container__category_design-ideas .product__block {
+    width: 25.5%;
+}
+
+.container__category_design-ideas .product__block:nth-child(3n+2) {
+    margin-left: 11.3%;
+    margin-right: 11.3%;
+}
+
+
+.container__category_design-ideas .sale__class__box.sale__class__box_desid{
+
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block{
+
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list{
+    width: 23.5%;
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list:nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list{
+    margin-left: 1.58%!important;
+}
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list:nth-child(4n-3) {
+    margin-left: 0!important;
+}
+
+
+.container__category_design-ideas .sale__class__box_desid_brands{
+
+}
+
+.sale__class__box_desid_brands .sale__class__box__block__list{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sale__class__box_desid_brands .sale__class__box__block__list .sale__class__box__block__list__img_brand{
+    position: absolute;
+    top: 15px;
+    opacity: 0.8;
+    left: 0;
+    height: 40px;
+}
+
+
+
+.sale__class__box_desid_brands .sale__class__box__block__list .sale__class__box__block__list__title{
+    bottom: -12px;
+    position: absolute;
+    background: #fff;
+    padding: 8px;
+    opacity: 0.7;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+
+@media (max-width: 569px){
+    .seotext__box__design-ideas__title {
+    font: 24px Arial;
+    width: 100%;
+}
+
+.seotext__box__design-ideas p {
+    margin: 15px 0 15px 0;
+    font: 14px arial;
+}
+
+.container__category_design-ideas .group__filtr__box_right .product__filtr__form:first-child{
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+.container__category_design-ideas .product__block:nth-child(3n+2) {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container__category_design-ideas .product__block {
+    width: 45%;
+}
+
+.container__category_design-ideas .product__block:nth-child(2n+1) {
+    margin-right: 7.5%;
+}
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list {
+    margin-left: 0!important;
+    width: 46.5%;
+}
+
+
+
+}
+
+
+@media (min-width: 570px) and (max-width: 735px){
+    .seotext__box__design-ideas__title {
+    font: 24px Arial;
+    width: 100%;
+}
+
+.seotext__box__design-ideas p {
+    margin: 15px 0 15px 0;
+    font: 14px arial;
+}
+
+.container__category_design-ideas .group__filtr__box_right .product__filtr__form:first-child{
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+
+.container__category_design-ideas .product__block {
+    width: 25%;
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list {
+    width: 22.4%;
+}
+
+
+
+}
+
+
+@media (min-width: 736px) and (max-width: 895px){
+    .seotext__box__design-ideas__title {
+    font: 24px Arial;
+    width: 100%;
+}
+
+.seotext__box__design-ideas p {
+    margin: 15px 0 15px 0;
+    font: 14px arial;
+}
+
+.container__category_design-ideas .group__filtr__box_right .product__filtr__form:first-child{
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+}
+
+
+.container__category_design-ideas .product__block {
+    width: 25.4%;
+}
+
+
+.container__category_design-ideas .sale__class__box_desid .sale__class__box__block__list {
+    width: 23.4%;
+}
+
+
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px){
+
+.group__filtr__box_left {
+    display: inline-block!important;
+    width: 55%!important;
+}
+
+.product__filtr__form:first-child {
+    width: 45%!important;
+    text-align: right!important;
+    margin-right: 15px!important;
+}
+
+.product__filtr__form {
+    display: inline-block!important;
+    width: 50%!important;
+}
+
+.group__filtr__box_right {
+    display: inline-block!important;
+    margin-right: 0!important;
+    width: 40%!important;
+    position: absolute;
+}
+
+.group__filtr__box_right .product__filtr__form:first-child{
+    width: 55%!important;
+}
+
+
+}

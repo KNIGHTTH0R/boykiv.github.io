@@ -1,0 +1,229 @@
+.container__category_quote .seotext__fullwidth__box__title{
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.continueshopping__button{
+    background: #eeeeee;
+    font: bold 17px Arial;
+    color: #333;
+    height: 38px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 10px 20px;
+    line-height: 25px;
+}
+
+.continueshopping__button:hover{
+	text-decoration: none; 
+    background: #ddd;
+    border: 1px solid #ddd;
+    color: #111;
+}
+
+.table__quotebox{
+    margin: 25px 0;
+    margin-bottom: 0;
+}
+
+.table__quotebox thead{
+    background-color: #f7f7f7;
+}
+
+
+.table__quotebox thead th{
+    font: bold 12px Arial;
+    color: #333333;
+    border: none!important;
+}
+
+.table__quotebox__headth{
+
+}
+
+.table__quotebox__bodytr{
+
+}
+
+.table-bordered>tbody>.table__quotebox__bodytr>td,
+.table-bordered>tbody>.table__quotebox__bodytr>.table__quotebox__imgprodth{
+
+    border-left: 0!important;
+    border-right: 0!important;
+    font: 12px Arial;
+    color: #111;
+}
+
+
+.table-bordered>tbody>.table__quotebox__bodytr>td b{
+	display: block;
+}
+
+
+.table__quotebox__imgprodth{
+    text-align: center;	
+}
+
+.table__quote__imgprod{
+    width: 225px;
+}
+
+.table__quote__titleprod{
+
+}
+
+
+.table__quote__collorlistblock{
+    padding: 0;
+    list-style-type: none;
+}
+
+.table__quote__collorlist{
+    margin: 5px 0;
+}
+
+.table__quote__collorlist .product__content__collor__selectnow__link{
+
+}
+
+.table__quote__collorlist .product__content__collor__selectnow__img{
+
+}
+
+.table__quote__collorlist .product__content__collor__selectnow__title{
+
+}
+
+.table__quotebox__headthqua,
+.table__quote__quaprod{
+	text-align: center;
+}
+
+.updateblock{
+    padding: 5px;
+    background: #F7F7F7;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+}
+
+.updateblock__link{
+    cursor: pointer;
+    color: #880000;
+    font: bold 12px arial;
+    text-decoration: underline;
+}
+
+.updateblock__link:hover{
+    color: #880000;
+    text-decoration: none;
+}
+
+.contact__block__quotepage{
+    border: 1px solid #DDD;
+    font: 12px Arial;
+    color: #111;
+    padding: 10px 5px;
+    margin-bottom: 25px;
+}
+
+.contact__block__quotepage__leftblock{
+    width: 40%;
+    display: inline-block;
+}
+
+.contact__block__quotepage__rightblock{
+    width: 60%;
+    display: inline-block;
+    float: right;
+}
+
+.contact__block__quotepage .needhelpmodal__contactblock__form{
+	width: 100%;
+}
+
+.contact__block__quotepage .needhelpmodal__contactblock__label{
+    width: 115px;
+}
+
+
+.contact__block__quotepage .needhelpmodal__contactblock__select{
+	width: 100%
+}
+
+.contact__block__quotepage__rightblock .needhelpmodal__contactblock__label{
+    width: 26%;
+}
+
+.contact__block__quotepage .blocckforinput{
+  width: 74%;
+  text-align: center;
+}
+.contact__block__quotepage__leftblock .blocckforinput{
+    width: 65%;
+
+}
+
+.contact__block__quotepage .blocckforinput.submitbuttonblock{
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 510px){
+
+	.container__category_quote .contact__leftblock{
+        margin-bottom: 25px;
+	}
+
+	.table__quote__imgprod {
+    width: 100%;
+    }
+
+    .table__quote__collorlistblock{
+    	display: none;
+    }
+
+    .table__quote__titleprod {
+    width: 135%;
+    display: block;
+}
+.contact__block__quotepage__rightblock {
+    width: 100%;
+}
+
+.contact__block__quotepage__leftblock {
+    width: 100%;
+}
+}
+
+
+@media (min-width: 511px) and (max-width: 680px){
+
+	.container__category_quote .contact__leftblock{
+        margin-bottom: 25px;
+	}
+
+	.table__quote__imgprod {
+    width: 80%;
+    }
+
+    .table__quote__titleprod {
+    width: 100%;
+    display: block;
+}
+
+.contact__block__quotepage__rightblock {
+    width: 100%;
+}
+
+.contact__block__quotepage__leftblock {
+    width: 100%;
+}
+
+}
+
