@@ -1,4 +1,8 @@
 
+body {
+    overflow-x: hidden;
+}
+
 @media (min-width: 1024px){
 .container__body {
     width: 1000px;
