@@ -224,6 +224,10 @@ body {
 	transition: .4s;
 }
 
+.main-menu a:hover {
+	letter-spacing: .15em;
+}
+
 .main-menu li.active a span {
 	font-weight: 700;
 }
