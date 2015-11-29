@@ -535,3 +535,87 @@ body {
 #home img {
 	width: 100%;
 }
+
+
+/* MODAL */
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+	opacity: .8;
+}
+
+.modal-dialog {
+	position: fixed;
+	z-index: 1041;
+	top: 50%;
+	left: 50%;
+	padding: 10px;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	width: 500px;
+	font-size: 0;
+}
+
+.modal-dialog img {
+	width: 100%;
+}
+
+.modal-dialog .cross {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	background: #fff;
+	right: -30px;
+	top: 0;
+	cursor: pointer;
+}
+
+.modal-dialog .cross svg {
+	width: 20px;
+	height: 20px;
+}
+
+.modal-dialog .left-arrow,
+.modal-dialog .right-arrow {
+	width: 100px;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.modal-dialog .left-arrow svg,
+.modal-dialog .right-arrow svg {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	margin-top: -40px;
+	fill: #fff;
+	left: 50%;
+	margin-left: -40px;
+	transition: .4s;
+}
+
+.modal-dialog .left-arrow {
+	left: -100px;
+}
+
+.modal-dialog .right-arrow {
+	right: -100px;
+}
+
+.modal-dialog .left-arrow:hover svg {
+	margin-left: -50px;
+}
+
+.modal-dialog .right-arrow:hover svg {
+	margin-left: -30px;
+}
