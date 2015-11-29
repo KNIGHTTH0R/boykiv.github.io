@@ -11,14 +11,14 @@
 <body id="about">
 	<div class="wrapper">
 		<header class="main-header menu-col">
-			<div class="logo">
+			<a href="index.html" class="logo">
 				<h1>Sarah J Farrell</h1>
-			</div>
+			</a>
 			<div onclick="this.classList.toggle('open');" class="menu-glif">
 				<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 0 48 48" width="48"><path d="M0 0h48v48h-48z" fill="none"/><path d="M6 36h36v-4h-36v4zm0-10h36v-4h-36v4zm0-14v4h36v-4h-36z"/></svg>
 			</div>
 			<ul class="main-menu">
-				<li><a href="index.html"><span>Projects</a></span></li>
+				<li><a href="projects.html"><span>Projects</a></span></li>
 				<li><a href=""><span>Socially</a></span></li>
 				<li class="active"><a href="about.html"><span>About</a></span></li>
 				<li><a href="contact.html"><span>Contact</a></span></li>
@@ -26,13 +26,21 @@
 		</header>
 		<div class="content-col">
 			<div class="col50p">
-				<img src="img/ava-big-g.jpg">
+				<img class="normal-ava" src="img/ava-big-g.jpg">
+				<div class="mobile-ava">
+					<img src="img/ava-mobile.jpg">
+				</div>
 			</div>
 			<div class="col50p">
 				<div class="quote">Create your own visual style... let it be unique for yourself and yet identifiable for others.</div>
 				<div class="quote-author">— Orson Welles</div>
 				<p>I am a highly energetic individual with a keen eye and an absolute dedication to detail. My progression into senior positions is a reflection of my dedication as well as the respect and regard for my work shown by my employers. I aspire to deliver the highes standarts and demand the same from those working to me.</p>
-				<a href="#">Download CV</a>
+				<a onclick="this.classList.toggle('open');" class="cv">Download CV</a>
+				<div class="password-block">
+					<input placeholder="Enter password" type="text" class="password">
+					<a href="#" class="ok">ok</a>
+					<div class="error">Wrong password</div>
+				</div>
 			</div>
 		</div>
 	</div>
