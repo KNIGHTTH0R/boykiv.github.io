@@ -3,32 +3,26 @@ body {
 	color: #555;
 	font-family: Roboto;
 	background: #FFFAFA;
-	padding-bottom: 140px;
 }
 
 
 /* GRID */
 
-.content {
-	text-align: center;
-	font-size: 0;
-	width: 1200px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
 .menu-col {
 	box-sizing: border-box;
 	width: 250px;
 	padding: 0 10px;
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 40px;
 }
 
 .content-col {
 	box-sizing: border-box;
-	width: 950px;
+	margin-left: 250px;
 	padding: 0 10px;
 	float: left;
+	overflow: hidden;
 }
 
 .col50p {
@@ -88,14 +82,71 @@ body {
 .wrapper {
 	width: 1200px;
 	margin: 100px auto;
+	overflow: hidden;
+	position: relative;
+	padding: 0 40px;
+}
+
+@media (max-width: 1300px) {
+
+	.wrapper {
+		width: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+
+	.wrapper {
+		padding: 0;
+		margin-top: 40px;
+	}
+
+	.menu-col {
+		width: auto;
+		float: none;
+		position: static;
+		margin: 0 20px 35px;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.menu-col .logo {
+		float: left;
+	}
+
+	.content-col {
+		float: none;
+		margin: 0;
+	}
+
+	.menu-glif {
+		display: block !important;
+	}
+
+	.main-menu {
+		clear: both;
+		border-bottom: 1px solid #ddd !important;
+		padding-bottom: 10px !important;
+		margin-bottom: 10px !important;
+	}
+
+	.main-menu li {
+		text-align: right;
+	}
+
+	.open + .main-menu a {
+		height: 30px;
+		line-height: 30px !important;
+	}
+
+	.main-menu a {
+		overflow: hidden;
+		height: 0;
+	}
 }
 
 
 /* HEADER */
-
-.logo img {
-	width: 160px;
-}
 
 .logo h1 {
 	font-weight: normal;
@@ -108,9 +159,21 @@ body {
 	letter-spacing: .1em;
 }
 
+.menu-glif {
+	float: right;
+	display: none;
+	cursor: pointer;
+}
+
+.menu-glif svg {
+	width: 33px;
+	height: 33px;
+}
+
 .main-menu {
 	margin: 0;
 	padding: 0;
+	border-bottom: 0px solid #ddd;
 }
 
 .main-menu li {
@@ -126,6 +189,7 @@ body {
 	text-decoration: none;
 	line-height: 20px;
 	display: block;
+	transition: .4s;
 }
 
 .main-menu li.active a span {
@@ -193,6 +257,7 @@ body {
 .show-more {
 	clear: both;
 	padding-top: 20px;
+	text-align: center;
 }
 
 .show-more button {
