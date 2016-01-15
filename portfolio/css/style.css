@@ -6,10 +6,23 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 22px;
-	margin-top: 100px;
-	margin-bottom: 10px;
+	font-size: 16px;
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 1px;
 	color: #444;
+}
+
+.ava {
+	width: 135px;
+	height: 135px;
+	margin: 100px auto 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.ava img {
+	width: 100%;
 }
 
 .lead {
@@ -18,7 +31,7 @@ h1 {
 	width: 400px;
 	margin: 0 auto;
 	line-height: 1.333;
-	color: #111;
+	color: #666;
 }
 
 
@@ -176,9 +189,13 @@ h1 {
 	vertical-align: top;
 }
 
-.works a {
-	text-decoration: none;
-	color: #444;
+.works li > a:hover {
+	opacity: .9;
+}
+
+.works li > a:hover + p a {
+	color: #f88;
+	border-bottom: 1px solid #fcc;
 }
 
 .works img {
@@ -191,12 +208,13 @@ h1 {
 	margin: 8px 0 0;
 }
 
-.works p span {
+.works p a {
 	color: #08f;
 	line-height: 1.6;
 	border-bottom: 1px solid #acf;
+	text-decoration: none;
 }
-.works a:hover span {
+.works p a:hover {
 	color: #f88;
 	border-bottom: 1px solid #fcc;
 }
