@@ -28,7 +28,7 @@ h1 {
 .lead {
 	font-size: 16px;
 	text-align: center;
-	width: 400px;
+	max-width: 400px;
 	margin: 0 auto;
 	line-height: 1.333;
 	color: #666;
@@ -38,10 +38,10 @@ h1 {
 /* JOBS */
 
 .jobs {
-	max-width: 800px;
+	max-width: 760px;
 	margin: 90px auto 0;
 	background: #ecf0f1;
-	padding: 20px 80px 40px;
+	padding: 20px 60px 40px;
 	border-radius: 4px;
 }
 
@@ -49,7 +49,7 @@ h1 {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	max-width: 800px;
+	max-width: 760px;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -175,7 +175,7 @@ h1 {
 /* WORKS */
 
 .works {
-	width: 720px;
+	max-width: 960px;
 	font-size: 0;
 	margin: 100px auto 100px;
 }
@@ -183,6 +183,7 @@ h1 {
 .works ul {
 	padding: 0;
 	margin: 0;
+	text-align: center;
 }
 
 .works li {
@@ -190,6 +191,7 @@ h1 {
 	width: 160px;
 	padding: 0 40px 40px;
 	vertical-align: top;
+	text-align: left;
 }
 
 .works li > a:hover {
@@ -284,4 +286,77 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: .15em;
 	line-height: 1.6;
+}
+
+.jobs-text {
+	display: none;
+	color: #666;
+	padding: 0 10px;
+}
+
+
+/* ADAPTIVITY */
+
+@media (max-width: 1000px) {
+	
+	.works {
+		margin: 100px 20px;
+	}
+}
+
+@media (max-width: 940px) {
+
+	.jobs {
+		margin: 90px 20px 0;
+	}
+
+	.jobs .timeline {
+		display: none;
+	}
+
+	.jobs .logo,
+	.jobs .freelance-text-logo {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 800px) {
+
+	.jobs img {
+		height: 30px !important;
+	}
+
+	.jobs .freelance-text-logo {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+@media (max-width: 620px) {
+
+	.jobs {
+		border-radius: 0;
+		margin: 90px 0 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 450px) {
+
+	.ava {
+		margin-top: 60px;
+	}
+
+	.lead {
+		margin: 0 25px;
+	}
+
+	.jobs-text {
+		display: block;
+	}
+
+	.jobs ul {
+		display: none;
+	}
 }
