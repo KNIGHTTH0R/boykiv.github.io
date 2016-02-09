@@ -1,0 +1,268 @@
+/*html {
+	background: url(../two.jpg) 50% 0 no-repeat;
+}
+body {
+	opacity: .5;
+}*/
+
+
+
+body {
+	margin: 0;
+	font-family: 'Open Sans' !important;
+}
+
+
+/* ПЕРВЫЙ БЛОК */
+
+.block-one {
+	margin: 251px 0 0 432px;
+	width: 665px;
+	height: 480px;
+}
+
+.block-one h2 {
+	margin: 0;
+
+	font-size: 28px;
+	color: #9d9d9d;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.block-one .product-choise {
+	padding: 0;
+	margin: 12px 0 15px;
+	overflow: hidden;
+}
+
+.block-one .product-choise li {
+	margin: 0 19px 0 13px;
+	float: left;
+	display: block;
+}
+
+.block-one .product-choise a {
+	font-size: 14px;
+	font-weight: 600;
+	color: #06b7af;
+}
+
+.block-one .product-choise a img {
+	margin: 0 0 0 3px;
+
+	vertical-align: 3px;
+}
+
+.block-one .product-choise a.active {
+	color: #717171;
+}
+
+
+/* Товар */
+
+.product-block {
+	margin: 8px 0px;
+}
+
+.block-one .product-block {
+	overflow: hidden;
+	border-top: 1px solid #d1d1d1;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+/*визуальная-часть-товара*/
+
+.block-one .view-part {
+	width: 279px;
+	float: left;
+}
+
+.block-one .view-part h3 {
+	margin: 5px 0 0 3px;
+
+	color: #06b7ae;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.block-one .view-part .title-discription {
+	margin-top: -3px;
+	margin-left: 3px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.block-one .view-part img {
+	margin-top: 8px;
+}
+
+
+/* Описательная часть */
+
+.block-one .discription-part {
+	width: 385px;
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 8px;
+	border-left: 1px solid #d1d1d1;
+}
+
+.block-one .discription-part ul {
+	margin: 0;
+	padding: 13px 0 0 0;
+}
+
+.block-one .discription-part li {
+	display: block;
+	margin-left: 16px;
+
+	line-height: 13px;
+	font-size: 12px;
+	color: #303030;
+}
+
+.block-one .discription-part .price {
+	float: left;
+	margin: 9px 0 0 26px;
+
+	font-size: 28px;
+	font-weight: 600;
+	color: #303030;
+}
+
+
+/* ВТОРОЙ БЛОК */
+
+.block-two {
+	margin: 251px 0 0 432px;
+	width: 665px;
+	height: 480px;
+}
+
+.block-two h2 {
+	margin: 0 0 22px;
+
+	font-size: 28px;
+	color: #9d9d9d;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.block-two .calculator-block {
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+
+.block-two .begun-block {
+	margin-bottom: 3px;
+}
+
+.block-two .shower {
+	padding-left: 13px;
+	margin-bottom: 22px;
+	height: 25px;
+
+	border-radius: 4px;
+	line-height: 25px;
+	font-size: 13px;
+	color: #444444;
+	background: #e4e4e4  url(../img/big-bottom-arrow.png) 649px 11px no-repeat;
+}
+
+.block-two .input-block {
+	margin: 16px 12px;
+}
+
+.block-two .input-block label,
+.block-two .input-block span {
+	color: #444;
+	font-size: 13px;
+	font-weight: 600;
+	vertical-align: center;
+}
+
+.block-two .input-block .discription-text {
+	margin-top: 22px;
+
+	font-size: 12px;
+	font-style: italic;
+	color: #868686;
+}
+
+.first-block {
+	margin-top: -16px;
+	width: 325px;
+	float: left;
+}
+.second-block {
+	border-left: 1px solid #d1d1d1;
+	padding-left: 14px;
+	width: 325px;
+	height: 75px;
+	float: left;
+}
+
+.second-block .input-block {
+	margin-top: 0px;
+}
+
+.block-two .bottom-of-form {
+	margin-top: 18px;
+	border-top: 1px solid #d1d1d1;
+}
+
+.block-two .bottom-of-form .discription-text {
+	margin-top: 9px;
+	width: 400px;
+
+	color: #868686;
+	line-height: 13px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+/* Бегунок */
+
+.tracker-block {
+	margin-top: 28px;
+	margin-left: -42px;
+	margin-right: -17px;
+
+	background: url(../img/trackbar.png) 34px 4px no-repeat;
+}
+
+.tracker-labels {
+	margin-top: -1px;
+	height: 24px;
+	position: relative;
+	font-size: 13px;
+	color: #444444;
+	font-weight: 600;
+}
+
+.soft {
+	position: absolute;
+	left: 33px;
+}
+
+.soft-middle {
+	position: absolute;
+	left: 143px;
+}
+
+.middle {
+	position: absolute;
+	left: 298px;
+}
+
+.middle-hard {
+	position: absolute;
+	left: 407px;
+}
+
+.hard {
+	position: absolute;
+	left: 567px;
+}

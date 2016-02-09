@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Второй блок</title>
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<link href="css/trackbar.css" type="text/css" rel="stylesheet">
+</head>
+<body onmouseup="trackerChange()">
+	<div class="block-two">
+		<h2>Подбор матраса</h2>
+		<div class="calculator-block">
+			<div class="shower">По размеру</div>
+			<div class="input-block">
+				<label for="size">Выберите размер матраса:</label>
+				<input type="text"><span>см.</span>
+				<div class="discription-text">Если вы не нашли нужный Вам размер, пожалуйста, обратитесь к онлайн консультанту.</div>
+			</div>
+		</div>
+		<div class="begun-block" style="height: 135px" onmousemove="trackerChange()">
+			<div class="shower">По жесткости</div>
+			<div class="input-block">
+				<div class="tracker-block">
+					<div id="fourId"></div>
+				</div>
+				<div class="tracker-labels">
+					<div class="soft">мягкий</div>
+					<div class="soft-middle">средне-мягкий</div>
+					<div class="middle">средний</div>
+					<div class="middle-hard">средне-жесткий</div>
+					<div class="hard">жесткий</div>
+				</div>
+			</div>
+		</div>
+		<div class="calculator-block">
+			<div class="shower">По телосложению</div>
+			<div class="first-block">
+				<div class="input-block">
+					<label for="size">Ваш рост:</label>
+					<input type="text"><span>см.</span>
+				</div>
+				<div class="input-block">
+					<label for="size">Ваш вес:</label>
+					<input type="text"><span>кг.</span>
+				</div>
+			</div>
+			<div class="second-block">
+				<div class="input-block">
+					<label for="size">Ваш возраст:</label>
+					<input type="text"><span>лет</span>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-of-form">
+			<div class="discription-text">Данный способ подбора основывается на расчете Индекса Массы Тела, признанным Всемирной Организацией Здравоохранения, и носит рекомендательный характер</div>
+			<a href="#">Подобрать</a>
+		</div>
+	</div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/trackbar.js"></script>
+
+	<script>
+		trackbar.getObject('four').init(
+		{
+			onMove : function() {
+				trackbar.getObject('three').updateLeftValue(this.leftValue);
+			},
+			width : 669, // px
+			//	leftLimit : 0, // unit of value
+			leftValue : 0, // unit of value
+			rightLimit : 255, // unit of value
+			rightValue : 255
+		},
+		"fourId"
+	);//610
+
+	var $soft = $('.soft');
+	var $softMiddle = $('.soft-middle');
+	var $middle = $('.middle');
+	var $middleHard = $('.middle-hard');
+	var $hard = $('.hard');	
+	function trackerChange() {
+		var leftWidth = $('#leftBlock_four').width();
+		var rightWidth = $('#rightBlock_four').width();
+		$soft.css('color', '#444');
+		$softMiddle.css('color', '#444');
+		$middle.css('color', '#444');
+		$middleHard.css('color', '#444');
+		$hard.css('color', '#444');
+		if (leftWidth > 475) {
+			$soft.css('color', '#aaa');
+			$softMiddle.css('color', '#aaa');
+			$middle.css('color', '#aaa');
+			$middleHard.css('color', '#aaa');
+		} else if (leftWidth > 345) {
+			$soft.css('color', '#aaa');
+			$softMiddle.css('color', '#aaa');
+			$middle.css('color', '#aaa');
+		} else if (leftWidth > 205) {
+			$soft.css('color', '#aaa');
+			$middleHard.css('color', '#aaa');
+		} else if (leftWidth > 71) {
+			$soft.css('color', '#aaa');
+		}
+
+
+		if (rightWidth > 475) {
+			$softMiddle.css('color', '#aaa');
+			$middle.css('color', '#aaa');
+			$middleHard.css('color', '#aaa');
+			$hard.css('color', '#aaa');
+		} else if (rightWidth > 335) {
+			$middle.css('color', '#aaa');
+			$middleHard.css('color', '#aaa');
+			$hard.css('color', '#aaa');
+		} else if (rightWidth > 204) {
+			$middleHard.css('color', '#aaa');
+			$hard.css('color', '#aaa');
+		} else if (rightWidth > 64) {
+			$hard.css('color', '#aaa');
+		}
+	}
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
