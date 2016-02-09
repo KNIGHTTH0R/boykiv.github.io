@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html> 
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1251" />
+    <title>counter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery.countdown.js" type="text/javascript"></script>
+    <script src="js/mobilyslider.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        var today = new Date();
+        var currentYear = today.getFullYear();
+        var currentTime = today.getTime();
+
+
+        var targetDate = new Date(2013,10,11);
+        var targetTime = targetDate.getTime();
+
+
+        var timeLeft = targetTime - currentTime;
+
+        var sec = Math.floor(timeLeft/1000);
+        var min = Math.floor(sec/60);
+        var hours = Math.floor(min/60);
+        var days = Math.floor(hours/24);
+
+
+          var counter = days + ":" + (hours%24) + ":" + (min%60) + ":" + (sec%60);
+
+        $('#counter').countdown({
+          image: 'img/digits.png',
+            digitWidth: 53,
+            digitHeight: 77,
+          startTime: counter
+        });
+      });
+
+$(function(){
+
+
+  $('.slider').mobilyslider({
+    content: '.all-slides', // селектор для слайдера
+    children: 'li', // селектор для дочерних элементов
+    transition: 'fade', // переходы: horizontal, vertical, fade
+    animationSpeed: 300, // скорость перехода в миллисекундах
+    autoplay: true,
+    autoplaySpeed: 8000, // время между переходами (миллисекунды)
+    bullets: false, // генерировать навигацию (true/false, class: sliderBullets)
+    arrows: false, // генерировать стрелки вперед и назад (true/false, class: sliderArrows)
+  });
+
+
+})(jQuery);
+    </script>
+    <style type="text/css">
+      br { clear: both; }
+      .cntSeparator {
+        font-size: 54px;
+        margin: 2px 2px;
+        color: #000;
+      }
+      .counter-container {
+        overflow: hidden;
+        padding-top: 50px;
+        height: 150px;
+        width: 430px;
+      }
+      .wrapper {
+        margin-left: -52px;
+        width: 1000px;
+      }
+    </style>
+  </head>
+<body>
+
+
+<div class="counter-container">
+  <div class="wrapper">
+    <div id="counter"></div>
+  </div>
+  </div>
+        <div class="slider-box">
+        <div class="slider">
+          <ul class="all-slides">
+            <li><img src="http://img-fotki.yandex.ru/get/9264/202832981.3/0_1297ee_adef5066_L.jpg"></li>
+            <li><img src="http://img-fotki.yandex.ru/get/9063/27612503.4f/0_ae834_cd031796_L.jpg"></li>
+            <li><img src="http://img-fotki.yandex.ru/get/9264/202832981.3/0_1297ee_adef5066_L.jpg"></li>
+            <li><img src="http://img-fotki.yandex.ru/get/9063/27612503.4f/0_ae834_cd031796_L.jpg"></li>
+          </ul>
+        </div>
+      </div>
+</body>
+</html>
