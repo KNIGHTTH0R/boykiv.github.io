@@ -311,6 +311,7 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: .15em;
 	line-height: 1.6;
+	padding: 0 20px;
 }
 
 .jobs-text {
@@ -322,10 +323,17 @@ h1 {
 
 /* ADAPTIVITY */
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
 	
 	.works {
 		margin: 100px 20px;
+	}
+
+	.col {
+		float: none;
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
@@ -333,6 +341,11 @@ h1 {
 
 	.jobs {
 		margin: 90px 20px 0;
+	}
+
+	.works h2:after {
+		left: 0px;
+		right: 0px;
 	}
 
 	.jobs .timeline {
@@ -364,6 +377,25 @@ h1 {
 		margin: 90px 0 0;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+
+	.works h2:after {
+		left: -20px;
+		right: -20px;
+	}
+
+	.work-page h1 {
+		font-size: 22px;
+		padding: 0 20px;
+		margin: 0;
+	}
+
+	.go-home {
+		margin: 50px 0;
+	}
+
+	.screenshots {
+		margin-top: 50px;
 	}
 }
 
