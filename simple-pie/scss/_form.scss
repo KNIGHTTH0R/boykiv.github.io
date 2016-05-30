@@ -1,0 +1,115 @@
+
+$form-color: rgba(255, 255, 255, .4);
+$label-color: rgba(0, 0, 0, .2);
+$label-color-darker: rgba(0, 0, 0, .2);
+$label-color-darkest: rgba(0, 0, 0, .2);
+
+.form-block {
+	padding-left: 40px;
+	padding-right: 40px;
+	box-sizing: border-box;
+
+	label {
+		display: block;
+		font-size: 14px;
+	}
+
+	.input-label {
+		width: 390px;
+		float: left;
+		height: 37px;
+		position: relative;
+
+		@media (max-width: $block-w) {
+			margin-right: 0 !important;
+			width: 100%;
+			max-width: 380px;
+			float: none;
+		}
+
+		&:first-child {
+			margin-right: 20px;
+			margin-bottom: 20px;
+		}
+
+		.input-part {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 60px;
+
+			input {
+				height: 37px;
+				width: 100%;
+			}
+		}
+
+		.text-part {
+			text-align: center;
+			width: 60px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			line-height: 37px;
+			color: #fff;
+			font-weight: 500;
+			background: $label-color;
+		}
+	}
+
+	input,
+	textarea {
+		border: none;
+		padding: 10px 10px;
+		box-sizing: border-box;
+		font-family: Roboto;
+		font-size: 16px;
+		color: #fff;
+		outline: none;
+		background: $form-color;
+	}
+
+	.message-label {
+		padding: 0 10px;
+		line-height: 37px;
+		color: #fff;
+		font-weight: 500;
+		clear: both;
+		margin-top: 57px;
+		background: $label-color;
+
+		@media (max-width: $block-w) {
+			margin-top: 20px;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		height: 160px;
+		padding-top: 10px;
+	}
+
+	input[type="submit"] {
+		margin-top: 15px;
+		background: $label-color;
+		cursor: pointer;
+		font-size: 14px;
+		height: 37px;
+		line-height: 37px;
+		padding: 0 24px;
+		font-family: Roboto;
+		font-weight: 500;
+		transition: .2s;
+		position: relative;
+		top: 0;
+
+		&:hover {
+			background: rgba(0,0,0,.4);
+		}
+
+		&:active {
+			top: 2px;
+			background: rgba(0,0,0,.6);
+		}
+	}
+}

@@ -1,0 +1,28 @@
+
+.jobs {
+
+	@media (max-width: $block-w) {
+
+		.def-table > tbody > tr > td {
+			display: block !important;
+			text-align: left;
+		}
+	}
+}
+
+#education {
+
+	@media (max-width: $block-w) {
+
+		.def-table > tbody > tr > td {
+			display: block !important;
+			text-align: left;
+		}
+
+		.picture-cell {
+			height: 150px;
+			width: 100%;
+			width: auto !important;
+		}
+	}
+}

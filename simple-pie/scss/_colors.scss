@@ -1,0 +1,142 @@
+
+body {
+	margin: 0;
+	padding: 100px 0;
+	font-family: 'Roboto';
+	color: #444;
+}
+
+.row {
+	margin-top: 90px;
+}
+
+a:not(.regular-btn) {
+	text-decoration: none;
+	color: #08f;
+	border-bottom: 1px solid #acf;
+
+	&:hover {
+		color: #f88;
+		border-bottom: 1px solid #fcc;
+	}
+}
+
+@mixin btn($color, $text-color) {
+	font-size: 16px;
+	border: none;
+	color: $text-color;
+	height: 34px;
+	padding: 0 20px;
+	font-family: 'Open Sans';
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	background: none;
+	display: inline-block;
+	text-decoration: none;
+
+	span {
+		position: relative;
+		z-index: 2;
+		top: 0;
+		transition: .2s;
+		line-height: 34px;
+
+		svg {
+			fill: $text-color;
+		}
+
+		img {
+			vertical-align: middle;
+			width: 16px;
+			height: 16px;
+			margin-left: 5px;
+		}
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 2px;
+		left: 0;
+		background: $color;
+		z-index: 1;
+		border-radius: 3px;
+		transition: .2s;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 2px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: darken($color, 10%);
+		z-index: 0;
+		border-radius: 3px;
+		transition: .2s;
+	}
+
+	&:hover {
+
+		span {
+			// opacity: .94;
+		}
+		
+		&:before {
+			background: darken($color, 7%);
+		}
+
+		&:after {
+			background: darken($color, 17%);
+		}
+	}
+
+	&:active {
+
+		& span {
+			top: 2px;	
+		}
+
+		&:before {
+			top: 2px;
+			bottom: 0px;
+			background: darken($color, 14%);
+		}
+
+		&:after {
+			background: darken($color, 24%);
+		}
+	}
+	
+	&.ask-disable {
+		cursor: default;
+		opacity: .8;
+
+		span {
+			opacity: .5;
+			top: 0;
+		}
+
+		&:before {
+			top: 0px;
+			bottom: 0px;
+			background: $color;
+		}
+
+
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.regular-btn {
+	@include btn(#9ab, #fff);
+}
