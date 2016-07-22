@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Info card</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<script src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+	<div class="card-wrapper">
+		<div class="card">
+			<header class="card-header">
+				<div class="main-logo"><img src="logo.png"></div>
+				<div class="share"><img src="share.png"></div>
+			</header>
+			<div class="card-content">
+				<p><span class="lead">45.8 million</span>people are <span class="link" onclick="$('.card-info').toggleClass('open');">enslaved</span> in the world today.</p>
+				<p>That’s the equivalent of <span class="marked">5 times</span> the population of <span class="marked">London.</span></p>
+			</div>
+			<footer class="card-footer">
+				<p>A Contexxt card: This card is localised and uses your location to provide numerical context.</p>
+				<div class="logo"><img src="contexxt-logo.png"></div>
+			</footer>
+		</div>
+		<div class="card-info">
+			Slavery is a legal or economic system in which principles of property law are applied to humans allowing them to be classified as property,[1] to be owned, bought and sold accordingly, and they cannot withdraw unilaterally from the arrangement. While a person is enslaved, the owner is entitled to the productivity of the slave's labour, without any remuneration.
+		</div>
+	</div>
+</body>
+</html>
