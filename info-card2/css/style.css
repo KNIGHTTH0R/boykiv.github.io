@@ -51,7 +51,20 @@ body {
 	backface-visibility: hidden;
 }
 
-.card-info .cross {
+.cross-area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+}
+
+.open + .cross-area {
+	z-index: 100;
+}
+
+.cross {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -61,13 +74,12 @@ body {
 	transition: .2s;
 }
 
-.card-info .cross:hover {
+.cross:hover {
 	opacity: .5;
 }
 
 .card-info.open {
 	transform: translateX( 0 ) rotateY( 0deg );
-	z-index: 20;
 }
 
 .link-to-article {
