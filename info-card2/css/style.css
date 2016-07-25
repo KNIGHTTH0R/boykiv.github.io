@@ -67,6 +67,7 @@ body {
 
 .card-info.open {
 	transform: translateX( 0 ) rotateY( 0deg );
+	z-index: 20;
 }
 
 .link-to-article {
