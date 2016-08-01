@@ -1,4 +1,4 @@
-﻿body {
+body {
 	margin: 0;
 	font-family: "Open Sans";
 	min-width: 1250px
@@ -29,7 +29,6 @@
 }
 
 .card .flip-action {
-	line-height: 38px;
 	cursor: pointer;
 	position: relative;
 	transition: .2s;
@@ -46,10 +45,18 @@
 	width: 73px;
 }
 
+.card .flip-action .pre-text {
+	padding-left: 84px;
+	margin-top: -2px;
+	position: relative;
+	top: -2px;
+}
+
 .card .flip-action span {
 	color: #e44;
 	border-bottom: 1px solid #eaa;
-	margin-left: 86px;
+	font-size: 14px;
+	line-height: 14px;
 }
 
 .card.open {
