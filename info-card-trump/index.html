@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Info card</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+	<script src="jquery-3.1.0.min.js"></script>
+	<script>
+		function beforeOpen() {
+			$('.card-info').removeClass('open');
+			$('.link').removeClass('active');
+		}
+	</script>
+</head>
+<body>
+<script src="//d3js.org/d3.v3.min.js"></script>
+	<div class="content-wrapper">
+		<div class="card-wrapper">
+			<div class="card">
+				<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The Democratic Convention has paid ZERO respect to the great police and law enforcement professionals of our country. No recognition - SAD!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/758238226180083712">July 27, 2016</a></blockquote>
+				<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="flip-action" onclick="beforeOpen();$('.card').toggleClass('open');$('.source-card').toggleClass('open');$(this).toggleClass('active');">
+					<span>Donald Trump has not confirmed his source for this</span>
+					<img src="pre.jpg">
+				</div>
+			</div>
+			<div class="card-info source-card">
+				<div class="cross" onclick="beforeOpen();$('.card').toggleClass('open');">x</div>
+				<iframe width="525" height="280" src="https://www.youtube.com/embed/_IJy2Pw_PHQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>				
+<script>
+var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 390 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .ticks(10, "%");
+
+var svg = d3.select("body .growth-info").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.tsv("data.tsv", type, function(error, data) {
+  if (error) throw error;
+
+  x.domain(data.map(function(d) { return d.letter; }));
+  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis);
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("");
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.letter); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.frequency); })
+      .attr("height", function(d) { return height - y(d.frequency); });
+});
+
+function type(d) {
+  d.frequency = +d.frequency;
+  return d;
+}
+</script>
+</body>
+</html>

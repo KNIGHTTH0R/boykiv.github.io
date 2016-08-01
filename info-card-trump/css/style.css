@@ -1,0 +1,298 @@
+body {
+	margin: 0;
+	font-family: "Open Sans";
+	min-width: 1250px
+}
+
+.content-wrapper {
+	width: 525px;
+	margin: 50px 30px;
+	margin: 532px 220px 0;
+}
+
+.card-wrapper {
+	position: relative;
+	perspective: 800px;
+	margin-top: 30px;
+}
+
+.card {
+	position: relative;
+	padding: 10px 11px 10px;
+	background: #ddd;
+	box-sizing: border-box;
+	border-radius: 3px;
+	transform-style: preserve-3d;
+	transition: transform .65s;
+	transform: translateX( 0 ) rotateY( 0deg );
+	backface-visibility: hidden;
+}
+
+.card .flip-action {
+	line-height: 38px;
+	cursor: pointer;
+	position: relative;
+	transition: .2s;
+}
+
+.card .flip-action:hover {
+	opacity: .7;
+}
+
+.card .flip-action img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 73px;
+}
+
+.card .flip-action span {
+	color: #e44;
+	border-bottom: 1px solid #eaa;
+	margin-left: 86px;
+}
+
+.card.open {
+	transform: translateX( 0 ) rotateY( 180deg );
+}
+
+.card-info {
+	z-index: -1;
+	background: #fff;
+	overflow: hidden;
+	position: absolute;
+	overflow: hidden;
+	width: 525px;
+	top: 0;
+	bottom: 0;
+	right: -2px;
+	top: 0;
+	border: 1px solid #e8eeef;
+	transform-style: preserve-3d;
+	transition: transform .65s;
+	transform: translateX( 0 ) rotateY( -180deg );
+	backface-visibility: hidden;
+}
+
+.card-info .cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 7px 20px;
+	font-size: 30px;
+	transition: .2s;
+	background: #fff;
+}
+
+.card-info .cross:hover {
+	opacity: .8;
+}
+
+.card-info.open {
+	transform: translateX( 0 ) rotateY( 0deg );
+}
+
+.link-to-article {
+	color: #08f;
+	text-decoration: none;
+	border-bottom: 2px solid #acf;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/* __________________________________________________ */
+/* CARD CONTENT */
+
+.card-content .quote {
+	font-size: 34px;
+	color: #fff;
+	font-weight: 100;
+	width: 400px;
+	position: relative;
+}
+
+.card-content .quote:before {
+	content: "“";
+	margin-left: -10px;
+}
+
+.card-content .quote:after {
+	content: "”";
+}
+
+.card-content .quote .link {
+	color: #f44;
+	font-weight: 400;
+	border-bottom: 2px solid #844;
+	cursor: pointer;
+	transition: opacity .2s;
+}
+
+.card-content .quote .link:hover {
+	opacity: .8;
+}
+
+.card-content .quote .link.active {
+	border-bottom: 0 solid #844;
+	/*background: #fff;*/
+	outline: 2px solid #844;
+	padding: 0 5px;
+	margin: 0 -5px;
+}
+
+/* __________________________________________________ */
+/* CARD FOOTER */
+
+.card-footer {
+	font-size: 16px;
+	color: #aaa;
+	width: 300px;
+}
+
+.card-footer .link {
+	color: #ddd;
+	font-weight: 400;
+	border-bottom: 1px solid #888;
+	cursor: pointer;
+}
+
+.card-footer .link.active {
+	border-bottom: 0;
+	padding: 0 3px;
+	margin: 0 -3px;
+	outline: 1px solid #888;
+}
+
+
+/* __________________________________________________ */
+/* PERSONAL INFO */
+
+.personal-info {
+}
+
+.personal-info .personal-header {
+	border-bottom: 1px solid #e8eeef;
+	margin: -20px -200px 35px;
+	padding: 0 200px;
+}
+
+.personal-info img {
+	position: absolute;
+	top: 0;
+	right: 200px;
+}
+
+.personal-info .name {
+	font-size: 22px;
+	color: #222;
+	margin-top: 30px;
+}
+
+.personal-info .profession {
+	font-size: 12px;
+	margin-bottom: 39px;
+}
+
+.personal-info .share-icon {
+	position: absolute;
+	z-index: 2;
+	top: 55px;
+	right: 355px;
+	fill: #666;
+}
+
+.personal-info p {
+	font-size: 14px;
+}
+
+.personal-info ul {
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.personal-info li {
+	margin-bottom: 6px;
+}
+
+.personal-info a {
+	color: #1a0dab;
+	text-decoration: none;
+}
+
+.personal-info a:hover {
+	text-decoration: underline;
+}
+
+
+/* __________________________________________________ */
+/* CHART */
+
+.bar {
+  fill: steelblue;
+  cursor: pointer;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.growth-info {
+}
+
+.growth-info img {
+	width: 100%;
+}
+
+.growth-info .bank-header {
+	margin: 24px 0 22px;
+	display: block;
+}
+
+.growth-info .bank-header a {
+	font-size: 24px;
+	text-decoration: none;
+	color: #08f;
+	border-bottom: 1px solid #acf;
+}
+
+
+/* __________________________________________________ */
+/* ECONOMIC INFO */
+
+.economic-info {
+}
+
+.economic-info .economic-title {
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.economic-info li {
+	margin-bottom: 8px;
+}
+
+.economic-info .read-more {
+	text-align: right;
+}
+
+body {
+	background: url(../stream.png) 0 0 no-repeat;
+}
