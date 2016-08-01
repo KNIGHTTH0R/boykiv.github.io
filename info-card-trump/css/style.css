@@ -301,5 +301,6 @@ body {
 }
 
 body {
-	background: url(../stream.png) 0 0 no-repeat;
+	background: url(../stream.png) 0 0 no-repeat,  url(../stream2.png) 0 743px no-repeat;
+	padding-bottom: 500px;
 }
