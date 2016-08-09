@@ -89,6 +89,12 @@ body {
 	margin-bottom: 10px;
 }
 
+.card-info .info a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px solid #fff;
+}
+
 .card-info.open {
 	transform: translateY(0%);
 }
