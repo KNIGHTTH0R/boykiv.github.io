@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	font-family: "Open Sans";
+	min-width: 1250px
+}
+
+.content-wrapper {
+	width: 800px;
+	margin: 50px 30px;
+	margin: 430px 84px 0;
+	transform: scale(0.656, 0.656);
+}
+
+.card-wrapper {
+	position: relative;
+	perspective: 800px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.card {
+	position: relative;
+	z-index: 1;
+	background: url(../background-man.jpg);
+	height: 510px;
+	box-sizing: border-box;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.card img {
+	width: 100%;
+}
+
+.card .eye {
+	position: absolute;
+	bottom: 8px;
+	left: 25px;
+	cursor: pointer;
+	opacity: .8;
+}
+
+.card .eye:hover {
+	opacity: .6;
+}
+
+.card .eye svg {
+	width: 40px;
+	height: 40px;
+}
+
+.card .logo {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	opacity: .8;
+	width: 250px;
+	cursor: pointer;
+}
+
+.card .logo:hover {
+	opacity: .6;
+}
+
+body {
+	background: url(../stream.png) 0 0 no-repeat;
+}
+
+.card-info {
+	font-size: 20px;
+	padding: 10px 22px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	color: #fff;
+	background: rgba(0,0,0,.8);
+	transform: translateY(100%);
+	transition: .2s;
+}
+
+.card-info .title {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.card-info .info {
+	margin-bottom: 10px;
+}
+
+.card-info.open {
+	transform: translateY(0%);
+}
+
+.card-info .cross {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+	padding: 7px 20px;
+	font-size: 30px;
+}
+
+.card-info .cross:hover {
+	color: #aaa;
+}
