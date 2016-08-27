@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: "Open Sans";
+	font-family: "Roboto";
 }
 
 $brand-red: #e23237;
@@ -10,6 +10,8 @@ $brand-red: #e23237;
 
 $col-space: 20px;
 $col-number: 12;
+
+$gal-col-space: 10px;
 
 .row {
   
@@ -39,6 +41,19 @@ $col-number: 12;
     padding: {
       left: $col-space/2;
       right: $col-space/2;
+    }
+  }
+}
+
+@for $i from 1 through $col-number {
+  
+  .gal-col-#{$i} {
+    width: (100%/$col-number)*$i;
+    box-sizing: border-box;
+    float: left;
+    padding: {
+      left: $gal-col-space/2;
+      right: $gal-col-space/2;
     }
   }
 }
@@ -80,7 +95,6 @@ h2 {
 
 h3 {
 	font-size: 24px;
-	font-family: Roboto;
 	font-weight: bold;
 	margin: 0;
 }
@@ -147,7 +161,7 @@ h1 {
 .technical-skills {
 
 	h3 {
-		margin-top: 15px;
+		margin-top: 17px;
 		margin-bottom: 6px;
 	}
 
@@ -179,12 +193,28 @@ h1 {
 	}
 }
 
+.logo {
+	width: auto;
+	margin-top: 17px;
+}
+
 // GALLERY
 
 .gallery {
 
+	.gallery1 {
+		height: 400px;
+		overflow: hidden;
+	}
+
+	.gallery2 {
+		height: 310px;
+		overflow: hidden;
+	}
+
 	.row {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+
 	}
 }
 

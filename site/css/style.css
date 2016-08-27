@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Open Sans"; }
+  font-family: "Roboto"; }
 
 /* ____________________________________________________________________ */
 /* GRID */
@@ -97,6 +97,90 @@ body {
   padding-left: 10px;
   padding-right: 10px; }
 
+.gal-col-1 {
+  width: 8.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-2 {
+  width: 16.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-3 {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-4 {
+  width: 33.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-5 {
+  width: 41.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-6 {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-7 {
+  width: 58.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-8 {
+  width: 66.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-9 {
+  width: 75%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-10 {
+  width: 83.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-11 {
+  width: 91.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.gal-col-12 {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px; }
+
 /* ____________________________________________________________________ */
 /* TYPOGRAPHY */
 ul {
@@ -127,7 +211,6 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-family: Roboto;
   font-weight: bold;
   margin: 0; }
 
@@ -177,7 +260,7 @@ h1 {
     opacity: .7; }
 
 .technical-skills h3 {
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 6px; }
 .technical-skills .technical-header {
   margin-top: -8px;
@@ -194,8 +277,18 @@ h1 {
 .technical-skills .optional .col-content {
   background: #f6f6f6; }
 
+.logo {
+  width: auto;
+  margin-top: 17px; }
+
+.gallery .gallery1 {
+  height: 400px;
+  overflow: hidden; }
+.gallery .gallery2 {
+  height: 310px;
+  overflow: hidden; }
 .gallery .row {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 .call-to-action {
   padding: 30px 0;
