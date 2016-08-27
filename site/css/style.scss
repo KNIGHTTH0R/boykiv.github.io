@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	font-family: "Open Sans";
+}
+
+$brand-red: #e23237;
+
+/* ____________________________________________________________________ */
+/* GRID */
+
+$col-space: 20px;
+$col-number: 12;
+
+.row {
+  
+  & > * {
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@for $i from 1 through $col-number {
+  
+  .col-#{$i} {
+    width: (100%/$col-number)*$i;
+    box-sizing: border-box;
+    float: left;
+    padding: {
+      left: $col-space/2;
+      right: $col-space/2;
+    }
+  }
+}
+
+/* ____________________________________________________________________ */
+/* TYPOGRAPHY */
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+h2 {
+	text-align: center;
+	color: $brand-red;
+	font-weight: 900;
+	position: relative;
+	margin: 70px 0 25px;
+	font-size: 32px;
+
+	span {
+		background: #fff;
+		position: relative;
+		z-index: 1;
+		padding: 0 20px;
+	}
+
+	&:after {
+		content: "";
+		border-bottom: 2px solid #ddd;
+		top: 23px;
+		left: 0;
+		right: 0;
+		display: block;
+		position: absolute;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	font-family: Roboto;
+	font-weight: bold;
+	margin: 0;
+}
+
+h4 {
+	font-size: 16px;
+	margin: 0;
+	font-weight: bold;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+/* ____________________________________________________________________ */
+/* CONTENT */
+
+.content {
+	width: 940px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+	padding: 80px 0;
+}
+
+h1 {
+	font-size: 50px;
+	font-family: Oswald;
+	margin: 0;
+
+	.major {
+		display: block;
+		background: $brand-red;
+		color: #fff;
+		text-transform: uppercase;
+
+		&:after {
+			content: "|";
+			z-index: -1;
+			position: absolute;
+			top: 80px;
+			left: 0;
+			right: 0;
+			background: $brand-red;
+			color: $brand-red;
+			display: block;
+		}
+	}
+
+	.minor {
+		text-transform: none;
+		font-weight: 100;
+		opacity: .7;
+	}
+}
+
+// TECHNICAL
+
+.technical-skills {
+
+	h3 {
+		margin-top: 15px;
+		margin-bottom: 6px;
+	}
+
+	.technical-header {
+		margin-top: -8px;
+		margin-bottom: 10px;
+	}
+
+	.mandatory,
+	.desirable,
+	.optional {
+
+		.col-content {
+			padding: 16px 20px;
+			height: 132px;
+		}
+	}
+
+	.mandatory .col-content {
+		background: #e8e8e8;
+	}
+
+	.desirable .col-content {
+		background: #eeeeee;
+	}
+
+	.optional .col-content {
+		background: #f6f6f6;
+	}
+}
+
+// GALLERY
+
+.gallery {
+
+	.row {
+		margin-bottom: 20px;
+	}
+}
+
+.call-to-action {
+	padding: 30px 0;
+	border: 2px solid $brand-red;
+	text-align: center;
+	margin: 30px 0 50px;
+	font-size: 32px;
+	font-weight: 900;
+	color: $brand-red;
+
+	.minor {
+		font-weight: 400;
+	}
+}
