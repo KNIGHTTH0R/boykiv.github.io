@@ -552,30 +552,4 @@ h1 {
       font-size: 22px;
       padding: 30px 10px; } }
 
-.link-wrapper {
-  text-align: center;
-  padding-top: 50px; }
-  .link-wrapper a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 16px;
-    max-width: 200px;
-    background: #e23237;
-    margin: 0 auto; }
-
-.vacancy + .vacancy {
-  margin-top: 80px; }
-
-.vacancy {
-  border: 2px solid #e23237;
-  padding: 0 20px 40px;
-  margin: 0 -20px; }
-  .vacancy h1 .major {
-    position: relative;
-    margin: 0 -20px;
-    padding: 0 20px; }
-    .vacancy h1 .major:after {
-      display: none; }
-
 /*# sourceMappingURL=style.css.map */
