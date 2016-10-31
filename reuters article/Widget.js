@@ -31,7 +31,7 @@ lib.properties = {
 
 
 
-(lib.Afterreview17pngcopy2 = function() {
+(lib.Afterreview17pngcopy3 = function() {
 	this.spriteSheet = ss["Widget_atlas_"];
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
@@ -435,14 +435,13 @@ p.nominalBounds = new cjs.Rectangle(-164.9,-30.4,329.9,60.9);
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({_off:true},3).wait(3));
 
 	// Reviews
-	this.instance_3 = new lib.Afterreview17pngcopy2();
-	this.instance_3.setTransform(1.2,0);
+	this.instance_3 = new lib.Afterreview17pngcopy3();
+	this.instance_3.setTransform(0,1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({_off:true},4).wait(2));
 
 	// Trailer
 	this.instance_4 = new lib.Afterreview18();
-	this.instance_4.setTransform(1.2,0);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_4).to({_off:true},5).wait(1));
 
@@ -452,7 +451,7 @@ p.nominalBounds = new cjs.Rectangle(-164.9,-30.4,329.9,60.9);
 	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(6));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(265,241.5,531.2,483);
+p.nominalBounds = new cjs.Rectangle(265,241.5,530,484);
 
 })(lib = lib||{}, images = images||{}, createjs = createjs||{}, ss = ss||{});
 var lib, images, createjs, ss;
