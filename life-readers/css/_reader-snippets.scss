@@ -1,0 +1,927 @@
+.reader-snippet {
+	display: block;
+	position: relative;
+	margin: 40px 0;
+	
+
+	/*____________________________________________________________*/
+	/* AVA */
+
+	.ava-part {
+		width: 270px;
+		font-size: 0;
+		
+		.ava-img {
+			width: 100%;
+		}
+	}
+
+	.info-part {
+		position: absolute;
+		left: 270px;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		border-bottom: 2px solid $border-grey;
+		border-right: 2px solid $border-grey;
+
+
+		/*____________________________________________________________*/
+		/* TOP INFO */
+
+		.top-info {
+			background: $light-grey;
+			position: relative;
+			height: 30px;
+
+			/* Status bar*/
+
+			.status-bar {
+				margin-left: 520px;
+				line-height: 30px;
+				font-size: $small-text;
+				font-weight: $bold;
+
+				// online
+
+				.online-status {
+					float: left;
+					margin-right: 20px;
+
+					&.online {
+						display: inline-block;
+						color: $success;
+						
+						&:before {
+							content: "";
+							display: inline-block;
+							width: 10px;
+							height: 10px;
+							background: $success;
+							border-radius: 50%;
+							margin-right: 3px;
+						}
+						
+						&:after {
+							content: "Online";
+						}
+					}
+				}
+
+				// premium
+
+				.premium-status {
+					float: left;
+					color: $premier;
+					margin-right: 10px;
+					display: none;
+
+					.icon-star {
+						margin-right: 3px;
+						font-size: 13px;
+					}
+
+					&.premium {
+						display: block;
+					}
+				}
+
+				// favourite
+
+				.favourite-status {
+					float: left;
+					overflow: hidden;
+
+					&.favourite {
+						
+						.favourite-link {
+
+							span {
+
+								&:after {
+									content: "Favorite Reader";
+								}
+
+								&:before {
+									content: "\e907";
+									margin-right: 3px;
+									font-family: 'icomoon' !important;
+									speak: none;
+									font-style: normal;
+									font-weight: normal;
+									font-variant: normal;
+									text-transform: none;
+									line-height: 1;
+									-webkit-font-smoothing: antialiased;
+									-moz-osx-font-smoothing: grayscale;
+									font-size: 12px;
+									margin-right: 3px;
+								}
+
+								text-decoration: none;
+							}
+
+							&:before {
+								content: "\e908";
+								margin-right: 3px;
+								font-family: 'icomoon' !important;
+								speak: none;
+								font-style: normal;
+								font-weight: normal;
+								font-variant: normal;
+								text-transform: none;
+								line-height: 1;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+								font-size: 12px;
+								position: absolute;
+								top: 39px;
+								left: 9px;
+								z-index: 2;
+							}
+
+							&:after {
+								content: "Unfavourite";
+								position: absolute;
+								top: 30px;
+								left: 0;
+								line-height: 30px;
+								width: 130px;
+								padding: 0 10px;
+								background: darken($light-grey, 4%);
+								text-decoration: underline;
+								padding-left: 26px;
+								transition: .2s background;
+							}
+
+							&:hover {
+								color: darken($danger, 5%);
+								top: -30px;
+							}
+
+							&:active {
+								color: darken($danger, 10%);
+
+								&:after {
+									background: darken($light-grey, 12%);
+								}
+							}
+						}
+					}
+
+					.favourite-link {
+						color: $link;
+						text-decoration: none;
+						line-height: 30px;
+						display: block;
+						padding: 0 10px;
+						transition: .2s;
+						position: relative;
+
+						&:hover {
+							background: darken($light-grey, 4%);
+							color: darken($link, 4%);
+						}
+
+						&:active {
+							background: darken($light-grey, 12%);
+							color: darken($link, 12%);
+						}
+
+						span {
+
+							&:before {
+								content: "Add to Favorites";
+							}
+
+							text-decoration: underline;
+						}
+
+						&:before {
+							content: "\e901";
+							font-family: 'icomoon' !important;
+							speak: none;
+							font-style: normal;
+							font-weight: normal;
+							font-variant: normal;
+							text-transform: none;
+							line-height: 1;
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+							font-size: 12px;
+							margin-right: 2px;
+						}
+					}
+				}
+			}
+
+			/* Reader name */
+
+			.reader-name {
+				text-transform: uppercase;
+				display: inline;
+				position: absolute;
+				left: -10px;
+				top: 0;
+				margin-left: 30px;
+				font-size: $large-text;
+				font-weight: $bold;
+
+				.name-link {
+					color: $link;
+					line-height: 30px;
+					display: block;
+					padding: 0 10px;
+					transition: .2s;
+
+					&:hover {
+						background: darken($light-grey, 4%);
+						color: darken($link, 4%);
+					}
+
+					&:active {
+						background: darken($light-grey, 12%);
+						color: darken($link, 12%);
+					}
+				}
+			}
+		}
+
+
+		/*____________________________________________________________*/
+		/* MAJOR INFO */
+
+		.major-info {
+			left: 30px;
+			top: 50%;
+			position: absolute;
+			margin-top: 13px;
+			transform: translateY(-50%);
+
+			/* First info */
+
+			.first-info {
+				width: 420px;
+				float: left;
+
+				.brief-info {
+					font-size: 24px;
+					font-weight: 700;
+				}
+
+				.reader-tag-list {
+					font-size: $small-text;
+					margin-top: 12px;
+
+					.reader-tag {
+						display: block;
+						margin: 4px 0;
+
+						&:before {
+							content: "\2014";
+							margin-right: 4px;
+						}
+					}
+				}
+			}
+
+			/* Second info */
+
+			.second-info {
+				margin-left: 490px;
+
+				// info list
+
+				.info-list {
+					overflow: hidden;
+					padding-top: 5px;
+
+					.info-item {
+						float: left;
+						display: block;
+						margin-right: 40px;
+						font-size: $small-text;
+
+						.info-title {
+							font-weight: $light;
+						}
+
+						.info-number {
+							font-weight: $bold;
+						}
+					}
+				}
+
+				// major actions
+
+				.major-actions {
+					margin-top: 20px;
+
+					.major-action-btns {
+
+						.btn-success.call-btn {
+							@include btn($success);
+
+							.icon-phone {
+								margin-right: 3px;
+							}
+						}
+
+						.btn-success.chat-btn {
+							@include btn($success);
+
+							.icon-bubbles2 {
+								margin-right: 4px;
+							}
+						}
+					}
+
+					.actions-description {
+						font-size: $small-text;
+						margin-top: 5px;
+						font-weight: $light;
+
+						.reading-price {
+							display: inline-block;
+							margin-right: 16px;
+						}
+
+						.special-chat-offer {
+							display: inline-block;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.vertical {
+		float: left;
+		margin-top: 30px;
+		margin-bottom: 0;
+
+		& + .vertical {
+			margin-left: 30px;
+		}
+
+		&:nth-child(3n+1) {
+			margin-left: 0;
+		}
+
+		.ava-part {
+			width: 370px;
+		}
+
+		.info-part {
+			position: relative;
+			width: 366px;
+			left: 0;
+			border-left: 2px solid $border-grey;
+
+
+			/*____________________________________________________________*/
+			/* TOP INFO */
+
+			.top-info {
+				background: $light-grey;
+				position: relative;
+				height: 30px;
+
+				/* Status bar*/
+
+				.status-bar {
+					margin-left: 0;
+					line-height: 30px;
+					font-size: $small-text;
+					font-weight: $bold;
+
+					// online
+
+					.online-status {
+						float: left;
+						margin-left: 12px;
+						margin-right: 0;
+
+						&.online {
+							display: inline-block;
+							color: $success;
+							
+							&:before {
+								content: "";
+								display: inline-block;
+								width: 10px;
+								height: 10px;
+								background: $success;
+								border-radius: 50%;
+								margin-right: 3px;
+							}
+							
+							&:after {
+								content: "";
+							}
+						}
+					}
+
+					// premium
+
+					.premium-status {
+						float: left;
+						color: $premier;
+						margin-right: 12px;
+						display: none;
+						font-size: 0;
+						margin-top: 5px;
+						margin-left: 2px;
+						position: relative;
+						z-index: 100;
+
+						.icon-star {
+							margin-right: 3px;
+							font-size: 13px;
+						}
+
+						&.premium {
+							display: block;
+						}
+					}
+
+					// favourite
+
+					.favourite-status {
+						float: right;
+						overflow: hidden;
+
+						&.favourite {
+							
+							.favourite-link {
+
+								span {
+
+									&:after {
+										content: "Favorite Reader";
+									}
+
+									&:before {
+										content: "\e907";
+										margin-right: 3px;
+										font-family: 'icomoon' !important;
+										speak: none;
+										font-style: normal;
+										font-weight: normal;
+										font-variant: normal;
+										text-transform: none;
+										line-height: 1;
+										-webkit-font-smoothing: antialiased;
+										-moz-osx-font-smoothing: grayscale;
+										font-size: 12px;
+										margin-right: 3px;
+									}
+
+									text-decoration: none;
+								}
+
+								&:before {
+									content: "\e908";
+									margin-right: 3px;
+									font-family: 'icomoon' !important;
+									speak: none;
+									font-style: normal;
+									font-weight: normal;
+									font-variant: normal;
+									text-transform: none;
+									line-height: 1;
+									-webkit-font-smoothing: antialiased;
+									-moz-osx-font-smoothing: grayscale;
+									font-size: 12px;
+									position: absolute;
+									top: 39px;
+									left: 9px;
+									z-index: 2;
+								}
+
+								&:after {
+									content: "Unfavourite";
+									position: absolute;
+									top: 30px;
+									left: 0;
+									line-height: 30px;
+									width: 130px;
+									padding: 0 10px;
+									background: darken($light-grey, 4%);
+									text-decoration: underline;
+									padding-left: 26px;
+									transition: .2s background;
+								}
+
+								&:hover {
+									color: darken($danger, 5%);
+									top: -30px;
+								}
+
+								&:active {
+									color: darken($danger, 10%);
+
+									&:after {
+										background: darken($light-grey, 12%);
+									}
+								}
+							}
+						}
+
+						.favourite-link {
+							color: $link;
+							text-decoration: none;
+							line-height: 30px;
+							display: block;
+							padding: 0 10px;
+							transition: .2s;
+							position: relative;
+
+							&:hover {
+								background: darken($light-grey, 4%);
+								color: darken($link, 4%);
+							}
+
+							&:active {
+								background: darken($light-grey, 12%);
+								color: darken($link, 12%);
+							}
+
+							span {
+
+								&:before {
+									content: "Add to Favorites";
+								}
+
+								text-decoration: underline;
+							}
+
+							&:before {
+								content: "\e901";
+								font-family: 'icomoon' !important;
+								speak: none;
+								font-style: normal;
+								font-weight: normal;
+								font-variant: normal;
+								text-transform: none;
+								line-height: 1;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+								font-size: 12px;
+								margin-right: 2px;
+							}
+						}
+					}
+				}
+
+				/* Reader name */
+
+				.reader-name {
+					text-transform: uppercase;
+					display: inline;
+					position: absolute;
+					left: -10px;
+					top: 0;
+					margin-left: 47px;
+					font-size: $general-text;
+					font-weight: $bold;
+
+					.name-link {
+						color: $link;
+						line-height: 30px;
+						display: block;
+						padding: 0 10px;
+						transition: .2s;
+
+						&:hover {
+							background: darken($light-grey, 4%);
+							color: darken($link, 4%);
+						}
+
+						&:active {
+							background: darken($light-grey, 12%);
+							color: darken($link, 12%);
+						}
+					}
+				}
+			}
+
+
+			/*____________________________________________________________*/
+			/* MAJOR INFO */
+
+			.major-info {
+				position: relative;
+				margin-top: 0;
+				transform: none;
+				left: 0;
+				padding: 12px;
+
+				/* First info */
+
+				.first-info {
+					width: auto;
+					float: none;
+
+					.brief-info {
+						font-size: $general-text;
+						font-weight: 700;
+						margin-right: 30px;
+					}
+
+					.reader-tag-list {
+						font-size: $small-text;
+						margin-top: 10px;
+
+						.reader-tag {
+							display: inline;
+							margin: 0;
+
+							&:before {
+								content: "";
+								margin: 0;
+							}
+
+							&:after {
+								content: ", ";
+							}
+						}
+					}
+				}
+
+				/* Second info */
+
+				.second-info {
+					margin-left: 0;
+
+					// info list
+
+					.info-list {
+						overflow: hidden;
+						padding-top: 10px;
+
+						.info-item {
+							float: left;
+							display: block;
+							margin-right: 30px;
+							font-size: $small-text;
+
+							.info-title {
+								font-weight: $light;
+							}
+
+							.info-number {
+								font-weight: $bold;
+							}
+						}
+					}
+
+					// major actions
+
+					.major-actions {
+						margin-top: 14px;
+
+						.major-action-btns {
+							text-align: right;
+
+							.btn-success.call-btn {
+								@include btn($success);
+
+								.icon-phone {
+									margin-right: 3px;
+								}
+							}
+
+							.btn-success.chat-btn {
+								@include btn($success);
+
+								.icon-bubbles2 {
+									margin-right: 4px;
+								}
+							}
+						}
+
+						.actions-description {
+							font-size: $small-text;
+							margin-top: 5px;
+							text-align: right;
+
+							.reading-price {
+								display: inline-block;
+							}
+
+							.special-chat-offer {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+	&.small {
+		float: left;
+		margin: 0;
+
+		& + .vertical {
+			margin-left: 30px;
+		}
+
+		&:nth-child(3n+1) {
+			margin-left: 0;
+		}
+
+		.ava-part {
+			width: 270px;
+		}
+
+		.info-part {
+			position: absolute;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			border: none;
+
+
+			/*____________________________________________________________*/
+			/* TOP INFO */
+
+			.top-info {
+				background: none;
+				position: absolute;
+				top: 0;
+				height: 50px;
+				left: 0;
+				right: 0;
+				background: linear-gradient(to bottom, rgba(0,0,0,.5) 0%, rgba(0,0,0,0) 100%);
+
+				/* Status bar*/
+
+				.status-bar {
+					margin-left: 0;
+
+					// online
+
+					.online-status {
+						margin-left: 8px;
+						margin-right: 0;
+
+						&.online {
+							
+							&:after {
+								content: "";
+							}
+						}
+					}
+
+					// premium
+
+					.premium-status {
+						float: left;
+						color: $premier;
+						margin-right: 12px;
+						display: none;
+						font-size: 0;
+						margin-top: 5px;
+						margin-left: 2px;
+						position: relative;
+						z-index: 100;
+
+						.icon-star {
+							margin-right: 3px;
+							font-size: 13px;
+						}
+
+						&.premium {
+							display: block;
+						}
+					}
+
+					// favourite
+
+					.favourite-status {
+						display: none;
+					}
+				}
+
+				/* Reader name */
+
+				.reader-name {
+					text-transform: none;
+					display: inline;
+					position: absolute;
+					left: -14px;
+					top: 0;
+					margin-left: 47px;
+					font-size: $general-text;
+					font-weight: $bold;
+
+					.name-link {
+						color: #fff;
+						line-height: 30px;
+						display: block;
+						padding: 0 10px;
+						transition: .2s;
+
+						&:hover {
+							background: rgba(0, 0, 0, .1);
+							color: rgba(255, 255, 255, .9);
+						}
+
+						&:active {
+							background: rgba(0, 0, 0, .2);
+							color: rgba(255, 255, 255, .8);
+						}
+					}
+				}
+			}
+
+
+			/*____________________________________________________________*/
+			/* MAJOR INFO */
+
+			.major-info {
+				position: absolute;
+				bottom: 0;
+				margin-top: 0;
+				transform: none;
+				left: 0;
+				right: 0;
+				padding: 12px;
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,.5) 100%);
+
+				/* First info */
+
+				.first-info {
+					display: none;
+				}
+
+				/* Second info */
+
+				.second-info {
+					margin-left: 0;
+
+					// info list
+
+					.info-list {
+						display: none;
+					}
+
+					// major actions
+
+					.major-actions {
+						margin-top: 14px;
+
+						.major-action-btns {
+							position: absolute;
+							bottom: 8px;
+							left: 8px;
+							right: 0;
+
+							.btn-success.call-btn {
+								@include btn($success);
+
+								.icon-phone {
+									margin-right: 3px;
+								}
+							}
+
+							.btn-success.chat-btn {
+								@include btn($success);
+
+								.icon-bubbles2 {
+									margin-right: 4px;
+								}
+							}
+						}
+
+						.actions-description {
+							font-size: $small-text;
+							margin-top: 5px;
+							position: absolute;
+							bottom: 44px;
+							left: 8px;
+							right: 0;
+							font-weight: $bold;
+							color: #fff;
+
+							.reading-price {
+								display: inline-block;
+								margin-right: 10px;
+							}
+
+							.special-chat-offer {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
