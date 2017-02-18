@@ -65,7 +65,7 @@ li {
           background: rgba(255, 255, 255, 0.1); }
 
 .hero-section {
-  background: url(../img/hero.jpg);
+  background: url(../img/hero-img.jpg);
   background-size: 2000px;
   background-position: 50% -530px;
   overflow: hidden; }
