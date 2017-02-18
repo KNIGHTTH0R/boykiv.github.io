@@ -1,0 +1,265 @@
+#home-page {
+
+	.logo-section {
+		margin: 100px 0 0;
+	}
+
+	.galery-section {
+		margin-top: 110px;
+	}
+}
+
+.hero-section {
+	background: url(../img/hero-img.png);
+	background-size: 2000px;
+	background-position: 50% -530px;
+	overflow: hidden;
+
+	h1 {
+		color: #fff;
+		font-size: $h1-text;
+		line-height: 55px;
+		font-weight: 800;
+		margin: 170px 0 130px;
+	}
+
+	.tag-list-subsection {
+		border-top: 1px solid #fff;
+		font-size: 0;
+		padding: 10px 0;
+		text-align: justify;
+		background: rgba(0, 0, 0, .7);
+
+		.wrapper:after {
+			content: "";
+			width: 100%;
+			display: inline-block;
+		}
+
+		.tag-list {
+			display: inline-block;
+			padding: 5px 0;
+
+			.tags-header {
+				font-size: $general-text;
+				color: #fff;
+				font-weight: 400;
+				display: inline-block;
+				margin: 0;
+				line-height: 26px;
+			}
+
+			ul {
+				display: inline-block;
+
+				li {
+					display: inline-block;
+
+					a {
+						color: #fff;
+						text-decoration: none;
+						font-size: $general-text;
+						line-height: 26px;
+						border: 1px solid #fff;
+						display: block;
+						padding: 0 12px;
+						border-radius: 4px;
+						margin-left: 6px;
+						background: rgba(255, 255, 255, .1);
+						position: relative;
+						transition: .2s;
+
+						&:hover {
+							background: rgba(255, 255, 255, .22);
+						}
+
+						&:active {
+							background: rgba(255, 255, 255, .37);
+						}
+
+						&:after {
+							content: "";
+							position: absolute;
+							top: -6px;
+							bottom: -6px;
+							left: -4px;
+							display: block;
+							right: -4px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.portfolio-preview-section {
+	overflow: hidden;
+	position: relative;
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		background: radial-gradient(
+					ellipse at center,
+					rgba(#3b89c9, 1) 0,rgba(#3b89c9, .2) 70%);
+		background-position-y: 0;
+		background-size: 100% 1000px;
+		height: 500px;
+
+		@media (max-width: $laptop) {
+			background-size: 100% 858px;
+			height: 429px;
+		}
+
+		@media (max-width: $tablet) {
+			background-size: 100% 706px;
+			height: 353px;
+		}
+	}
+
+	.project {
+		padding: 0 15px;
+		float: left;
+		width: 33.333%;
+		box-sizing: border-box;
+
+		img {
+			margin-top: 122px;
+			width: 100%;
+		}
+
+		.project-name {
+			font-size: $h3-text;
+			margin: 0;
+			margin-top: 15px;
+			font-weight: 800;
+		}
+
+		.short-description {
+			margin: 4px 0 0;
+			color: #555;
+		}
+	}
+
+	.projects-btn-block {
+		text-align: center;
+		padding-top: 30px;
+
+		.projects-btn {
+			color: $brand-color;
+			border: 1px solid $brand-color;
+			display: inline-block;
+			text-decoration: none;
+			font-size: $general-text;
+			line-height: 26px;
+			padding: 0 12px;
+			border-radius: 4px;
+			margin-left: 6px;
+			font-size: 15px;
+			transition: .2s;
+			background: rgba($brand-color, .07);
+
+			&:hover {
+				color: darken($brand-color, 14%);
+				border: 1px solid darken($brand-color, 14%);
+				background: rgba($brand-color, .14);
+			}
+
+			&:active {
+				color: darken($brand-color, 30%);
+				border: 1px solid darken($brand-color, 30%);
+				background: rgba($brand-color, .26);
+			}
+		}
+	}
+}
+
+.logo-section {
+	background: #f8f8f8;
+	border: 1px solid #dddddd;
+
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			padding: 20px 10px;
+		}
+	}
+}
+
+.testimonials-preview-section {
+	padding: 40px 0 0;
+
+	.testimonials-slider {
+		width: 500px;
+		margin: 0 auto;
+		position: relative;
+		padding-left: 130px;
+
+		.ava {
+			position: absolute;
+			left: 0;
+			top: 0;
+			overflow: hidden;
+			border-radius: 50%;
+			font-size: 0;
+		}
+
+		.text {
+			font-size: $h3-text;
+			font-weight: bold;
+			position: relative;
+			line-height: 24px;
+			color: #222;
+
+			&:before,
+			&:after {
+				color: #999;
+			}
+
+			&:before {
+				content: open-quote;
+				position: absolute;
+				top: 6px;
+				font-size: 40px;
+				left: -21px;
+			}
+
+			&:after {
+				content: close-quote;
+				margin-left: 4px;
+				font-size: 40px;
+				line-height: 0px;
+				vertical-align: -13px;
+			}
+		}
+
+		.customer-info {
+			color: #888;
+			margin-top: 6px;
+		}
+	}
+}
+
+.galery-section {
+	overflow: hidden;
+
+	ul {
+		cursor: grab;
+	}
+
+	.slick-arrow {
+		display: none !important;
+	}
+
+	.slick-dots {
+		display: none !important;
+	}
+}

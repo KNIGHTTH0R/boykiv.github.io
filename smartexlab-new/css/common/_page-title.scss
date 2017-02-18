@@ -1,0 +1,15 @@
+.hero-title {
+	background: url(../img/hero-img.jpg);
+	background-size: 2000px;
+	background-position: 50% -530px;
+	overflow: hidden;
+
+	h1 {
+		color: #fff;
+		font-size: $h1-text;
+		line-height: 55px;
+		font-weight: 800;
+		margin: 140px 0 100px;
+		text-align: center;
+	}
+}

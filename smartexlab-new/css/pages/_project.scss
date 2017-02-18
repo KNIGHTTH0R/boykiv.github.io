@@ -1,0 +1,51 @@
+.projects-preview-section {
+	margin: 85px 0;
+
+	.project {
+		width: 33.333%;
+		padding: 0 15px;
+		float: left;
+		margin: 25px 0;
+		box-sizing: border-box;
+
+		.poject-view {
+
+			img {
+				width: 100%;
+			}
+		}
+
+		a {
+			color: $brand-color;
+			font-size: $h3-text;
+			display: block;
+			text-decoration: none;
+			margin-top: 8px;
+			font-weight: bold;
+
+			span {
+				border-bottom: 2px solid lighten($brand-color, 30%);
+			}
+
+			&:hover {
+				color: darken($brand-color, 15%);
+
+				span {
+					border-bottom: 2px solid lighten($brand-color, 15%);
+				}
+			}
+
+			&:active {
+				color: darken($brand-color, 30%);
+
+				span {
+					border-bottom: 2px solid darken($brand-color, 15%);
+				}
+			}
+		}
+
+		p {
+			margin: 8px 0 0;
+		}
+	}
+}

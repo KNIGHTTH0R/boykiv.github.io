@@ -1,0 +1,113 @@
+.feedback-section {
+	overflow: hidden;
+	padding: 80px 0;
+	background: #d4ddee;
+
+	.form-part {
+		padding: 0 15px;
+		width: 50%;
+		box-sizing: border-box;
+		float: left;
+
+		input,
+		textarea {
+			width: 100%;
+			border: 1px solid $brand-color;
+			padding: 6px 12px;
+			border-radius: 4px;
+			font-size: 15px;
+			font-family: "Open Sans";
+			margin-bottom: 10px;
+			line-height: 22px;
+
+			&:focus {
+				outline: none;
+				box-shadow: 0 0 0 2px rgba($brand-color, .4);
+			}
+		}
+
+		textarea {
+			height: 130px;
+		}
+
+		.send-btn {
+			padding: 7px 30px;
+			line-height: 22px;
+			color: #fff;
+			background: $brand-color;
+			border-radius: 4px;
+			text-decoration: none;
+			display: inline-block;
+			transition: .2s;
+
+			&:hover {
+				background: darken($brand-color, 7%);
+			}
+
+			&:active {
+				background: darken($brand-color, 14%);
+			}
+		}
+	}
+
+	.contact-info {
+		padding: 0 15px;
+		width: 33.333%;
+		margin-left: 40px;
+		float: left;
+		box-sizing: border-box;
+
+		.email,
+		.phone {
+			line-height: 1.5;
+		}
+
+		.address-link {
+			margin-top: 12px;
+			display: block;
+			text-decoration: none;
+
+			.address-text {
+				color: $brand-color;
+				line-height: 1.5;
+			}
+
+			.address-map {
+				border: 1px solid $brand-color;
+				display: inline-block;
+				font-size: 0;
+			}
+
+			&:hover {
+
+				.address-text {
+					color: darken($brand-color, 15%);
+				}
+
+				.address-map {
+					border: 1px solid darken($brand-color, 15%);
+				}
+			}
+
+			&:active {
+
+				.address-text {
+					color: darken($brand-color, 40%);
+				}
+
+				.address-map {
+					border: 1px solid darken($brand-color, 40%);
+				}
+			}
+		}
+	}
+}
+
+.main-footer {
+	background: #000;
+	padding: 50px 0;
+
+	a {
+		color: #fff;
+	}
+}
