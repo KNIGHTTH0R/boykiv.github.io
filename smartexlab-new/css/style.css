@@ -185,7 +185,7 @@ body:not(#home-page) .main-nav {
         background: rgba(59, 137, 201, 0.22); }
 
 .hero-title {
-  background: url(../img/hero-img.jpg);
+  background: url(../img/hero-img.png);
   background-size: 2000px;
   background-position: 50% -530px;
   overflow: hidden; }
