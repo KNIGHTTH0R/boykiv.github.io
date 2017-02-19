@@ -1,51 +1,127 @@
-.projects-preview-section {
-	margin: 85px 0;
+#project-page {
+	padding: 50px 0 0;
 
-	.project {
+}
+
+.breadcrumb {
+	margin-top: 80px;
+
+	a {
+		color: $brand-color;
+	}
+}
+
+.project-name {
+	font-size: $h1-text;
+	font-weight: 800;
+	margin: 0;
+}
+
+.project-short-description {
+	max-width: 66.666%;
+	font-size: $h3-text;
+	margin-top: 10px;
+}
+
+.project-info {
+	padding-top: 50px;
+
+	.collaboration {
 		width: 33.333%;
-		padding: 0 15px;
 		float: left;
-		margin: 25px 0;
-		box-sizing: border-box;
+		padding: 0 15px;
 
-		.poject-view {
-
-			img {
-				width: 100%;
-			}
+		h2 {
+			font-size: $general-text;
+			margin: 0;
 		}
 
-		a {
-			color: $brand-color;
-			font-size: $h3-text;
-			display: block;
-			text-decoration: none;
-			margin-top: 8px;
-			font-weight: bold;
+		ul {
+			font-size: 0;
 
-			span {
-				border-bottom: 2px solid lighten($brand-color, 30%);
-			}
+			li {
+				display: inline-block;
 
-			&:hover {
-				color: darken($brand-color, 15%);
+				a {
+					color: $brand-color;
+					text-decoration: none;
+					font-size: $general-text;
+					line-height: 26px;
+					border: 1px solid $brand-color;
+					display: block;
+					padding: 0 12px;
+					border-radius: 4px;
+					margin-right: 6px;
+					margin-top: 6px;
+					position: relative;
+					transition: .2s;
 
-				span {
-					border-bottom: 2px solid lighten($brand-color, 15%);
+					&:hover {
+						background: rgba($brand-color, .1);
+					}
+
+					&:active {
+						background: rgba($brand-color, .2);
+					}
+
+					&:after {
+						content: "";
+						position: absolute;
+						top: -6px;
+						bottom: -6px;
+						left: -4px;
+						display: block;
+						right: -4px;
+					}
 				}
 			}
+		}
+	}
 
-			&:active {
-				color: darken($brand-color, 30%);
+	.time-efford {
 
-				span {
-					border-bottom: 2px solid darken($brand-color, 15%);
-				}
-			}
+		h2 {
+			font-size: $general-text;
+			margin: 0;
 		}
 
 		p {
-			margin: 8px 0 0;
+			margin: 0 0 14px;
+		}
+	}
+
+	.screenshoots-and-text {
+		padding-top: 50px;
+		padding-bottom: 70px;
+
+		.screenshoots {
+			width: 66.66%;
+			box-sizing: border-box;
+			padding: 0 15px;
+			float: left;
+
+			.slick-arrow {
+				display: none !important;
+			}
+
+			.slick-dots {
+				display: none !important;
+			}
+
+			img {
+				height: 400px;
+			}
+		}
+
+		.project-text {
+			width: 33.33%;
+			box-sizing: border-box;
+			padding: 0 15px;
+			float: left;
+
+			p {
+				margin: 0 0 14px;
+			}
 		}
 	}
 }

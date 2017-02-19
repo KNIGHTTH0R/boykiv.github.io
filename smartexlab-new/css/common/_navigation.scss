@@ -85,9 +85,66 @@ body:not(#home-page) .main-nav {
 						position: absolute;
 						top: 0;
 						bottom: 0;
-						left: -10px;
+						left: -11px;
 						display: block;
 						right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&.dark {
+		border-bottom: 1px solid rgba(#dddddd, 1) !important;
+
+		.logo {
+
+			.logo-svg {
+				fill: $brand-color;
+			}
+		}
+
+		ul {
+
+			li {
+
+				&.active {
+
+					span {
+						border-bottom: 1px solid rgba($brand-color, 1);
+					}
+				}
+
+				a {
+					color: $brand-color;
+				}
+
+				&:not(.active) {
+
+					a {
+
+						&:hover {
+							background: rgba($brand-color, .15);
+						}
+
+						&:active {
+							background: rgba($brand-color, .26);
+						}
+					}
+				}
+
+				&.contact-link {
+
+					a {
+						border: 1px solid $brand-color;
+
+						&:hover {
+							background: rgba($brand-color, .1);
+						}
+
+						&:active {
+							background: rgba($brand-color, .22);
+						}
 					}
 				}
 			}

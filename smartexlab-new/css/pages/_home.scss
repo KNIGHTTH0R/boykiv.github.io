@@ -163,18 +163,17 @@
 			margin-left: 6px;
 			font-size: 15px;
 			transition: .2s;
-			background: rgba($brand-color, .07);
 
 			&:hover {
 				color: darken($brand-color, 14%);
 				border: 1px solid darken($brand-color, 14%);
-				background: rgba($brand-color, .14);
+				background: rgba($brand-color, .07);
 			}
 
 			&:active {
 				color: darken($brand-color, 30%);
 				border: 1px solid darken($brand-color, 30%);
-				background: rgba($brand-color, .26);
+				background: rgba($brand-color, .14);
 			}
 		}
 	}
