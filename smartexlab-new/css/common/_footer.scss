@@ -5,6 +5,24 @@
 	// background: $brand-color;
 	// background: mix(#000, $brand-color);
 	border-bottom: 1px solid #444;
+	background: url(../img/map.png) 0 50%;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		background: rgba(0, 0, 0, .7);
+	}
+
+	.wrapper {
+		position: relative;
+		z-index: 2;
+	}
 
 	.form-part {
 		padding: 0 15px;
@@ -38,7 +56,7 @@
 			padding: 5px 30px;
 			line-height: 22px;
 			color: #fff;
-			background: $brand-color;
+			border: 1px solid #fff;
 			border-radius: 4px;
 			text-decoration: none;
 			display: inline-block;
@@ -60,7 +78,7 @@
 		margin-left: 40px;
 		float: left;
 		box-sizing: border-box;
-		// color: #fff;
+		color: #fff;
 
 		.email {
 
@@ -94,25 +112,15 @@
 		.phone {
 			line-height: 1;
 			margin-bottom: 10px;
-			font-weight: 100;
+			font-weight: 600;
 		}
 
 		.address-link {
 			margin-top: 18px;
 			display: block;
 			text-decoration: none;
-
-			.address-text {
-				color: $brand-color;
-				line-height: 1.5;
-				font-weight: 700;
-			}
-
-			.address-map {
-				border: 1px solid $brand-color;
-				display: inline-block;
-				font-size: 0;
-			}
+			color: #fff;
+			font-weight: 700;
 
 			&:hover {
 
