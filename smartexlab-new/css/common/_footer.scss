@@ -2,6 +2,9 @@
 	overflow: hidden;
 	padding: 80px 0;
 	background: #d4ddee;
+	// background: $brand-color;
+	// background: mix(#000, $brand-color);
+	border-bottom: 1px solid #444;
 
 	.form-part {
 		padding: 0 15px;
@@ -12,7 +15,8 @@
 		input,
 		textarea {
 			width: 100%;
-			border: 1px solid $brand-color;
+			border: 2px solid $brand-color;
+			border: 2px solid mix(#fff, $brand-color, 40%);
 			padding: 6px 12px;
 			border-radius: 4px;
 			font-size: 15px;
@@ -22,7 +26,7 @@
 
 			&:focus {
 				outline: none;
-				box-shadow: 0 0 0 2px rgba($brand-color, .4);
+				// box-shadow: 0 0 0 2px rgba($brand-color, .4);
 			}
 		}
 
@@ -31,7 +35,7 @@
 		}
 
 		.send-btn {
-			padding: 7px 30px;
+			padding: 5px 30px;
 			line-height: 22px;
 			color: #fff;
 			background: $brand-color;
@@ -56,20 +60,52 @@
 		margin-left: 40px;
 		float: left;
 		box-sizing: border-box;
+		// color: #fff;
+
+		.email {
+
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 18px;
+				height: 20px;
+				background: url('../img/mail.svg');
+				background-size: 18px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+
+		.phone {
+
+			&:before {
+				content: "";
+				display: inline-block;
+				width: 19px;
+				height: 19px;
+				background: url('../img/phone.svg');
+				background-size: 19px;
+				vertical-align: middle;
+				margin-right: 2px;
+			}
+		}
 
 		.email,
 		.phone {
-			line-height: 1.5;
+			line-height: 1;
+			margin-bottom: 10px;
+			font-weight: 100;
 		}
 
 		.address-link {
-			margin-top: 12px;
+			margin-top: 18px;
 			display: block;
 			text-decoration: none;
 
 			.address-text {
 				color: $brand-color;
 				line-height: 1.5;
+				font-weight: 700;
 			}
 
 			.address-map {

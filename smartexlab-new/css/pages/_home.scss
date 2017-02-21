@@ -54,38 +54,48 @@
 
 				li {
 					display: inline-block;
+				}
+			}
+		}
+	}
 
-					a {
-						color: #fff;
-						text-decoration: none;
-						font-size: $general-text;
-						line-height: 26px;
-						border: 1px solid #fff;
+	.services-subsection,
+	.technologies-subsection {
+
+		ul {
+
+			li {
+
+				span {
+					color: #fff;
+					text-decoration: none;
+					font-size: $general-text;
+					line-height: 26px;
+					border: 1px solid #fff;
+					display: block;
+					padding: 0 12px;
+					border-radius: 4px;
+					margin-left: 6px;
+					background: rgba(255, 255, 255, .1);
+					position: relative;
+					transition: .2s;
+				
+					// &:hover {
+					// 	background: rgba(255, 255, 255, .22);
+					// }
+				
+					// &:active {
+					// 	background: rgba(255, 255, 255, .37);
+					// }
+				
+					&:after {
+						content: "";
+						position: absolute;
+						top: -6px;
+						bottom: -6px;
+						left: -4px;
 						display: block;
-						padding: 0 12px;
-						border-radius: 4px;
-						margin-left: 6px;
-						background: rgba(255, 255, 255, .1);
-						position: relative;
-						transition: .2s;
-
-						&:hover {
-							background: rgba(255, 255, 255, .22);
-						}
-
-						&:active {
-							background: rgba(255, 255, 255, .37);
-						}
-
-						&:after {
-							content: "";
-							position: absolute;
-							top: -6px;
-							bottom: -6px;
-							left: -4px;
-							display: block;
-							right: -4px;
-						}
+						right: -4px;
 					}
 				}
 			}
@@ -105,9 +115,9 @@
 		left: 0;
 		right: 0;
 		z-index: -1;
-		background: radial-gradient(
+		/* background: radial-gradient(
 					ellipse at center,
-					rgba(#3b89c9, 1) 0,rgba(#3b89c9, .2) 70%);
+					rgba(#3b89c9, 1) 0,rgba(#3b89c9, .2) 70%); */
 		background-position-y: 0;
 		background-size: 100% 1000px;
 		height: 500px;
@@ -123,16 +133,28 @@
 		}
 	}
 
+	.project-images {
+		border-bottom: 1px solid #ddd;
+
+		.project-img {
+			padding: 0 15px;
+			float: left;
+			width: 33.333%;
+			box-sizing: border-box;
+			font-size: 0;
+
+			img {
+				margin-top: 122px;
+				width: 100%;
+			}
+		}
+	}
+
 	.project {
 		padding: 0 15px;
 		float: left;
 		width: 33.333%;
 		box-sizing: border-box;
-
-		img {
-			margin-top: 122px;
-			width: 100%;
-		}
 
 		.project-name {
 			font-size: $h3-text;
@@ -216,7 +238,7 @@
 			font-weight: bold;
 			position: relative;
 			line-height: 24px;
-			color: #222;
+			color: #333;
 
 			&:before,
 			&:after {
@@ -252,6 +274,10 @@
 
 	ul {
 		cursor: grab;
+	}
+
+	.slick-slide {
+		padding: 0 20px 40px;
 	}
 
 	.slick-arrow {

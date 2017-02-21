@@ -10,6 +10,10 @@
 
 		.poject-view {
 
+			&.border {
+				outline: 1px solid #ddd;
+			}
+
 			img {
 				width: 100%;
 			}

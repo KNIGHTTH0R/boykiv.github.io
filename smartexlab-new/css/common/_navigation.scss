@@ -45,6 +45,7 @@ body:not(#home-page) .main-nav {
 				display: block;
 				text-decoration: none;
 				transition: .2s;
+				border-radius: 4px;
 			}
 
 			&:not(.active) {
