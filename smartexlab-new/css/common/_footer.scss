@@ -1,157 +1,181 @@
-.feedback-section {
-	overflow: hidden;
-	padding: 80px 0;
-	background: #d4ddee;
-	// background: $brand-color;
-	// background: mix(#000, $brand-color);
-	border-bottom: 1px solid #444;
-	background: url(../img/map.png) 0 50%;
-	position: relative;
-
-	&:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		display: block;
-		background: rgba(0, 0, 0, .7);
-	}
-
-	.wrapper {
-		position: relative;
-		z-index: 2;
-	}
-
-	.form-part {
-		padding: 0 15px;
-		width: 50%;
-		box-sizing: border-box;
-		float: left;
-
-		input,
-		textarea {
-			width: 100%;
-			border: 2px solid $brand-color;
-			border: 2px solid mix(#fff, $brand-color, 40%);
-			padding: 6px 12px;
-			border-radius: 4px;
-			font-size: 15px;
-			font-family: "Open Sans";
-			margin-bottom: 10px;
-			line-height: 22px;
-
-			&:focus {
-				outline: none;
-				// box-shadow: 0 0 0 2px rgba($brand-color, .4);
-			}
-		}
-
-		textarea {
-			height: 130px;
-		}
-
-		.send-btn {
-			padding: 5px 30px;
-			line-height: 22px;
-			color: #fff;
-			border: 1px solid #fff;
-			border-radius: 4px;
-			text-decoration: none;
-			display: inline-block;
-			transition: .2s;
-
-			&:hover {
-				background: darken($brand-color, 7%);
-			}
-
-			&:active {
-				background: darken($brand-color, 14%);
-			}
-		}
-	}
-
-	.contact-info {
-		padding: 0 15px;
-		width: 33.333%;
-		margin-left: 40px;
-		float: left;
-		box-sizing: border-box;
-		color: #fff;
-
-		.email {
-
-			&:before {
-				content: "";
-				display: inline-block;
-				width: 18px;
-				height: 20px;
-				background: url('../img/mail.svg');
-				background-size: 18px;
-				vertical-align: middle;
-				margin-right: 5px;
-			}
-		}
-
-		.phone {
-
-			&:before {
-				content: "";
-				display: inline-block;
-				width: 19px;
-				height: 19px;
-				background: url('../img/phone.svg');
-				background-size: 19px;
-				vertical-align: middle;
-				margin-right: 2px;
-			}
-		}
-
-		.email,
-		.phone {
-			line-height: 1;
-			margin-bottom: 10px;
-			font-weight: 600;
-		}
-
-		.address-link {
-			margin-top: 18px;
-			display: block;
-			text-decoration: none;
-			color: #fff;
-			font-weight: 700;
-
-			&:hover {
-
-				.address-text {
-					color: darken($brand-color, 15%);
-				}
-
-				.address-map {
-					border: 1px solid darken($brand-color, 15%);
-				}
-			}
-
-			&:active {
-
-				.address-text {
-					color: darken($brand-color, 40%);
-				}
-
-				.address-map {
-					border: 1px solid darken($brand-color, 40%);
-				}
-			}
-		}
-	}
-}
-
 .main-footer {
-	background: #000;
-	padding: 50px 0;
+	background: url(../img/map.png) 50% -80px;
 
-	a {
-		color: #fff;
+	.feedback-subsection {
+		overflow: hidden;
+		padding: 80px 0;
+		border-bottom: 1px solid #444;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			background: rgba(0, 0, 0, .7);
+		}
+
+		.wrapper {
+			position: relative;
+			z-index: 2;
+		}
+
+		.form-part {
+			padding: 0 15px;
+			width: 50%;
+			box-sizing: border-box;
+			float: left;
+
+			input,
+			textarea {
+				width: 100%;
+				border: 1px solid #fff;
+				padding: 6px 12px;
+				border-radius: 4px;
+				font-size: 15px;
+				font-family: "Open Sans";
+				margin-bottom: 10px;
+				line-height: 22px;
+				background: rgba(0, 0, 0, .7);
+				color: #fff;
+
+				&:focus {
+					outline: none;
+					// box-shadow: 0 0 0 2px rgba($brand-color, .4);
+				}
+			}
+
+			textarea {
+				height: 130px;
+			}
+
+			.send-btn {
+				padding: 5px 30px;
+				line-height: 22px;
+				color: #fff;
+				border: 1px solid #fff;
+				border-radius: 4px;
+				text-decoration: none;
+				display: inline-block;
+				transition: .2s;
+
+				&:hover {
+					background: darken($brand-color, 7%);
+				}
+
+				&:active {
+					background: darken($brand-color, 14%);
+				}
+			}
+		}
+
+		.contact-info {
+			padding: 0 15px;
+			width: 33.333%;
+			margin-left: 40px;
+			float: left;
+			box-sizing: border-box;
+			color: #fff;
+
+			.email {
+
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 18px;
+					height: 20px;
+					background: url('../img/mail.svg');
+					background-size: 18px;
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
+
+			.phone {
+
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 19px;
+					height: 19px;
+					background: url('../img/phone.svg');
+					background-size: 19px;
+					vertical-align: middle;
+					margin-right: 2px;
+				}
+			}
+
+			.email,
+			.phone {
+				line-height: 1;
+				margin-bottom: 10px;
+				font-weight: 600;
+			}
+
+			.address-link {
+				margin-top: 28px;
+				display: block;
+				text-decoration: none;
+				color: #fff;
+				font-weight: 700;
+				transition: color .2s;
+
+				.address-text {
+					border-bottom: 1px solid rgba(255, 255, 255, 0);
+					transition: .2s;
+				}
+
+				&:hover {
+
+					.address-text {
+						border-bottom: 1px solid #fff;
+					}
+				}
+
+				&:active {
+					color: rgba(255, 255, 255, .7);
+
+					.address-text {
+						border-bottom: 1px solid rgba(255, 255, 255, .7);
+					}
+				}
+
+				.map-img {
+					display: block;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+
+	.footer-links-subsection {
+		padding: 50px 0;
+		position: relative;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: block;
+			background: rgba(0, 0, 0, .96);
+		}
+
+		.wrapper {
+			position: relative;
+			z-index: 2;
+		}
+
+		.footer-menu {
+
+			a {
+				color: #fff;
+			}
+		}
 	}
 }

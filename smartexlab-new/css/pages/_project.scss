@@ -111,7 +111,38 @@
 			}
 
 			img {
-				height: 400px;
+				width: 100%;
+			}
+
+			.screenshoots-list {
+			}
+
+			.screenshoots-preview-list {
+
+				.slick-list {
+					margin: 0 -2px;
+
+					.slick-slide {
+						padding: 4px 2px;
+						cursor: pointer;
+						position: relative;
+						outline: none;
+
+						&.slick-current {
+
+							&:after {
+								content: "";
+								position: absolute;
+								top: 4px;
+								right: 2px;
+								bottom: 4px;
+								left: 2px;
+								z-index: 2;
+								background: rgba(0, 122, 255, .5);
+							}
+						}
+					}
+				}
 			}
 		}
 
