@@ -521,7 +521,14 @@ body:not(#home-page) .main-nav {
 .breadcrumb {
   margin-top: 80px; }
   .breadcrumb a {
-    color: #3b89c9; }
+    color: #3b89c9;
+    position: relative;
+    z-index: 1;
+    transition: .2s; }
+    .breadcrumb a:hover {
+      color: #22537c; }
+    .breadcrumb a:active {
+      color: #0c1e2c; }
 
 .project-name {
   font-size: 50px;
@@ -536,18 +543,24 @@ body:not(#home-page) .main-nav {
 
 .project-info {
   padding-top: 50px; }
-  .project-info .collaboration {
-    width: 33.333%;
+  .project-info .collaboration,
+  .project-info .technology-stack {
+    width: 27%;
     float: left;
-    padding: 0 15px; }
-    .project-info .collaboration h2 {
+    padding: 0 15px;
+    box-sizing: border-box; }
+    .project-info .collaboration h2,
+    .project-info .technology-stack h2 {
       font-size: 15px;
       margin: 0; }
-    .project-info .collaboration ul {
+    .project-info .collaboration ul,
+    .project-info .technology-stack ul {
       font-size: 0; }
-      .project-info .collaboration ul li {
+      .project-info .collaboration ul li,
+      .project-info .technology-stack ul li {
         display: inline-block; }
-        .project-info .collaboration ul li a {
+        .project-info .collaboration ul li span,
+        .project-info .technology-stack ul li span {
           color: #3b89c9;
           text-decoration: none;
           font-size: 15px;
@@ -559,12 +572,10 @@ body:not(#home-page) .main-nav {
           margin-right: 6px;
           margin-top: 6px;
           position: relative;
-          transition: .2s; }
-          .project-info .collaboration ul li a:hover {
-            background: rgba(59, 137, 201, 0.1); }
-          .project-info .collaboration ul li a:active {
-            background: rgba(59, 137, 201, 0.2); }
-          .project-info .collaboration ul li a:after {
+          transition: .2s;
+          cursor: default; }
+          .project-info .collaboration ul li span:after,
+          .project-info .technology-stack ul li span:after {
             content: "";
             position: absolute;
             top: -6px;
@@ -572,12 +583,19 @@ body:not(#home-page) .main-nav {
             left: -4px;
             display: block;
             right: -4px; }
-  .project-info .time-efford h2 {
-    font-size: 15px;
-    margin: 0; }
-  .project-info .time-efford p {
-    margin: 0 0 14px;
-    color: #777; }
+  .project-info .technology-stack {
+    width: 48%; }
+  .project-info .time-efford {
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+    box-sizing: border-box; }
+    .project-info .time-efford h2 {
+      font-size: 15px;
+      margin: 0; }
+    .project-info .time-efford p {
+      margin: 0 0 14px;
+      color: #777; }
   .project-info .screenshoots-and-text {
     padding-top: 50px;
     padding-bottom: 70px; }
@@ -609,12 +627,38 @@ body:not(#home-page) .main-nav {
             z-index: 2;
             background: rgba(0, 122, 255, 0.5); }
     .project-info .screenshoots-and-text .project-text {
-      width: 33.33%;
+      width: 25%;
       box-sizing: border-box;
       padding: 0 15px;
       float: left; }
       .project-info .screenshoots-and-text .project-text p {
         margin: 0 0 14px; }
+
+.main-services-section .main-service {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 0 15px; }
+  .main-services-section .main-service .circle {
+    width: 150px;
+    height: 150px;
+    background: red;
+    border-radius: 50%;
+    position: relative; }
+    .main-services-section .main-service .circle:after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 120px;
+      height: 120px;
+      margin: -60px 0 0 -60px;
+      background: #fff;
+      content: "";
+      border-radius: 50%; }
+  .main-services-section .main-service h3 {
+    margin: 0; }
+  .main-services-section .main-service p {
+    margin: 0; }
 
 .main-services-section .main-service {
   width: 25%;

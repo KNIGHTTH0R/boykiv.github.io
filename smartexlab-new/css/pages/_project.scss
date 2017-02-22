@@ -8,6 +8,17 @@
 
 	a {
 		color: $brand-color;
+		position: relative;
+		z-index: 1;
+		transition: .2s;
+
+		&:hover {
+			color: darken($brand-color, 20%);
+		}
+
+		&:active {
+			color: darken($brand-color, 40%);
+		}
 	}
 }
 
@@ -15,6 +26,7 @@
 	font-size: $h1-text;
 	font-weight: 800;
 	margin: 0;
+
 }
 
 .project-short-description {
@@ -27,10 +39,12 @@
 .project-info {
 	padding-top: 50px;
 
-	.collaboration {
-		width: 33.333%;
+	.collaboration,
+	.technology-stack {
+		width: 27%;
 		float: left;
 		padding: 0 15px;
+		box-sizing: border-box;
 
 		h2 {
 			font-size: $general-text;
@@ -43,7 +57,7 @@
 			li {
 				display: inline-block;
 
-				a {
+				span {
 					color: $brand-color;
 					text-decoration: none;
 					font-size: $general-text;
@@ -56,14 +70,15 @@
 					margin-top: 6px;
 					position: relative;
 					transition: .2s;
+					cursor: default;
 
-					&:hover {
-						background: rgba($brand-color, .1);
-					}
+					// &:hover {
+					// 	background: rgba($brand-color, .1);
+					// }
 
-					&:active {
-						background: rgba($brand-color, .2);
-					}
+					// &:active {
+					// 	background: rgba($brand-color, .2);
+					// }
 
 					&:after {
 						content: "";
@@ -79,7 +94,15 @@
 		}
 	}
 
+	.technology-stack {
+		width: 48%;
+	}
+
 	.time-efford {
+		width: 25%;
+		float: left;
+		padding: 0 15px;
+		box-sizing: border-box;
 
 		h2 {
 			font-size: $general-text;
@@ -147,7 +170,7 @@
 		}
 
 		.project-text {
-			width: 33.33%;
+			width: 25%;
 			box-sizing: border-box;
 			padding: 0 15px;
 			float: left;

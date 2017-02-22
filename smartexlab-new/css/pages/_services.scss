@@ -39,3 +39,41 @@
 		}
 	}
 }
+
+.main-services-section {
+
+	.main-service {
+		width: 25%;
+		float: left;
+		box-sizing: border-box;
+		padding: 0 15px;
+
+		.circle {
+			width: 150px;
+			height: 150px;
+			background: red;
+			border-radius: 50%;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 120px;
+				height: 120px;
+				margin: -60px 0 0 -60px;
+				background: #fff;
+				content: "";
+				border-radius: 50%;
+			}
+		}
+
+		h3 {
+			margin: 0;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+}
