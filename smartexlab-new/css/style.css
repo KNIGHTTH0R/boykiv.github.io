@@ -165,12 +165,12 @@ body:not(#home-page) .main-nav {
   .main-nav .logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 18px;
     margin: 5px 0;
     font-size: 0; }
-    .main-nav .logo .logo-svg {
+    .main-nav .logo svg {
       fill: #fff;
-      width: 150px;
+      width: 140px;
       height: 50px; }
   .main-nav ul {
     text-align: right;
@@ -215,23 +215,7 @@ body:not(#home-page) .main-nav {
             display: block;
             right: 0; }
   .main-nav.dark {
-    border-bottom: 1px solid #dddddd !important; }
-    .main-nav.dark .logo .logo-svg {
-      fill: #3b89c9; }
-    .main-nav.dark ul li.active span {
-      border-bottom: 1px solid #3b89c9; }
-    .main-nav.dark ul li a {
-      color: #3b89c9; }
-    .main-nav.dark ul li:not(.active) a:hover {
-      background: rgba(59, 137, 201, 0.15); }
-    .main-nav.dark ul li:not(.active) a:active {
-      background: rgba(59, 137, 201, 0.26); }
-    .main-nav.dark ul li.contact-link a {
-      border: 1px solid #3b89c9; }
-      .main-nav.dark ul li.contact-link a:hover {
-        background: rgba(59, 137, 201, 0.1); }
-      .main-nav.dark ul li.contact-link a:active {
-        background: rgba(59, 137, 201, 0.22); }
+    background: #3b89c9; }
 
 .hero-title {
   background: url(../img/hero-img.png);
@@ -634,56 +618,51 @@ body:not(#home-page) .main-nav {
       .project-info .screenshoots-and-text .project-text p {
         margin: 0 0 14px; }
 
-.main-services-section .main-service {
-  width: 25%;
-  float: left;
-  box-sizing: border-box;
-  padding: 0 15px; }
-  .main-services-section .main-service .circle {
-    width: 150px;
-    height: 150px;
-    background: red;
-    border-radius: 50%;
-    position: relative; }
-    .main-services-section .main-service .circle:after {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 120px;
-      height: 120px;
-      margin: -60px 0 0 -60px;
-      background: #fff;
-      content: "";
-      border-radius: 50%; }
-  .main-services-section .main-service h3 {
-    margin: 0; }
-  .main-services-section .main-service p {
-    margin: 0; }
+.services-with-short-description {
+  padding: 70px 0;
+  border-bottom: 1px solid #ddd; }
+  .services-with-short-description h2 {
+    margin: 12px 0 4px;
+    font-size: 40px; }
+  .services-with-short-description .service {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px; }
+    .services-with-short-description .service h3 {
+      margin: 12px 0 4px;
+      font-size: 20px; }
+    .services-with-short-description .service p {
+      margin: 0; }
 
-.main-services-section .main-service {
-  width: 25%;
-  float: left;
-  box-sizing: border-box;
-  padding: 0 15px; }
-  .main-services-section .main-service .circle {
+.main-services-section .service {
+  width: 25%; }
+  .main-services-section .service .circle {
     width: 150px;
     height: 150px;
     background: red;
     border-radius: 50%;
     position: relative; }
-    .main-services-section .main-service .circle:after {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 120px;
-      height: 120px;
-      margin: -60px 0 0 -60px;
-      background: #fff;
-      content: "";
-      border-radius: 50%; }
-  .main-services-section .main-service h3 {
-    margin: 0; }
-  .main-services-section .main-service p {
-    margin: 0; }
+.main-services-section.web-development h3 {
+  color: #3b89c9; }
+.main-services-section.mobile h3 {
+  color: #ed6d23; }
+.main-services-section.ui-ux h3 {
+  color: #c52929; }
+.main-services-section.qa h3 {
+  color: #692c91; }
+
+.process-services-section .service {
+  width: 50%; }
+  .process-services-section .service .chart {
+    height: 150px;
+    background: red;
+    position: relative; }
+
+.models-services-section .service {
+  width: 33.333%; }
+  .models-services-section .service .chart {
+    height: 150px;
+    background: red;
+    position: relative; }
 
 /*# sourceMappingURL=style.css.map */
