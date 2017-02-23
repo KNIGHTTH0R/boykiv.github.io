@@ -1,7 +1,8 @@
 @import url(normalize.css);
 body {
   font-size: 15px;
-  color: #333; }
+  color: #333;
+  font-family: "Open Sans"; }
 
 ul {
   padding: 0;
@@ -32,6 +33,160 @@ li {
   @media (max-width: 768px) {
     .wrapper {
       width: auto; } }
+
+.col-1 {
+  width: 8.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-2 {
+  width: 16.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-3 {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-4 {
+  width: 33.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-5 {
+  width: 41.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-6 {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-7 {
+  width: 58.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-8 {
+  width: 66.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-9 {
+  width: 75%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10 {
+  width: 83.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-11 {
+  width: 91.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-12 {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-1 {
+  width: 10%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-2 {
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-3 {
+  width: 30%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-4 {
+  width: 40%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-5 {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-6 {
+  width: 60%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-7 {
+  width: 70%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-8 {
+  width: 80%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-9 {
+  width: 90%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10-10 {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
 
 .main-footer {
   background: url(../img/map.png) 50% -80px; }
@@ -618,12 +773,58 @@ body:not(#home-page) .main-nav {
       .project-info .screenshoots-and-text .project-text p {
         margin: 0 0 14px; }
 
+#services-page {
+  /* CHARTS */ }
+  #services-page canvas {
+    width: 140px;
+    height: 140px; }
+  #services-page input.khob {
+    font-family: "Open Sans" !important;
+    font-size: 20px !important;
+    text-align: right !important;
+    margin-top: 38px !important;
+    margin-left: -153px !important;
+    font-weight: 800 !important; }
+  #services-page .progress-bar.horizontal-pb {
+    width: 100%;
+    height: 40px;
+    background-color: #eee; }
+    #services-page .progress-bar.horizontal-pb .idicator {
+      height: 100%;
+      width: 50%;
+      background-color: #0577BD; }
+    #services-page .progress-bar.horizontal-pb .label {
+      font-weight: bold;
+      color: #fff;
+      line-height: 40px;
+      margin-left: 10px; }
+  #services-page .progress-bar.vertical-pb {
+    width: 270px;
+    height: 200px;
+    background-color: transparent;
+    position: relative; }
+    #services-page .progress-bar.vertical-pb .idicator {
+      height: 40%;
+      width: 100%;
+      background-color: #0577BD;
+      position: absolute;
+      bottom: 0; }
+    #services-page .progress-bar.vertical-pb .label {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-weight: bold; }
+
 .services-with-short-description {
   padding: 70px 0;
   border-bottom: 1px solid #ddd; }
   .services-with-short-description h2 {
-    margin: 12px 0 4px;
-    font-size: 40px; }
+    margin: 0 0 18px;
+    font-weight: 100;
+    font-size: 34px;
+    text-align: center; }
   .services-with-short-description .service {
     float: left;
     box-sizing: border-box;
@@ -636,20 +837,14 @@ body:not(#home-page) .main-nav {
 
 .main-services-section .service {
   width: 25%; }
-  .main-services-section .service .circle {
-    width: 150px;
-    height: 150px;
-    background: red;
-    border-radius: 50%;
-    position: relative; }
-.main-services-section.web-development h3 {
-  color: #3b89c9; }
-.main-services-section.mobile h3 {
-  color: #ed6d23; }
-.main-services-section.ui-ux h3 {
-  color: #c52929; }
-.main-services-section.qa h3 {
-  color: #692c91; }
+  .main-services-section .service.web-development h3 {
+    color: #3b89c9; }
+  .main-services-section .service.mobile h3 {
+    color: #ed6d23; }
+  .main-services-section .service.ui-ux h3 {
+    color: #c52929; }
+  .main-services-section .service.qa h3 {
+    color: #692c91; }
 
 .process-services-section .service {
   width: 50%; }
@@ -657,6 +852,10 @@ body:not(#home-page) .main-nav {
     height: 150px;
     background: red;
     position: relative; }
+  .process-services-section .service.scrum h3 {
+    color: #3b89c9; }
+  .process-services-section .service.kanban h3 {
+    color: #ed6d23; }
 
 .models-services-section .service {
   width: 33.333%; }
@@ -664,5 +863,148 @@ body:not(#home-page) .main-nav {
     height: 150px;
     background: red;
     position: relative; }
+  .models-services-section .service.team h3 {
+    color: #3b89c9; }
+  .models-services-section .service.mvp h3 {
+    color: #ed6d23; }
+  .models-services-section .service.cycle h3 {
+    color: #c52929; }
+
+.contract-types-section {
+  padding: 70px 0;
+  border-bottom: 1px solid #ddd; }
+  .contract-types-section h2 {
+    margin: 0 0 18px;
+    font-weight: 100;
+    font-size: 34px; }
+  .contract-types-section h3 {
+    margin: 12px 0 4px;
+    font-size: 20px;
+    text-align: center; }
+  .contract-types-section p {
+    margin: 0; }
+  .contract-types-section .time-materials h3 {
+    color: #3b89c9; }
+  .contract-types-section .fixed-price h3 {
+    color: #ed6d23; }
+
+.technologies-services-section {
+  background: #f8f8f8;
+  border-bottom: 1px solid #dddddd;
+  padding: 70px 0; }
+  .technologies-services-section h2 {
+    margin: 0 0 18px;
+    font-weight: 100;
+    font-size: 34px;
+    text-align: center; }
+  .technologies-services-section h3 {
+    margin: 12px 0 4px;
+    font-size: 20px; }
+  .technologies-services-section ul {
+    font-size: 0; }
+    .technologies-services-section ul li {
+      display: inline-block; }
+      .technologies-services-section ul li span {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 26px;
+        display: block;
+        padding: 1px 13px;
+        border-radius: 4px;
+        margin-right: 6px;
+        margin-bottom: 6px;
+        position: relative;
+        transition: .2s; }
+        .technologies-services-section ul li span:after {
+          content: "";
+          position: absolute;
+          top: -6px;
+          bottom: -6px;
+          left: -4px;
+          display: block;
+          right: -4px; }
+  .technologies-services-section p {
+    margin: 4px 0 0; }
+  .technologies-services-section .experts-in h3 {
+    color: #3b89c9; }
+  .technologies-services-section .experts-in span {
+    background: #3b89c9; }
+  .technologies-services-section .key-stack h3 {
+    color: #ed6d23; }
+  .technologies-services-section .key-stack span {
+    background: #ed6d23; }
+  .technologies-services-section .other-tech h3 {
+    color: #c52929; }
+  .technologies-services-section .other-tech span {
+    background: #c52929; }
+
+.verticals-section {
+  padding: 70px 0; }
+  .verticals-section h2 {
+    margin: 0 0 18px;
+    font-weight: 100;
+    font-size: 34px;
+    text-align: center; }
+  .verticals-section h3 {
+    margin: 12px 0 4px;
+    font-size: 20px;
+    text-align: center; }
+  .verticals-section .global-hr h3 {
+    color: #3b89c9; }
+  .verticals-section .fintech h3 {
+    color: #ed6d23; }
+  .verticals-section .ecommerce h3 {
+    color: #c52929; }
+  .verticals-section .entertainment h3 {
+    color: #692c91; }
+  .verticals-section .other h3 {
+    color: #f9a823; }
+
+.clients-section {
+  padding: 70px 0;
+  text-align: center; }
+  .clients-section .clients-chart {
+    width: 230px;
+    display: inline-block;
+    padding: 0 15px;
+    box-sizing: border-box;
+    vertical-align: top; }
+    .clients-section .clients-chart input {
+      opacity: 0; }
+  .clients-section .clients-description {
+    width: 240px;
+    display: inline-block;
+    padding: 0 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: left; }
+  .clients-section .clients-text {
+    width: 350px;
+    display: inline-block;
+    padding: 0 15px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-align: left; }
+  .clients-section .startups-description:before {
+    background: #3b89c9; }
+  .clients-section .mid-size-description:before {
+    background: #f9a823; }
+  .clients-section canvas {
+    width: 200px !important;
+    height: 200px !important; }
+  .clients-section p {
+    margin: 0; }
+  .clients-section ul li {
+    padding-bottom: 10px; }
+    .clients-section ul li:before {
+      content: "";
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      margin-right: 4px;
+      vertical-align: -1px; }
+    .clients-section ul li span {
+      font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

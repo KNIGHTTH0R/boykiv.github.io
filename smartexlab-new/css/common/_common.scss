@@ -4,17 +4,19 @@ $laptop: 1200px;
 
 $general-text: 15px;
 $h3-text: 20px;
-$h2-text: 40px;
+$h2-text: 34px;
 $h1-text: 50px;
 
 $brand-color: #3b89c9;
 $orange: #ed6d23;
 $red: #c52929;
 $purple: #692c91;
+$yellow: #f9a823;
 
 body {
 	font-size: 15px;
 	color: #333;
+	font-family: "Open Sans";
 }
 
 ul {
@@ -54,5 +56,34 @@ li {
 
 	@media (max-width: $phone) {
 		width: auto;
+	}
+}
+
+$col-number: 12;
+$col-space: 30px;
+
+@for $i from 1 through $col-number {
+
+	.col-#{$i} {
+		width: (100%/$col-number)*$i;
+		box-sizing: border-box;
+		float: left;
+		padding: {
+			left: $col-space/2;
+			right: $col-space/2;
+		}
+	}
+}
+
+@for $i from 1 through 10 {
+
+	.col-10-#{$i} {
+		width: (100%/10)*$i;
+		box-sizing: border-box;
+		float: left;
+		padding: {
+			left: $col-space/2;
+			right: $col-space/2;
+		}
 	}
 }
