@@ -829,6 +829,12 @@ body:not(#home-page) .main-nav {
     float: left;
     box-sizing: border-box;
     padding: 0 15px; }
+    @media (max-width: 992px) {
+      .services-with-short-description .service {
+        width: 100% !important;
+        float: none; }
+        .services-with-short-description .service:not(:last-child) {
+          padding-bottom: 40px; } }
     .services-with-short-description .service h3 {
       margin: 12px 0 4px;
       font-size: 20px; }
@@ -980,12 +986,15 @@ body:not(#home-page) .main-nav {
     vertical-align: top;
     text-align: left; }
   .clients-section .clients-text {
-    width: 350px;
+    width: 330px;
     display: inline-block;
     padding: 0 15px;
     box-sizing: border-box;
     vertical-align: top;
     text-align: left; }
+    @media (max-width: 992px) {
+      .clients-section .clients-text {
+        width: 270px; } }
   .clients-section .startups-description:before {
     background: #3b89c9; }
   .clients-section .mid-size-description:before {
