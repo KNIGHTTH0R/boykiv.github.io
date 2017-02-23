@@ -401,6 +401,21 @@ body:not(#home-page) .main-nav {
     line-height: 55px;
     font-weight: 800;
     margin: 170px 0 130px; }
+  .hero-section .short-facts {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    width: 312px; }
+    .hero-section .short-facts li {
+      width: 156px;
+      float: left;
+      padding-bottom: 17px; }
+      .hero-section .short-facts li .fact-data {
+        font-size: 20px;
+        font-weight: 800; }
   .hero-section .tag-list-subsection {
     border-top: 1px solid #fff;
     font-size: 0;

@@ -23,6 +23,30 @@
 		margin: 170px 0 130px;
 	}
 
+	.short-facts {
+		position: absolute;
+		top: 10px;
+		right: 0;
+		color: #fff;
+		padding: 0;
+		margin: 0;
+		width: 312px;
+
+		li {
+			width: 156px;
+			float: left;
+			padding-bottom: 17px;
+
+			.fact-title {
+			}
+
+			.fact-data {
+				font-size: $h3-text;
+				font-weight: 800;
+			}
+		}
+	}
+
 	.tag-list-subsection {
 		border-top: 1px solid #fff;
 		font-size: 0;
