@@ -51,18 +51,15 @@
 		border-top: 1px solid #fff;
 		font-size: 0;
 		padding: 10px 0;
-		text-align: justify;
 		background: rgba(0, 0, 0, .7);
-
-		.wrapper:after {
-			content: "";
-			width: 100%;
-			display: inline-block;
-		}
 
 		.tag-list {
 			display: inline-block;
 			padding: 5px 0;
+
+			&:not(:last-child) {
+				padding-right: 25px;
+			}
 
 			.tags-header {
 				font-size: $general-text;
