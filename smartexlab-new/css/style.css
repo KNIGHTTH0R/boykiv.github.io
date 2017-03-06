@@ -8,8 +8,25 @@ ul {
   padding: 0;
   margin: 0; }
 
+p {
+  margin: 0; }
+  p + p {
+    margin-top: .7em; }
+
 li {
   display: block; }
+
+h2 {
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 100;
+  margin: 0 0 18px; }
+
+h3 {
+  margin: 12px 0 4px;
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700; }
 
 .wrapper {
   max-width: 1200px;
@@ -189,11 +206,10 @@ li {
   padding-right: 15px; }
 
 .main-footer {
-  background: url(../img/map.png) 50% -80px; }
+  background: url(../img/map.png) 50% 3px; }
   .main-footer .feedback-subsection {
     overflow: hidden;
-    padding: 80px 0;
-    border-bottom: 1px solid #444;
+    padding: 55px 0;
     position: relative; }
     .main-footer .feedback-subsection:after {
       content: "";
@@ -203,7 +219,7 @@ li {
       bottom: 0;
       left: 0;
       display: block;
-      background: rgba(59, 137, 201, 0.8); }
+      background: rgba(59, 137, 201, 0.7); }
     .main-footer .feedback-subsection .wrapper {
       position: relative;
       z-index: 2; }
@@ -216,7 +232,8 @@ li {
       padding: 0 15px;
       width: 50%;
       box-sizing: border-box;
-      float: left; }
+      float: left;
+      font-size: 0; }
       .main-footer .feedback-subsection .form-part input,
       .main-footer .feedback-subsection .form-part textarea {
         width: 100%;
@@ -229,10 +246,13 @@ li {
         margin-bottom: 10px;
         line-height: 22px;
         background: white;
-        color: #333; }
+        color: #333;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+        transition: .2s; }
         .main-footer .feedback-subsection .form-part input:focus,
         .main-footer .feedback-subsection .form-part textarea:focus {
-          outline: none; }
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3); }
       .main-footer .feedback-subsection .form-part textarea {
         height: 130px; }
       .main-footer .feedback-subsection .form-part .send-btn {
@@ -243,7 +263,12 @@ li {
         border-radius: 4px;
         text-decoration: none;
         display: inline-block;
-        transition: .2s; }
+        transition: .2s;
+        font-size: 15px; }
+        .main-footer .feedback-subsection .form-part .send-btn:hover {
+          background: rgba(255, 255, 255, 0.15); }
+        .main-footer .feedback-subsection .form-part .send-btn:active {
+          background: rgba(255, 255, 255, 0.3); }
     .main-footer .feedback-subsection .contact-info {
       padding: 0 15px;
       width: 33.333%;
@@ -251,15 +276,17 @@ li {
       float: left;
       box-sizing: border-box;
       color: #fff; }
-      .main-footer .feedback-subsection .contact-info .email:before {
-        content: "";
-        display: inline-block;
-        width: 18px;
-        height: 20px;
-        background: url("../img/mail.svg");
-        background-size: 18px;
-        vertical-align: -4px;
-        margin-right: 5px; }
+      .main-footer .feedback-subsection .contact-info .email {
+        margin-top: -4px; }
+        .main-footer .feedback-subsection .contact-info .email:before {
+          content: "";
+          display: inline-block;
+          width: 18px;
+          height: 20px;
+          background: url("../img/mail.svg");
+          background-size: 18px;
+          vertical-align: -4px;
+          margin-right: 5px; }
       .main-footer .feedback-subsection .contact-info .phone:before {
         content: "";
         display: inline-block;
@@ -275,24 +302,25 @@ li {
         margin-bottom: 10px;
         font-weight: 600; }
       .main-footer .feedback-subsection .contact-info .address-link {
-        margin-top: 28px;
+        margin-top: 19px;
         display: block;
         text-decoration: none;
         color: #fff;
         font-weight: 600;
         transition: color .2s; }
         .main-footer .feedback-subsection .contact-info .address-link .address-text {
-          border-bottom: 1px solid rgba(255, 255, 255, 0);
+          text-decoration: underline;
           transition: .2s; }
-        .main-footer .feedback-subsection .contact-info .address-link:hover .address-text {
-          border-bottom: 1px solid #fff; }
         .main-footer .feedback-subsection .contact-info .address-link:active {
           color: rgba(255, 255, 255, 0.7); }
           .main-footer .feedback-subsection .contact-info .address-link:active .address-text {
             border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
         .main-footer .feedback-subsection .contact-info .address-link .map-img {
           display: block;
-          margin-top: 5px; }
+          margin-top: 5px;
+          width: 220px;
+          height: 150px;
+          background: url(../img/map-small.png); }
   .main-footer .footer-links-subsection {
     padding: 50px 0;
     position: relative; }
@@ -304,7 +332,7 @@ li {
       bottom: 0;
       left: 0;
       display: block;
-      background: rgba(0, 0, 0, 0.96); }
+      background: rgba(0, 0, 0, 0.92); }
     .main-footer .footer-links-subsection .wrapper {
       position: relative;
       z-index: 2; }
@@ -538,12 +566,18 @@ body:not(#home-page) .main-nav {
 
 .logo-section {
   background: #f8f8f8;
-  border: 1px solid #dddddd; }
+  border: 1px solid #dddddd;
+  border-right: none;
+  border-left: none; }
   .logo-section ul {
-    text-align: center; }
+    text-align: center;
+    padding: 15px 0; }
     .logo-section ul li {
       display: inline-block;
-      padding: 20px 10px; }
+      padding: 5px 10px; }
+      @media (max-width: 768px) {
+        .logo-section ul li {
+          padding: 5px; } }
 
 .testimonials-preview-section {
   padding: 40px 0 0; }
@@ -790,8 +824,8 @@ body:not(#home-page) .main-nav {
 #services-page {
   /* CHARTS */ }
   #services-page canvas {
-    width: 140px;
-    height: 140px; }
+    width: 140px !important;
+    height: 140px !important; }
   #services-page input.khob {
     font-family: "Open Sans" !important;
     font-size: 20px !important;
@@ -800,7 +834,7 @@ body:not(#home-page) .main-nav {
     margin-left: -153px !important;
     font-weight: 800 !important; }
   #services-page .progress-bar.horizontal-pb {
-    width: 100%;
+    width: auto;
     height: 40px;
     background-color: #eee; }
     #services-page .progress-bar.horizontal-pb .idicator {
@@ -832,77 +866,70 @@ body:not(#home-page) .main-nav {
       font-weight: bold; }
 
 .services-with-short-description {
-  padding: 70px 0;
+  padding: 55px 0 70px;
   border-bottom: 1px solid #ddd; }
-  .services-with-short-description h2 {
-    margin: 0 0 18px;
-    font-weight: 100;
-    font-size: 34px;
-    text-align: center; }
-  .services-with-short-description .service {
-    float: left;
-    box-sizing: border-box;
-    padding: 0 15px; }
-    @media (max-width: 992px) {
-      .services-with-short-description .service {
-        width: 100% !important;
+  @media (max-width: 768px) {
+    .services-with-short-description {
+      padding: 45px 0 60px; }
+      .services-with-short-description [class^="col-"] {
+        width: auto;
         float: none; }
-        .services-with-short-description .service:not(:last-child) {
-          padding-bottom: 40px; } }
-    .services-with-short-description .service h3 {
-      margin: 12px 0 4px;
-      font-size: 20px; }
-    .services-with-short-description .service p {
-      margin: 0; }
+        .services-with-short-description [class^="col-"] + [class^="col-"] {
+          padding-top: 30px; } }
+  .services-with-short-description h2 {
+    text-align: center; }
+    @media (max-width: 768px) {
+      .services-with-short-description h2 {
+        margin-bottom: 22px;
+        text-align: left;
+        padding: 0 15px; } }
+  @media (max-width: 768px) {
+    .services-with-short-description h3 {
+      margin: 6px 0 0; } }
 
-.main-services-section .service {
-  width: 25%; }
-  .main-services-section .service.web-development h3 {
-    color: #3b89c9; }
-  .main-services-section .service.mobile h3 {
-    color: #ed6d23; }
-  .main-services-section .service.ui-ux h3 {
-    color: #c52929; }
-  .main-services-section .service.qa h3 {
-    color: #692c91; }
+.main-services-section .web-development h3 {
+  color: #3b89c9; }
+.main-services-section .mobile h3 {
+  color: #ed6d23; }
+.main-services-section .ui-ux h3 {
+  color: #c52929; }
+.main-services-section .qa h3 {
+  color: #692c91; }
 
-.process-services-section .service {
-  width: 50%; }
-  .process-services-section .service .chart {
-    height: 150px;
-    background: red;
-    position: relative; }
-  .process-services-section .service.scrum h3 {
-    color: #3b89c9; }
-  .process-services-section .service.kanban h3 {
-    color: #ed6d23; }
+.process-services-section .scrum h3 {
+  color: #3b89c9; }
+.process-services-section .kanban h3 {
+  color: #ed6d23; }
 
-.models-services-section .service {
-  width: 33.333%; }
-  .models-services-section .service .chart {
-    height: 150px;
-    background: red;
-    position: relative; }
-  .models-services-section .service.team h3 {
-    color: #3b89c9; }
-  .models-services-section .service.mvp h3 {
-    color: #ed6d23; }
-  .models-services-section .service.cycle h3 {
-    color: #c52929; }
+.models-services-section .team h3 {
+  color: #3b89c9; }
+.models-services-section .mvp h3 {
+  color: #ed6d23; }
+.models-services-section .cycle h3 {
+  color: #c52929; }
 
 .contract-types-section {
   padding: 70px 0;
   border-bottom: 1px solid #ddd; }
+  .contract-types-section .col-4 {
+    float: right; }
+  @media (max-width: 768px) {
+    .contract-types-section {
+      padding: 60px 0; }
+      .contract-types-section .time-materials,
+      .contract-types-section .fixed-price {
+        width: 50%; }
+      .contract-types-section .description {
+        width: auto;
+        float: none;
+        padding-bottom: 30px; } }
   .contract-types-section h2 {
-    margin: 0 0 18px;
-    font-weight: 100;
-    font-size: 34px; }
+    margin-top: -15px; }
+    @media (max-width: 768px) {
+      .contract-types-section h2 {
+        margin-bottom: 22px; } }
   .contract-types-section h3 {
-    margin: 12px 0 4px;
-    font-size: 20px;
     text-align: center; }
-  .contract-types-section p {
-    margin: 0; }
   .contract-types-section .time-materials h3 {
     color: #3b89c9; }
   .contract-types-section .fixed-price h3 {
@@ -911,17 +938,24 @@ body:not(#home-page) .main-nav {
 .technologies-services-section {
   background: #f8f8f8;
   border-bottom: 1px solid #dddddd;
-  padding: 70px 0; }
+  padding: 55px 0 70px; }
+  @media (max-width: 768px) {
+    .technologies-services-section {
+      padding: 45px 0 60px; }
+      .technologies-services-section [class^="col-"] {
+        width: auto;
+        float: none; }
+        .technologies-services-section [class^="col-"] + [class^="col-"] {
+          padding-top: 18px; } }
   .technologies-services-section h2 {
-    margin: 0 0 18px;
-    font-weight: 100;
-    font-size: 34px;
     text-align: center; }
-  .technologies-services-section h3 {
-    margin: 12px 0 4px;
-    font-size: 20px; }
+    @media (max-width: 768px) {
+      .technologies-services-section h2 {
+        margin-bottom: 20px;
+        text-align: left; } }
   .technologies-services-section ul {
-    font-size: 0; }
+    font-size: 0;
+    padding-bottom: 4px; }
     .technologies-services-section ul li {
       display: inline-block; }
       .technologies-services-section ul li span {
@@ -944,8 +978,6 @@ body:not(#home-page) .main-nav {
           left: -4px;
           display: block;
           right: -4px; }
-  .technologies-services-section p {
-    margin: 4px 0 0; }
   .technologies-services-section .experts-in h3 {
     color: #3b89c9; }
   .technologies-services-section .experts-in span {
@@ -960,16 +992,25 @@ body:not(#home-page) .main-nav {
     background: #c52929; }
 
 .verticals-section {
-  padding: 70px 0; }
+  padding: 55px 0 60px; }
+  .verticals-section .mobile-verticals {
+    display: none; }
   .verticals-section h2 {
-    margin: 0 0 18px;
-    font-weight: 100;
-    font-size: 34px;
     text-align: center; }
   .verticals-section h3 {
-    margin: 12px 0 4px;
-    font-size: 20px;
     text-align: center; }
+  @media (max-width: 768px) {
+    .verticals-section {
+      padding: 45px 0 60px; }
+      .verticals-section .mobile-verticals {
+        display: block; }
+      .verticals-section .desktop-verticals {
+        display: none; }
+      .verticals-section h2 {
+        text-align: left; }
+      .verticals-section h3 {
+        text-align: left;
+        margin: 0 0 8px; } }
   .verticals-section .global-hr h3 {
     color: #3b89c9; }
   .verticals-section .fintech h3 {
@@ -982,30 +1023,34 @@ body:not(#home-page) .main-nav {
     color: #f9a823; }
 
 .clients-section {
-  padding: 70px 0;
-  text-align: center; }
+  padding: 70px 0; }
   .clients-section .clients-chart {
-    width: 230px;
-    display: inline-block;
     padding: 0 15px;
     box-sizing: border-box;
-    vertical-align: top; }
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    top: 0; }
     .clients-section .clients-chart input {
       opacity: 0; }
   .clients-section .clients-description {
-    width: 240px;
-    display: inline-block;
     padding: 0 15px;
     box-sizing: border-box;
     vertical-align: top;
-    text-align: left; }
+    text-align: left;
+    position: absolute;
+    left: 170px;
+    top: 0; }
   .clients-section .clients-text {
     width: 330px;
-    display: inline-block;
+    margin-left: 420px;
     padding: 0 15px;
     box-sizing: border-box;
     vertical-align: top;
+    display: inline-block;
     text-align: left; }
+    .clients-section .clients-text h2 {
+      margin-top: -10px; }
     @media (max-width: 992px) {
       .clients-section .clients-text {
         width: 270px; } }
@@ -1016,8 +1061,6 @@ body:not(#home-page) .main-nav {
   .clients-section canvas {
     width: 200px !important;
     height: 200px !important; }
-  .clients-section p {
-    margin: 0; }
   .clients-section ul li {
     padding-bottom: 10px; }
     .clients-section ul li:before {

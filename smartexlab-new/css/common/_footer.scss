@@ -1,10 +1,9 @@
 .main-footer {
-	background: url(../img/map.png) 50% -80px;
+	background: url(../img/map.png) 50% 3px;
 
 	.feedback-subsection {
 		overflow: hidden;
-		padding: 80px 0;
-		border-bottom: 1px solid #444;
+		padding: 55px 0;
 		position: relative;
 
 		&:after {
@@ -15,7 +14,7 @@
 			bottom: 0;
 			left: 0;
 			display: block;
-			background: rgba($brand-color, .8);
+			background: rgba($brand-color, .7);
 		}
 
 		.wrapper {
@@ -35,6 +34,7 @@
 			width: 50%;
 			box-sizing: border-box;
 			float: left;
+			font-size: 0;
 
 			input,
 			textarea {
@@ -49,10 +49,12 @@
 				line-height: 22px;
 				background: rgba(255, 255, 255, 1);
 				color: #333;
+				box-shadow: 0 0 0 3px rgba(#fff, 0);
+				transition: .2s;
 
 				&:focus {
 					outline: none;
-					// box-shadow: 0 0 0 2px rgba($brand-color, .4);
+					box-shadow: 0 0 0 3px rgba(#fff, .3);
 				}
 			}
 
@@ -69,14 +71,15 @@
 				text-decoration: none;
 				display: inline-block;
 				transition: .2s;
+				font-size: 15px;
 
-				// &:hover {
-				// 	background: darken($brand-color, 7%);
-				// }
+				&:hover {
+					background: rgba(255, 255, 255, .15);
+				}
 
-				// &:active {
-				// 	background: darken($brand-color, 14%);
-				// }
+				&:active {
+					background: rgba(255, 255, 255, .3);
+				}
 			}
 		}
 
@@ -89,6 +92,7 @@
 			color: #fff;
 
 			.email {
+				margin-top: -4px;
 
 				&:before {
 					content: "";
@@ -124,7 +128,7 @@
 			}
 
 			.address-link {
-				margin-top: 28px;
+				margin-top: 19px;
 				display: block;
 				text-decoration: none;
 				color: #fff;
@@ -132,15 +136,11 @@
 				transition: color .2s;
 
 				.address-text {
-					border-bottom: 1px solid rgba(255, 255, 255, 0);
+					text-decoration: underline;
 					transition: .2s;
 				}
 
 				&:hover {
-
-					.address-text {
-						border-bottom: 1px solid #fff;
-					}
 				}
 
 				&:active {
@@ -154,6 +154,10 @@
 				.map-img {
 					display: block;
 					margin-top: 5px;
+					width: 220px;
+					height: 150px;
+					background: url(../img/map-small.png);
+					//https://mapstyle.withgoogle.com/
 				}
 			}
 		}
@@ -171,7 +175,7 @@
 			bottom: 0;
 			left: 0;
 			display: block;
-			background: rgba(0, 0, 0, .96);
+			background: rgba(0, 0, 0, .92);
 		}
 
 		.wrapper {
