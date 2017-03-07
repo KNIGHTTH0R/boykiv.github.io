@@ -5,6 +5,11 @@
 		overflow: hidden;
 		padding: 55px 0;
 		position: relative;
+		
+		@media (max-width: $phone) {
+			font-size: inherit;
+			padding: 45px 0 60px;
+		}
 
 		&:after {
 			content: "";
@@ -36,6 +41,11 @@
 			float: left;
 			font-size: 0;
 
+			@media (max-width: $phone) {
+				width: 100%;
+				float: none;
+			}
+
 			input,
 			textarea {
 				width: 100%;
@@ -51,6 +61,7 @@
 				color: #333;
 				box-shadow: 0 0 0 3px rgba(#fff, 0);
 				transition: .2s;
+				box-sizing: border-box;
 
 				&:focus {
 					outline: none;
@@ -86,10 +97,17 @@
 		.contact-info {
 			padding: 0 15px;
 			width: 33.333%;
-			margin-left: 40px;
+			margin-left: 25px;
 			float: left;
 			box-sizing: border-box;
 			color: #fff;
+
+			@media (max-width: $phone) {
+				width: 100%;
+				float: none;
+				margin-left: 0;
+				margin-top: 30px;
+			}
 
 			.email {
 				margin-top: -4px;
@@ -128,12 +146,16 @@
 			}
 
 			.address-link {
-				margin-top: 19px;
+				margin-top: 26px;
 				display: block;
 				text-decoration: none;
 				color: #fff;
 				font-weight: 600;
 				transition: color .2s;
+
+				@media (max-width: $phone) {
+					margin-top: 10px;
+				}
 
 				.address-text {
 					text-decoration: underline;
@@ -154,6 +176,7 @@
 				.map-img {
 					display: block;
 					margin-top: 5px;
+					margin-bottom: 4px;
 					width: 220px;
 					height: 150px;
 					background: url(../img/map-small.png);

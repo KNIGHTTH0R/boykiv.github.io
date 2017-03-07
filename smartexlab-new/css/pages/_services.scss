@@ -96,6 +96,11 @@
 }
 
 .main-services-section {
+	padding-top: 60px;
+
+	@media (max-width: $phone) {
+		padding-top: 55px;
+	}
 
 	.web-development h3 {color: $brand-color;}
 	.mobile h3 {color: $orange;}
@@ -125,7 +130,7 @@
 	}
 
 	@media (max-width: $phone) {
-		padding: 60px 0;
+		padding: 60px 0 50px;
 
 		.time-materials,
 		.fixed-price {
@@ -255,7 +260,7 @@
 	}
 
 	@media (max-width: $phone) {
-		padding: 45px 0 60px;
+		padding: 45px 0 45px;
 
 		.mobile-verticals {
 			display: block;
@@ -283,7 +288,25 @@
 }
 
 .clients-section {
-	padding: 70px 0;
+	padding: 70px 0 63px;
+	text-align: center;
+	font-size: 0;
+		
+	@media (max-width: $phone) {
+		font-size: inherit;
+		padding: 60px 0;
+	}
+
+	.centered-block {
+
+		@media (min-width: $phone) {
+			display: inline-block;
+			text-align: left;
+			font-size: 15px;
+			padding-left: 440px;
+			position: relative;
+		}
+	}
 
 	.clients-chart {
 		padding: 0 15px;
@@ -292,6 +315,13 @@
 		position: absolute;
 		left: 0;
 		top: 0;
+		
+		@media (max-width: $phone) {
+			position: static;
+			text-align: left;
+			padding-top: 30px;
+			padding-bottom: 8px;
+		}
 
 		input {
 			opacity: 0;
@@ -306,16 +336,23 @@
 		position: absolute;
 		left: 170px;
 		top: 0;
+		
+		@media (max-width: $phone) {
+			position: static;
+		}
 	}
 
 	.clients-text {
 		width: 330px;
-		margin-left: 420px;
 		padding: 0 15px;
 		box-sizing: border-box;
 		vertical-align: top;
 		display: inline-block;
 		text-align: left;
+		
+		@media (max-width: $phone) {
+			display: block;
+		}
 
 		h2 {
 			margin-top: -10px;
@@ -348,7 +385,10 @@
 	ul {
 
 		li {
-			padding-bottom: 10px;
+
+			&:not(:last-child) {
+				padding-bottom: 10px;
+			}
 		
 			&:before {
 				content: "";

@@ -1,6 +1,9 @@
 #project-page {
 	padding: 50px 0 0;
 
+	h2 {
+		font-weight: bold;
+	}
 }
 
 .breadcrumb {
@@ -26,7 +29,12 @@
 	font-size: $h1-text;
 	font-weight: 800;
 	margin: 0;
+	line-height: 55px;
 
+	@media (max-width: $phone) {
+		font-size: 40px;
+		line-height: 44px;
+	}
 }
 
 .project-short-description {
@@ -34,6 +42,10 @@
 	font-size: $h3-text;
 	margin-top: 10px;
 	color: #777;
+
+	@media (max-width: $phone) {
+		max-width: 100%;
+	}
 }
 
 .project-info {
@@ -45,6 +57,11 @@
 		float: left;
 		padding: 0 15px;
 		box-sizing: border-box;
+
+		@media (max-width: $phone) {
+			width: 100%;
+			float: none;
+		}
 
 		h2 {
 			font-size: $general-text;
@@ -72,14 +89,6 @@
 					transition: .2s;
 					cursor: default;
 
-					// &:hover {
-					// 	background: rgba($brand-color, .1);
-					// }
-
-					// &:active {
-					// 	background: rgba($brand-color, .2);
-					// }
-
 					&:after {
 						content: "";
 						position: absolute;
@@ -96,6 +105,11 @@
 
 	.technology-stack {
 		width: 48%;
+
+		@media (max-width: $phone) {
+			width: 100%;
+			float: none;
+		}
 	}
 
 	.time-efford {
@@ -103,6 +117,11 @@
 		float: left;
 		padding: 0 15px;
 		box-sizing: border-box;
+
+		@media (max-width: $phone) {
+			width: 100%;
+			float: none;
+		}
 
 		h2 {
 			font-size: $general-text;
@@ -120,10 +139,11 @@
 		padding-bottom: 70px;
 
 		.screenshoots {
-			width: 66.66%;
-			box-sizing: border-box;
-			padding: 0 15px;
-			float: left;
+
+			@media (max-width: $phone) {
+				width: 100%;
+				float: none;
+			}
 
 			.slick-arrow {
 				display: none !important;
@@ -170,10 +190,11 @@
 		}
 
 		.project-text {
-			width: 25%;
-			box-sizing: border-box;
-			padding: 0 15px;
-			float: left;
+
+			@media (max-width: $phone) {
+				width: 100%;
+				float: none;
+			}
 
 			p {
 				margin: 0 0 14px;
