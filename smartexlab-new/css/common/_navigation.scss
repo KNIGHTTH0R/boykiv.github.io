@@ -3,17 +3,65 @@ body:not(#home-page) .main-nav {
 }
 
 .main-nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
+	overflow: hidden;
+	transition: .4s background;
+
+	.overlay {
+		content: "";
+		position: fixed;
+		display: none;
+		background: rgba(#000, .85);
+		transition: .4s background;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 58px;
+	}
+
+	&.opened {
+
+		li {
+			height: 40px !important;
+
+			&.contact-link {
+				padding: 4px !important;
+				border-top: 1px solid rgba(255, 255, 255, .2);
+			}
+		}
+	}
+
+	&.small-menu {
+
+		li a {
+			border-radius: 0 !important;
+		}
+
+		.contact-link {
+
+			a {
+				border-top: none !important;
+				border-bottom: none !important;
+				line-height: 28px !important;
+			}
+		}
+	}
 
 	.logo {
-		position: absolute;
-		top: 0;
-		left: 18px;
-		margin: 5px 0;
+		margin: 4px 0;
+		display: block;
+		float: left;
 		font-size: 0;
+
+		@media (max-width: $phone) {
+			float: none;
+			padding: 0 15px;
+			width: 140px;
+		}
 
 		svg {
 			fill: #fff;
@@ -22,13 +70,37 @@ body:not(#home-page) .main-nav {
 		}
 	}
 
+	@media (max-width: $phone) {
+
+		.wrapper {
+			padding: 0;
+		}
+	}
+
 	ul {
 		text-align: right;
 		font-size: 0;
+		float: right;
+		overflow: hidden;
+		position: relative;
+		z-index: 1;
+		top: 15px;
+
+		@media (max-width: $phone) {
+			text-align: left;
+			float: none;
+		}
 
 		li {
 			display: inline-block;
-			margin: 15px 0;
+			transition: .4s;
+			overflow: hidden;
+
+			@media (max-width: $phone) {
+				margin: 0;
+				background: $brand-color;
+				height: 0;
+			}
 
 			&.active {
 
@@ -46,6 +118,13 @@ body:not(#home-page) .main-nav {
 				text-decoration: none;
 				transition: .2s;
 				border-radius: 4px;
+
+				@media (max-width: $phone) {
+					line-height: 39px;
+					border-radius: 0;
+					padding: 0 15px;
+					border-top: 1px solid rgba(255, 255, 255, .2);
+				}
 			}
 
 			&:not(.active) {
@@ -65,13 +144,23 @@ body:not(#home-page) .main-nav {
 			&.contact-link {
 				padding-left: 10px;
 
+				@media (max-width: $phone) {
+					padding-left: 0;
+				}
+
 				a {
 					border: 1px solid #fff;
 					border-radius: 4px;
-					box-sizing: border-box;
 					line-height: 26px;
+					box-sizing: border-box;
 					background: rgba(255, 255, 255, .1);
 					position: relative;
+
+					@media (max-width: $phone) {
+						padding: 0 6px;
+						border: 1px solid rgba(255, 255, 255, .2);
+						line-height: 38px;
+					}
 
 					&:hover {
 						background: rgba(255, 255, 255, .22);
@@ -96,63 +185,37 @@ body:not(#home-page) .main-nav {
 	}
 
 	&.dark {
-		background: $brand-color;
+		background: $brand-color !important;
+		border-bottom: none !important;
 	}
 
-	// &.dark {
-	// 	border-bottom: 1px solid rgba(#dddddd, 1) !important;
+	.menu-btn {
+		display: none;
+		fill: #fff;
+		position: absolute;
+		top: -4px;
+		right: 0;
+		height: 58px;
+		width: 90px;
+		text-align: right;
+		padding-right: 2px;
 
-	// 	.logo {
+		svg {
+			margin-top: 15px;
+		}
+	}
 
-	// 		.logo-svg {
-	// 			fill: $brand-color;
-	// 		}
-	// 	}
+	@media (max-width: $phone) {
 
-	// 	ul {
+		ul {
 
-	// 		li {
+			li {
+				display: block;
+			}
+		}
 
-	// 			&.active {
-
-	// 				span {
-	// 					border-bottom: 1px solid rgba($brand-color, 1);
-	// 				}
-	// 			}
-
-	// 			a {
-	// 				color: $brand-color;
-	// 			}
-
-	// 			&:not(.active) {
-
-	// 				a {
-
-	// 					&:hover {
-	// 						background: rgba($brand-color, .15);
-	// 					}
-
-	// 					&:active {
-	// 						background: rgba($brand-color, .26);
-	// 					}
-	// 				}
-	// 			}
-
-	// 			&.contact-link {
-
-	// 				a {
-	// 					border: 1px solid $brand-color;
-
-	// 					&:hover {
-	// 						background: rgba($brand-color, .1);
-	// 					}
-
-	// 					&:active {
-	// 						background: rgba($brand-color, .22);
-	// 					}
-	// 				}
-	// 			}
-	// 		}
-	// 	}
-	// }
+		.menu-btn {
+			display: block;
+		}
+	}
 }
