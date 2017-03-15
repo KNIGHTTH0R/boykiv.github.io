@@ -1,0 +1,207 @@
+@import 'normalize.css';
+
+// WRAPPER
+$phone: 768px;
+$tablet: 992px;
+$laptop: 1200px;
+
+body {
+	font-family: 'Open Sans';
+	color: #444;
+	background: #eeeef4;
+}
+
+.wrapper {
+	max-width: $laptop;
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 15px;
+
+	&.with-columns {
+		padding: 0;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	@media (max-width: $laptop) {
+		width: $tablet;
+	}
+
+	@media (max-width: $tablet) {
+		width: $phone;
+	}
+
+	@media (max-width: $phone) {
+		width: auto;
+	}
+}
+
+$col-number: 12;
+$col-space: 30px;
+
+@for $i from 1 through $col-number {
+
+	.col-#{$i} {
+		width: (100%/$col-number)*$i;
+		box-sizing: border-box;
+		float: left;
+		padding: {
+			left: $col-space/2;
+			right: $col-space/2;
+		}
+	}
+}
+
+.main-header {
+	background: #1976D2;
+	height: 50px;
+
+	.page-title {
+		color: #fff;
+		font-weight: bold;
+		line-height: 50px;
+		float: left;
+
+		.subject {
+			background: #64B5F6;
+			display: inline-block;
+			line-height: 22px;
+			padding: 0 6px 2px;
+		}
+	}
+
+	.user-block {
+		float: right;
+		line-height: 50px;
+
+		.login {
+			color: #fff;
+			margin-right: 16px;
+		}
+
+		.registration {
+			display: inline-block;
+			line-height: 28px;
+			padding: 0 12px;
+			text-decoration: none;
+			border: 1px solid #fff;
+			color: #fff;
+			border-radius: 4px;
+		}
+	}
+}
+
+.statistics-section {
+	margin-top: 50px;
+
+	$border-style: 2px solid #dde;
+
+	.wrapper {
+		border: $border-style;
+		border-bottom: none;
+
+		&:last-child {
+			border-bottom: $border-style;
+		}
+	}
+
+	.col-4 {
+		text-align: center;
+		border-right: $border-style;
+		padding: 20px 0;
+
+		&:last-child {
+			border-right: none;
+		}
+
+		.main-number {
+			font-size: 32px;
+			font-weight: bold;
+		}
+	}
+
+	.theory-progress {
+		padding: 15px 0;
+		text-align: center;
+
+		.progress-bar {
+			height: 10px;
+			background: #dddde4;
+		}
+
+		.progress-label {
+			padding-top: 3px;
+
+			.progress-number {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.tests-section {
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 50px;
+
+	.random-question,
+	.whole-test {
+		display: inline-block;
+		line-height: 28px;
+		padding: 0 12px;
+		text-decoration: none;
+		border: 1px solid #2196F3;
+		color: #2196F3;
+		border-radius: 4px;
+		margin: 0 20px;
+	}
+}
+
+.theory-section {
+	padding: 20px 0;
+
+	.wrapper {
+		background: #fff;
+		padding: 0 0 30px 0;
+		border-radius: 20px;
+		box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+	}
+
+	.progress-bar {
+		height: 5px;
+		background: #eee;
+	}
+
+	.theme {
+		text-align: center;
+		font-size: 21px;
+		line-height: 50px;
+		border-bottom: 1px solid #ddd;
+
+		.progress-number {
+			font-weight: bold;
+		}
+	}
+
+	.theory-chunk {
+		padding-top: 20px;
+		text-align: center;
+
+		.chunk-img {
+			font-size: 0;
+			border-radius: 50%;
+			overflow: hidden;
+			width: 100px;
+			display: inline-block;
+		}
+
+		.chunk-label {
+		}
+	}
+}

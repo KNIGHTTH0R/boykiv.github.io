@@ -1,0 +1,211 @@
+@import url(normalize.css);
+body {
+  font-family: 'Open Sans';
+  color: #444;
+  background: #eeeef4; }
+
+.wrapper {
+  max-width: 1200px;
+  width: auto;
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 15px; }
+  .wrapper.with-columns {
+    padding: 0; }
+  .wrapper:after {
+    content: "";
+    display: block;
+    clear: both; }
+  @media (max-width: 1200px) {
+    .wrapper {
+      width: 992px; } }
+  @media (max-width: 992px) {
+    .wrapper {
+      width: 768px; } }
+  @media (max-width: 768px) {
+    .wrapper {
+      width: auto; } }
+
+.col-1 {
+  width: 8.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-2 {
+  width: 16.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-3 {
+  width: 25%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-4 {
+  width: 33.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-5 {
+  width: 41.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-6 {
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-7 {
+  width: 58.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-8 {
+  width: 66.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-9 {
+  width: 75%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-10 {
+  width: 83.33333%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-11 {
+  width: 91.66667%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-12 {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.main-header {
+  background: #1976D2;
+  height: 50px; }
+  .main-header .page-title {
+    color: #fff;
+    font-weight: bold;
+    line-height: 50px;
+    float: left; }
+    .main-header .page-title .subject {
+      background: #64B5F6;
+      display: inline-block;
+      line-height: 22px;
+      padding: 0 6px 2px; }
+  .main-header .user-block {
+    float: right;
+    line-height: 50px; }
+    .main-header .user-block .login {
+      color: #fff;
+      margin-right: 16px; }
+    .main-header .user-block .registration {
+      display: inline-block;
+      line-height: 28px;
+      padding: 0 12px;
+      text-decoration: none;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 4px; }
+
+.statistics-section {
+  margin-top: 50px; }
+  .statistics-section .wrapper {
+    border: 2px solid #dde;
+    border-bottom: none; }
+    .statistics-section .wrapper:last-child {
+      border-bottom: 2px solid #dde; }
+  .statistics-section .col-4 {
+    text-align: center;
+    border-right: 2px solid #dde;
+    padding: 20px 0; }
+    .statistics-section .col-4:last-child {
+      border-right: none; }
+    .statistics-section .col-4 .main-number {
+      font-size: 32px;
+      font-weight: bold; }
+  .statistics-section .theory-progress {
+    padding: 15px 0;
+    text-align: center; }
+    .statistics-section .theory-progress .progress-bar {
+      height: 10px;
+      background: #dddde4; }
+    .statistics-section .theory-progress .progress-label {
+      padding-top: 3px; }
+      .statistics-section .theory-progress .progress-label .progress-number {
+        font-weight: bold; }
+
+.tests-section {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px; }
+  .tests-section .random-question,
+  .tests-section .whole-test {
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    text-decoration: none;
+    border: 1px solid #2196F3;
+    color: #2196F3;
+    border-radius: 4px;
+    margin: 0 20px; }
+
+.theory-section {
+  padding: 20px 0; }
+  .theory-section .wrapper {
+    background: #fff;
+    padding: 0 0 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+  .theory-section .progress-bar {
+    height: 5px;
+    background: #eee; }
+  .theory-section .theme {
+    text-align: center;
+    font-size: 21px;
+    line-height: 50px;
+    border-bottom: 1px solid #ddd; }
+    .theory-section .theme .progress-number {
+      font-weight: bold; }
+  .theory-section .theory-chunk {
+    padding-top: 20px;
+    text-align: center; }
+    .theory-section .theory-chunk .chunk-img {
+      font-size: 0;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 100px;
+      display: inline-block; }
+
+/*# sourceMappingURL=style.css.map */
