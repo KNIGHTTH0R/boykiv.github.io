@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ЦТ Математика</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"> -->
+	<script src="js/jquery.js"></script>
+	<script>
+		function loadTemplate(url, id) {
+			$('#' + id).load('templates/' + url + '.html');
+		}
+	</script>
+</head>
+<body>
+	<header class="main-header">
+		<div class="wrapper">
+			<div class="page-title">Централизованное Тестирование <span class="subject">математика</span></div>
+		</div>
+	</header>
+	<div class="tests-menu-section">
+		<div class="wrapper with-columns">
+			<ul class="tests-menu">
+				<li><a href="index.html">Случайный вопрос</a></li>
+				<li class="active"><a href="javascript:void(0)">Полный тест</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main-content">
+		<div class="wrapper">
+			<ul class="tests-list">
+				<li><div id="load-test"><script>loadTemplate('test', 'load-test');</script></div></li>
+				<li><div id="load-test2"><script>loadTemplate('test', 'load-test2');</script></div></li>
+				<li><div id="load-test3"><script>loadTemplate('test', 'load-test3');</script></div></li>
+				<li><div id="load-test4"><script>loadTemplate('test', 'load-test4');</script></div></li>
+				<li><div id="load-test5"><script>loadTemplate('test', 'load-test5');</script></div></li>
+				<li><div id="load-test6"><script>loadTemplate('test', 'load-test6');</script></div></li>
+				<li><div id="load-test7"><script>loadTemplate('test', 'load-test7');</script></div></li>
+				<li><div id="load-test8"><script>loadTemplate('test', 'load-test8');</script></div></li>
+				<li><div id="load-test9"><script>loadTemplate('test', 'load-test9');</script></div></li>
+				<li><div id="load-test10"><script>loadTemplate('test', 'load-test10');</script></div></li>
+				<li><div id="load-test11"><script>loadTemplate('test', 'load-test11');</script></div></li>
+			</ul>
+			<a class="next-question" href="javascript:void(0)">Сдать тест</a>
+		</div>
+	</div>
+</body>
+</html>
