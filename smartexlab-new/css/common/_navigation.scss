@@ -11,42 +11,22 @@ body:not(#home-page) .main-nav {
 	overflow: hidden;
 	transition: .4s background;
 
-	.overlay {
-		content: "";
-		position: fixed;
-		display: none;
-		background: rgba(#000, .85);
-		transition: .4s background;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		top: 58px;
-	}
-
-	&.opened {
-
-		li {
-			height: 40px !important;
-
-			&.contact-link {
-				padding: 4px !important;
-				border-top: 1px solid rgba(255, 255, 255, .2);
-			}
-		}
-	}
-
 	&.small-menu {
 
 		li a {
-			border-radius: 0 !important;
 		}
 
 		.contact-link {
 
 			a {
-				border-top: none !important;
-				border-bottom: none !important;
-				line-height: 28px !important;
+			}
+		}
+
+
+		.logo {
+
+			svg {
+				margin-left: -35px;
 			}
 		}
 	}
@@ -67,6 +47,8 @@ body:not(#home-page) .main-nav {
 			fill: #fff;
 			width: 140px;
 			height: 50px;
+			margin-left: 0;
+			transition: .4s margin;
 		}
 	}
 
@@ -206,8 +188,34 @@ body:not(#home-page) .main-nav {
 	}
 
 	@media (max-width: $phone) {
+		overflow: visible;
+
+		.overlay {
+			content: "";
+			position: fixed;
+			display: none;
+			background: rgba(#000, .85);
+			transition: .4s background;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 58px;
+		}
+
+		&.opened {
+
+			li {
+				height: 40px !important;
+
+				&.contact-link {
+					padding: 4px !important;
+					border-top: 1px solid rgba(255, 255, 255, .2);
+				}
+			}
+		}
 
 		ul {
+			top: 0 !important;
 
 			li {
 				display: block;

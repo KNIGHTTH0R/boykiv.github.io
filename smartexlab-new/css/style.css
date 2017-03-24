@@ -368,27 +368,8 @@ body:not(#home-page) .main-nav {
   z-index: 1000;
   overflow: hidden;
   transition: .4s background; }
-  .main-nav .overlay {
-    content: "";
-    position: fixed;
-    display: none;
-    background: rgba(0, 0, 0, 0.85);
-    transition: .4s background;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 58px; }
-  .main-nav.opened li {
-    height: 40px !important; }
-    .main-nav.opened li.contact-link {
-      padding: 4px !important;
-      border-top: 1px solid rgba(255, 255, 255, 0.2); }
-  .main-nav.small-menu li a {
-    border-radius: 0 !important; }
-  .main-nav.small-menu .contact-link a {
-    border-top: none !important;
-    border-bottom: none !important;
-    line-height: 28px !important; }
+  .main-nav.small-menu .logo svg {
+    margin-left: -35px; }
   .main-nav .logo {
     margin: 4px 0;
     display: block;
@@ -402,7 +383,9 @@ body:not(#home-page) .main-nav {
     .main-nav .logo svg {
       fill: #fff;
       width: 140px;
-      height: 50px; }
+      height: 50px;
+      margin-left: 0;
+      transition: .4s margin; }
   @media (max-width: 768px) {
     .main-nav .wrapper {
       padding: 0; } }
@@ -493,10 +476,29 @@ body:not(#home-page) .main-nav {
     .main-nav .menu-btn svg {
       margin-top: 15px; }
   @media (max-width: 768px) {
-    .main-nav ul li {
-      display: block; }
-    .main-nav .menu-btn {
-      display: block; } }
+    .main-nav {
+      overflow: visible; }
+      .main-nav .overlay {
+        content: "";
+        position: fixed;
+        display: none;
+        background: rgba(0, 0, 0, 0.85);
+        transition: .4s background;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 58px; }
+      .main-nav.opened li {
+        height: 40px !important; }
+        .main-nav.opened li.contact-link {
+          padding: 4px !important;
+          border-top: 1px solid rgba(255, 255, 255, 0.2); }
+      .main-nav ul {
+        top: 0 !important; }
+        .main-nav ul li {
+          display: block; }
+      .main-nav .menu-btn {
+        display: block; } }
 
 .hero-title {
   background: url(../img/hero-img.png);
@@ -859,8 +861,6 @@ body:not(#home-page) .main-nav {
         float: none;
         max-width: 500px;
         margin: 30px auto; } }
-    .projects-preview-section .project .poject-view.border {
-      outline: 1px solid #ddd; }
     .projects-preview-section .project .poject-view img {
       width: 100%; }
     .projects-preview-section .project a {
@@ -999,35 +999,115 @@ body:not(#home-page) .main-nav {
       .project-info .screenshoots-and-text {
         padding-bottom: 60px;
         padding-top: 16px; } }
-    @media (max-width: 768px) {
-      .project-info .screenshoots-and-text .screenshoots {
-        padding-bottom: 26px; } }
-    @media (max-width: 768px) {
-      .project-info .screenshoots-and-text .screenshoots {
-        width: 100%;
-        float: none; } }
-    .project-info .screenshoots-and-text .screenshoots .slick-arrow {
-      display: none !important; }
-    .project-info .screenshoots-and-text .screenshoots .slick-dots {
-      display: none !important; }
-    .project-info .screenshoots-and-text .screenshoots img {
-      width: 100%; }
-    .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list {
-      margin: 0 -2px; }
-      .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list .slick-slide {
-        padding: 4px 2px;
-        cursor: pointer;
-        position: relative;
-        outline: none; }
-        .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list .slick-slide.slick-current:after {
+    .project-info .screenshoots-and-text .screenshoots {
+      padding-bottom: 40px; }
+      @media (max-width: 768px) {
+        .project-info .screenshoots-and-text .screenshoots {
+          padding-bottom: 26px; } }
+      @media (max-width: 768px) {
+        .project-info .screenshoots-and-text .screenshoots {
+          width: 100%;
+          float: none; } }
+      .project-info .screenshoots-and-text .screenshoots .slick-arrow {
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        background: none;
+        outline: none;
+        box-shadow: none;
+        z-index: 5;
+        border: none;
+        cursor: pointer; }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow:after {
           content: "";
           position: absolute;
-          top: 4px;
-          right: 2px;
-          bottom: 4px;
-          left: 2px;
-          z-index: 2;
-          background: rgba(0, 122, 255, 0.5); }
+          top: 50%;
+          margin-top: -31px;
+          border: 2px solid rgba(255, 255, 255, 0);
+          border-top: none;
+          border-left: none;
+          width: 50px;
+          height: 50px;
+          padding: 0;
+          z-index: 1; }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow:before {
+          transition: .2s; }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow:hover:after {
+          border-color: white; }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow:hover:before {
+          background: rgba(0, 0, 0, 0.3); }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-prev {
+          left: 0; }
+          .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-prev:after {
+            transform: rotate(135deg);
+            left: 38px; }
+          .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-prev:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100px; }
+        .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-next {
+          right: 0; }
+          .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-next:after {
+            transform: rotate(-45deg);
+            right: 38px; }
+          .project-info .screenshoots-and-text .screenshoots .slick-arrow.slick-next:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 100px; }
+      .project-info .screenshoots-and-text .screenshoots .slick-dots {
+        text-align: center;
+        font-size: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -40px; }
+        .project-info .screenshoots-and-text .screenshoots .slick-dots li {
+          display: inline-block; }
+          .project-info .screenshoots-and-text .screenshoots .slick-dots li button {
+            border: none;
+            padding: 0;
+            background: none;
+            padding: 15px 10px;
+            cursor: pointer;
+            outline: none; }
+            .project-info .screenshoots-and-text .screenshoots .slick-dots li button:after {
+              content: "";
+              display: block;
+              width: 10px;
+              height: 10px;
+              background: #aaa;
+              border-radius: 50%;
+              transition: .2s; }
+            .project-info .screenshoots-and-text .screenshoots .slick-dots li button:hover:after {
+              background: #666; }
+          .project-info .screenshoots-and-text .screenshoots .slick-dots li.slick-active button:after {
+            background: #444; }
+      .project-info .screenshoots-and-text .screenshoots img {
+        width: 100%; }
+      .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list {
+        margin: 0 -2px; }
+        .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list .slick-slide {
+          padding: 4px 2px;
+          cursor: pointer;
+          position: relative;
+          outline: none; }
+          .project-info .screenshoots-and-text .screenshoots .screenshoots-preview-list .slick-list .slick-slide.slick-current:after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            right: 2px;
+            bottom: 4px;
+            left: 2px;
+            z-index: 2;
+            background: rgba(0, 122, 255, 0.5); }
     @media (max-width: 768px) {
       .project-info .screenshoots-and-text .project-text {
         width: 100%;

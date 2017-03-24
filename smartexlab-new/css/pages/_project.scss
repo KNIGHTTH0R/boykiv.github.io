@@ -153,6 +153,7 @@
 		}
 
 		.screenshoots {
+			padding-bottom: 40px;
 
 			@media (max-width: $phone) {
 				padding-bottom: 26px;
@@ -164,11 +165,131 @@
 			}
 
 			.slick-arrow {
-				display: none !important;
+				font-size: 0;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				width: 50%;
+				background: none;
+				outline: none;
+				box-shadow: none;
+				z-index: 5;
+				border: none;
+				cursor: pointer;
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					margin-top: -31px;
+					border: 2px solid rgba(255, 255, 255, 0);
+					border-top: none;
+					border-left: none;
+					width: 50px;
+					height: 50px;
+					padding: 0;
+					z-index: 1;
+				}
+
+				&:before {
+					transition: .2s;
+				}
+				
+				&:hover {
+
+					&:after {
+						border-color: rgba(255, 255, 255, 1);
+					}
+
+					&:before {
+						background: rgba(0, 0, 0, .3);
+					}
+				}
+
+				&.slick-prev {
+					left: 0;
+
+					&:after {
+						transform: rotate(135deg);
+						left: 38px;
+					}
+
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						width: 100px;
+					}
+				}
+
+				&.slick-next {
+					right: 0;
+
+					&:after {
+						transform: rotate(-45deg);
+						right: 38px;
+					}
+
+					&:before {
+						content: "";
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						width: 100px;
+					}
+				}
 			}
 
 			.slick-dots {
-				display: none !important;
+				text-align: center;
+				font-size: 0;
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -40px;
+
+				li {
+					display: inline-block;
+
+					button {
+						border: none;
+						padding: 0;
+						background: none;
+						padding: 15px 10px;
+						cursor: pointer;
+						outline: none;
+
+						&:after {
+							content: "";
+							display: block;
+							width: 10px;
+							height: 10px;
+							background: #aaa;
+							border-radius: 50%;
+							transition: .2s;
+						}
+
+						&:hover {
+
+							&:after {
+								background: #666;
+							}
+						}
+					}
+
+					&.slick-active {
+
+						button {
+
+							&:after {
+								background: #444;
+							}
+						}
+					}
+				}
 			}
 
 			img {
