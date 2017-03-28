@@ -14,6 +14,7 @@ function scrollFunction() {
 	var menuMinHeight = 38;
 	var menuColor = '59, 137, 201';
 	var menuColor = '12, 27, 39';
+	var menuColor = '59, 137, 201';
 
 	topOffset = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
 	var menuHeight = 58 - topOffset;

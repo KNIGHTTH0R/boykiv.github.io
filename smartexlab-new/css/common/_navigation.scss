@@ -12,16 +12,7 @@ body:not(#home-page) .main-nav {
 	transition: .4s background;
 
 	&.small-menu {
-
-		li a {
-		}
-
-		.contact-link {
-
-			a {
-			}
-		}
-
+		border-bottom: 1px solid rgba(255, 255, 255, .2);
 
 		.logo {
 
@@ -168,7 +159,6 @@ body:not(#home-page) .main-nav {
 
 	&.dark {
 		background: $brand-color !important;
-		border-bottom: none !important;
 	}
 
 	.menu-btn {

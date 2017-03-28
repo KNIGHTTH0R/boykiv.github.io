@@ -368,8 +368,10 @@ body:not(#home-page) .main-nav {
   z-index: 1000;
   overflow: hidden;
   transition: .4s background; }
-  .main-nav.small-menu .logo svg {
-    margin-left: -35px; }
+  .main-nav.small-menu {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    .main-nav.small-menu .logo svg {
+      margin-left: -35px; }
   .main-nav .logo {
     margin: 4px 0;
     display: block;
@@ -461,8 +463,7 @@ body:not(#home-page) .main-nav {
             display: block;
             right: 0; }
   .main-nav.dark {
-    background: #3b89c9 !important;
-    border-bottom: none !important; }
+    background: #3b89c9 !important; }
   .main-nav .menu-btn {
     display: none;
     fill: #fff;
