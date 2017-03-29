@@ -20,6 +20,7 @@
 		}
 
 		.poject-view {
+			font-size: 0;
 
 			img {
 				width: 100%;
@@ -30,7 +31,6 @@
 			color: $brand-color;
 			font-size: $h3-text;
 			display: block;
-			margin-top: 10px;
 			font-weight: bold;
 			transition: .2s;
 
@@ -45,6 +45,11 @@
 
 			&:active {
 				color: darken($brand-color, 30%);
+			}
+
+			span {
+				display: block;
+				margin-top: 10px;
 			}
 		}
 

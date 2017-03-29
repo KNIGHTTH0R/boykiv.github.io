@@ -16,7 +16,7 @@ function scrollFunction() {
 	var menuColor = '12, 27, 39';
 	var menuColor = '59, 137, 201';
 
-	topOffset = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
+	topOffset = window.pageYOffset ? window.pageYOffset : document.body.scrollTop; // сколько проскролилил
 	var menuHeight = 58 - topOffset;
 	var menuLinksTop = 15 - topOffset/2;
 	var logoTop = 4 - topOffset/2/15*11;
@@ -37,30 +37,9 @@ function scrollFunction() {
 		.css('background', 'rgba('+menuColor+', 1)');
 		$menuLinks.css('top', (menuMinHeight-28)/2+'px');
 		$logo.css('margin', '-3px 0');
-		$('.st0').fadeOut(400);
+		$('.st0').fadeOut(200);
 		$('.menu-btn svg').css('margin-top', '12px');
 	}
 }
 
 window.onscroll = scrollFunction;
-
-
-// function scrollFunction() {
-// 	topOffset = window.pageYOffset ? window.pageYOffset : document.body.scrollTop;
-// 	var menuHeight = 58 - topOffset;
-// 	if (menuHeight >= 30) {
-// 		mainNav.style.height = menuHeight + 'px';
-// 		mainNav.style.lineHeight = menuHeight + 'px';
-// 		logo.style.marginTop = -10 + topOffset * 0.02 + 'px';
-// 		mainNav.className = "main-nav";
-// 		menuBtn.style.height = menuHeight + 'px';
-// 		logoBlock.style.height = menuHeight + 'px';
-// 	} else {
-// 		mainNav.style.height = '40px';
-// 		mainNav.style.lineHeight = '30px';
-// 		mainNav.className = "main-nav small";
-// 		logo.style.marginTop = -10 + 50 * 0.02 + 'px';
-// 		menuBtn.style.height = '30px';
-// 		logoBlock.style.height = '30px';
-// 	}
-// }

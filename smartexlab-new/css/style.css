@@ -372,6 +372,9 @@ body:not(#home-page) .main-nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
     .main-nav.small-menu .logo svg {
       margin-left: -35px; }
+    @media (max-width: 768px) {
+      .main-nav.small-menu ul {
+        margin-top: -9px !important; } }
   .main-nav .logo {
     margin: 4px 0;
     display: block;
@@ -534,6 +537,9 @@ body:not(#home-page) .main-nav {
   background-size: 2000px;
   background-position: 50% -530px;
   overflow: hidden; }
+  @media (max-width: 768px) {
+    .hero-section > .wrapper {
+      max-width: 310px; } }
   .hero-section h1 {
     color: #fff;
     font-size: 50px;
@@ -569,7 +575,14 @@ body:not(#home-page) .main-nav {
     border-top: 1px solid #fff;
     font-size: 0;
     padding: 10px 0;
-    background: rgba(0, 0, 0, 0.7); }
+    background: rgba(0, 0, 0, 0.7);
+    text-align: justify; }
+    @media (max-width: 1200px) {
+      .hero-section .tag-list-subsection {
+        text-align: left; } }
+    .hero-section .tag-list-subsection .wrapper:after {
+      display: inline-block;
+      width: 100%; }
     .hero-section .tag-list-subsection .tag-list {
       display: inline-block;
       padding: 5px 0 0; }
@@ -835,11 +848,11 @@ body:not(#home-page) .main-nav {
 
 .galery-section {
   overflow: hidden;
-  padding-bottom: 10px; }
+  padding-bottom: 2px; }
   .galery-section ul {
     cursor: grab; }
   .galery-section .slick-slide {
-    padding: 0 5px; }
+    padding: 0 1px 0 1px; }
   .galery-section .slick-arrow {
     display: none !important; }
   .galery-section .slick-dots {
@@ -862,13 +875,14 @@ body:not(#home-page) .main-nav {
         float: none;
         max-width: 500px;
         margin: 30px auto; } }
-    .projects-preview-section .project .poject-view img {
-      width: 100%; }
+    .projects-preview-section .project .poject-view {
+      font-size: 0; }
+      .projects-preview-section .project .poject-view img {
+        width: 100%; }
     .projects-preview-section .project a {
       color: #3b89c9;
       font-size: 20px;
       display: block;
-      margin-top: 10px;
       font-weight: bold;
       transition: .2s; }
       @media (max-width: 992px) {
@@ -879,6 +893,9 @@ body:not(#home-page) .main-nav {
         color: #286190; }
       .projects-preview-section .project a:active {
         color: #173854; }
+      .projects-preview-section .project a span {
+        display: block;
+        margin-top: 10px; }
     .projects-preview-section .project p {
       margin: 5px 0 0; }
 

@@ -20,6 +20,13 @@ body:not(#home-page) .main-nav {
 				margin-left: -35px;
 			}
 		}
+
+		@media (max-width: $phone) {
+
+			ul {
+				margin-top: -9px !important;
+			}
+		}
 	}
 
 	.logo {

@@ -23,6 +23,14 @@
 	background-position: 50% -530px;
 	overflow: hidden;
 
+
+	@media (max-width: $phone) {
+
+		> .wrapper {
+			max-width: 310px;
+		}
+	}
+
 	h1 {
 		color: #fff;
 		font-size: $h1-text;
@@ -72,6 +80,19 @@
 		font-size: 0;
 		padding: 10px 0;
 		background: rgba(0, 0, 0, .7);
+		text-align: justify;
+
+		@media (max-width: $laptop) {
+			text-align: left;
+		}
+
+		.wrapper {
+
+			&:after {
+				display: inline-block;
+				width: 100%;
+			}
+		}
 
 		.tag-list {
 			display: inline-block;
@@ -459,14 +480,14 @@
 
 .galery-section {
 	overflow: hidden;
-	padding-bottom: 10px;
+	padding-bottom: 2px;
 
 	ul {
 		cursor: grab;
 	}
 
 	.slick-slide {
-		padding: 0 5px;
+		padding: 0 1px 0 1px;
 	}
 
 	.slick-arrow {
