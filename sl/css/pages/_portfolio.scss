@@ -1,0 +1,60 @@
+.projects-preview-section {
+	margin: 45px 0;
+
+	@media (max-width: $phone) {
+		margin: 70px 0 60px;
+	}
+
+	.project {
+		width: 33.333%;
+		padding: 0 15px;
+		float: left;
+		margin: 25px 0;
+		box-sizing: border-box;
+
+		@media (max-width: $phone) {
+			width: auto;
+			float: none;
+			max-width: 500px;
+			margin: 30px auto;
+		}
+
+		.poject-view {
+			font-size: 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		a {
+			color: $brand-color;
+			font-size: $h3-text;
+			display: block;
+			font-weight: bold;
+			transition: .2s;
+
+			@media (max-width: $tablet) {
+				font-size: 18px;
+				font-weight: 600;
+			}
+
+			&:hover {
+				color: darken($brand-color, 15%);
+			}
+
+			&:active {
+				color: darken($brand-color, 30%);
+			}
+
+			span {
+				display: block;
+				margin-top: 10px;
+			}
+		}
+
+		p {
+			margin: 5px 0 0;
+		}
+	}
+}
