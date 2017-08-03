@@ -4,21 +4,56 @@ body {
 	color: #222;
 }
 
-h1 {
+.introduction {
 	text-align: center;
-	font-size: 16px;
-	margin: 0;
-	margin-top: 10px;
-	margin-bottom: 1px;
-	color: #444;
+	padding-top: 100px;
+	font-size: 0;
 }
 
 .ava {
 	width: 135px;
 	height: 135px;
-	margin: 100px auto 0;
 	border-radius: 50%;
 	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #4c4c4c;
+	font-weight: 800;
+	line-height: 34px;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: block;
+}
+
+.name {
+	display: block;
+	font-weight: 100;
+	margin-top: -11px;
+}
+
+.job-title {
+	display: block;
+	color: #f66;
+	text-transform: uppercase;
+}
+
+.short-description {
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+	padding-left: 25px;
 }
 
 .ava img {
@@ -26,12 +61,63 @@ h1 {
 }
 
 .lead {
-	font-size: 16px;
-	text-align: center;
+	font-size: 14px;
 	max-width: 400px;
-	margin: 0 auto;
+	margin: 0;
 	line-height: 1.333;
-	color: #666;
+	color: #333;
+}
+
+.lead li > .svg {
+	font-size: 0;
+}
+
+.lead svg.mail {
+	width: 15px;
+	margin-left: 1px;
+	vertical-align: -7px;
+	margin-right: 6px;
+	fill: #444;
+}
+
+.lead svg.skype {
+	width: 17px;
+	height: 17px;
+	vertical-align: -4px;
+	margin-right: 5px;
+	fill: #444;
+}
+
+.lead svg.linkedin {
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+	margin-right: 6px;
+	margin-left: 1px;
+	fill: #08f;
+}
+
+.lead li {
+	padding: 1px 0;
+}
+
+.lead a {
+	color: #08f;
+	line-height: 1.6;
+	text-decoration: none;
+}
+
+.lead a span:not(.svg) {
+	border-bottom: 1px solid #acf;
+}
+
+.lead a:hover span:not(.svg) {
+	color: #f88;
+	border-bottom: 1px solid #fcc;
+}
+
+.lead a:hover svg.linkedin {
+	fill: #f88;
 }
 
 
@@ -347,17 +433,15 @@ h1 {
 /* WORK PAGE */
 
 .work-page {
-	background: #eee;
 }
 
 .go-home {
-	max-width: 1000px;
+	max-width: 960px;
 	margin: 0 auto 100px;
 	display: block;
 	height: 50px;
 	line-height: 50px;
 	background: #fff;
-	text-align: center;
 	text-decoration: none;
 }
 
@@ -373,7 +457,12 @@ h1 {
 .screenshots {
 	max-width: 1000px;
 	margin: 100px auto;
-	overflow: hidden;
+}
+
+.screenshots:after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .col {
@@ -386,6 +475,7 @@ h1 {
 .col img {
 	width: 100%;
 	margin-bottom: 40px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
 .col2 {
@@ -418,7 +508,7 @@ h1 {
 /* ADAPTIVITY */
 
 @media (max-width: 1020px) {
-	
+
 	.works {
 		margin: 100px 20px;
 	}
