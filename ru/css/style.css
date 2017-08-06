@@ -454,6 +454,10 @@ li {
 	border-bottom: 1px solid #fcc;
 }
 
+.go-home span:before {
+	content: "« ";
+}
+
 .screenshots {
 	max-width: 1000px;
 	margin: 100px auto;
@@ -472,13 +476,14 @@ li {
 	font-size: 0;
 }
 
-.col img {
+.screenshots img {
 	width: 100%;
 	margin-bottom: 40px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+	box-shadow: 0 0 30px rgba(0, 0, 0, .2);
 }
 
 .col2 {
+padding: 0 20px;
 	padding-bottom: 40px;
 	font-size: 0;
 }
