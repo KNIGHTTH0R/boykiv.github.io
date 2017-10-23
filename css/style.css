@@ -309,6 +309,12 @@ li {
 	text-align: left;
 }
 
+.works .projects li > a:not(.url) {
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
 .works .projects li.lead-project {
 	width: 400px;
 }
@@ -326,7 +332,8 @@ li {
 	overflow: hidden;
 }
 
-.works .projects li.lead-project:first-child > a:first-child:after {
+.works .projects li.lead-project:first-child > a:first-child:after,
+.white-image:after {
 	content: "";
 	display: block;
 	position: absolute;
