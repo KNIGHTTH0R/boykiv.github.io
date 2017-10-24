@@ -436,6 +436,14 @@ li {
 	}
 }
 
+.preview-col {
+	 padding: 0 20%;
+ }
+
+.preview-col img {
+ 	box-shadow: none !important;
+}
+
 
 /* WORK PAGE */
 
@@ -479,7 +487,15 @@ li {
 	font-size: 0;
 }
 
-.col img {
+.col1-3 {
+	width: 300px;
+	float: left;
+	padding: 0 15px;
+	font-size: 0;
+}
+
+.col img,
+.col1-3 img {
 	width: 100%;
 	margin-bottom: 40px;
 	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
@@ -493,6 +509,7 @@ li {
 .col2 img {
 	width: 100%;
 	margin-bottom: 40px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
 }
 
 .work-page h1 {
@@ -520,7 +537,8 @@ li {
 		margin: 100px 20px;
 	}
 
-	.col {
+	.col,
+	.col1-3 {
 		float: none;
 		width: auto;
 		padding-left: 0;
