@@ -1,0 +1,104 @@
+.browser {
+	overflow: hidden;
+	position: relative;
+	border-radius: 2px;
+	margin-bottom: 40px;
+	background:
+		url(../img/browser-left.png) top left no-repeat,
+		url(../img/browser-right.png) top right no-repeat,
+		url(../img/browser.png) top repeat-x,
+		#fff;
+	box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+	background-size: 66px 19px, 14px 19px, 1px 19px;
+}
+
+.screenshots .browser > img {
+	width: 100%;
+	margin-top: 18px;
+	margin-bottom: 0;
+}
+
+.project-screens {
+	position: relative;
+	overflow: hidden;
+}
+
+.project-screens .cover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 500px;
+	overflow: hidden;
+	z-index: -1;
+	background: url(img/sjf-header.jpg);
+	background-size: cover !important;
+	background-position: 50% !important;
+}
+
+.project-screens .cover:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 1);
+	display: block;
+}
+
+.project-screens .cover video {
+	width: 100%;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.screenshots {
+	max-width: 1000px;
+	margin: 80px auto;
+}
+
+.screenshots:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.col {
+	width: 460px;
+	float: left;
+	padding: 0 20px;
+	font-size: 0;
+}
+
+.col img {
+	width: 100%;
+	margin-bottom: 40px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.col2 {
+	padding-bottom: 40px;
+	font-size: 0;
+}
+
+.col2 img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.description {
+	font-size: 14px;
+	color: #222;
+	padding-bottom: 30px;
+}
+
+.description h2 {
+	/*text-transform: uppercase;*/
+	margin: 0;
+	margin-top: -10px;
+	font-size: 24px;
+}
