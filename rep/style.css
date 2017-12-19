@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: "Roboto Slab";
+}
+
+.wrapper {
+  width: 1040px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.intro-section {
+  background: #000;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.intro-section .video {
+  float: left;
+  width: 600px;
+}
+
+.intro-section .info {
+  float: left;
+}
+
+.intro-section .info .page-title {
+  font-family: "Oswald";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 62px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: -12px;
+}
+
+.intro-section .info .price {
+  font-size: 24px;
+  margin-top: 14px;
+    color: #f44;
+}
+
+.intro-section .info .price .highlited {
+}
+
+.section-title {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.list-of-videos li {
+  float: left;
+  width: 300px;
+}
+.list-of-videos li iframe {
+  width: 100%;
+}
